@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 alias ls="ls -G"
 alias nrw="npm run watch"
 alias nrb="npm run build"
+alias ns="npm start"
 alias ni="npm install"
 alias c="clear"
 alias sym="ln -s"
@@ -124,4 +125,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
