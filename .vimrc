@@ -1,4 +1,3 @@
-
 "No .swp files
 set noswapfile
 
@@ -10,3 +9,8 @@ set expandtab
 set ruler
 set ai
 set hlsearch
+highlight Comment ctermfg=green
+
+"Keymap
+inoremap jj <Esc>
+

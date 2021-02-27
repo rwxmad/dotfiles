@@ -16,15 +16,15 @@ ______         _     __  _  _
 
 You can find aliases for all scripts in [.zshrc](https://github.com/themadnesstony/dotfiles/blob/master/.zshrc)
 
-|                            Script                            |          Description           |    Alias |
-| :----------------------------------------------------------: | :----------------------------: | -------: |
-| [`myip.sh`](https://github.com/themadnesstony/dotfiles/blob/master/scripts/myip.sh) | Return local and external ipv4 | ```ip``` |
-|                                                              |                                |          |
-|                                                              |                                |          |
-|                                                              |                                |          |
-|                                                              |                                |          |
-|                                                              |                                |          |
-|                                                              |                                |          |
-|                                                              |                                |          |
-|                                                              |                                |          |
+|                            Script                            |          Description           |                Alias |
+| :----------------------------------------------------------: | :----------------------------: | -------------------: |
+| [`myip.sh`](https://github.com/themadnesstony/dotfiles/blob/master/scripts/myip.sh) | Return local and external ipv4 |             ```ip``` |
+| [`extract.sh`](https://github.com/themadnesstony/dotfiles/blob/master/scripts/extact.sh) |    Extract compressed files    | ```extract {file}``` |
+|                                                              |                                |                      |
+|                                                              |                                |                      |
+|                                                              |                                |                      |
+|                                                              |                                |                      |
+|                                                              |                                |                      |
+|                                                              |                                |                      |
+|                                                              |                                |                      |
 

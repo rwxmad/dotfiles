@@ -10,13 +10,12 @@ export ZSH="/Users/madnesstony/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="spaceship"
 
-# Default
+# Spaceship
 SPACESHIP_PROMPT_ADD_NEWLINE="false"
 SPACESHIP_PROMPT_SEPARATE_LINE="false"
+SPACESHIP_DIR_COLOR="green"
 
 # Other
-
-
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -76,11 +75,17 @@ SPACESHIP_PROMPT_SEPARATE_LINE="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# Custom LSCOLORS
+export CLICOLOR=1
+export LSCOLORS=cxgxfxexbxegedabagacad
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -111,6 +116,7 @@ alias py="python3"
 
 # IP
 alias ip="sh $HOME/scripts/myip.sh"
+alias extract="sh $HOME/scripts/extract.sh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
