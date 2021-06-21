@@ -111,9 +111,6 @@ alias ni="npm install"
 alias c="clear"
 alias sym="ln -s"
 
-# Python
-alias py="python3"
-
 # IP
 alias ip="sh $HOME/scripts/myip.sh"
 alias extract="sh $HOME/scripts/extract.sh"
