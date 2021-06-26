@@ -1,10 +1,12 @@
-"No .swp files
+set nocompatible
 set noswapfile
 
-"Editing
+colorscheme peachpuff
+
 syntax on
 set number
 set tabstop=2
+set shiftwidth=2
 set expandtab
 set ruler
 set ai
