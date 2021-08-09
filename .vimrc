@@ -1,3 +1,6 @@
+" Enable filetype detection
+filetype on
+
 set nocompatible
 set noswapfile
 
@@ -13,6 +16,8 @@ set ai
 set hlsearch
 highlight Comment ctermfg=green
 
-"Keymap
+" Keymap
 inoremap jj <Esc>
 
+" Tab indentation in Makefile 
+autocmd FileType make set noexpandtab shiftwidth=2 softtabstop=0
