@@ -4,7 +4,7 @@
 ### System variables ####
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/madnesstony/.oh-my-zsh"
+export ZSH="/Users/rwxmad/.oh-my-zsh"
 
 # Golang
 export GOROOT=/usr/local/go 
