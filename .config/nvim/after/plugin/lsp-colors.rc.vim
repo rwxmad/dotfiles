@@ -1,5 +1,3 @@
-if !exists('#LspColors') | finish | endif
-
 " Errors in Red
 hi LspDiagnosticsVirtualTextError guifg=Red ctermfg=Red
 " Warnings in Yellow

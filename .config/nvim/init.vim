@@ -1,7 +1,6 @@
-" Basic setup
-
-" init autocmd
+" Init autocmd
 autocmd!
+
 " Encoding
 if has('vim_starting')
   set encoding=utf-8
@@ -24,6 +23,7 @@ set showcmd
 set cmdheight=1
 set laststatus=2
 set scrolloff=10
+
 " Searching
 set hlsearch
 set incsearch
