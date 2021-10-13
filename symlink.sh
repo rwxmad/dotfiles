@@ -16,6 +16,11 @@ ln -sfn "$cwd"/.zshrc ~/.zshrc
 ln -sfn "$cwd"/.vimrc ~/.vimrc
 
 # ====================
+# NVIM
+# ====================
+ln -sfn "$cwd"/.config/nvim ~/.config/nvim
+
+# ====================
 # TMUX
 # ====================
 ln -sfn "$cwd"/.tmux.conf ~/.tmux.conf
@@ -29,3 +34,4 @@ ln -sfn "$cwd"/scripts ~/scripts
 # Misc
 # ====================
 ln -sfn "$cwd"/.editorconfig ~/.editorconfig
+
