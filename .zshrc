@@ -7,9 +7,8 @@
 export ZSH="/Users/rwxmad/.oh-my-zsh"
 
 # Golang
-export GOROOT=/usr/local/go 
 export GOPATH=$HOME/code/go 
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH=$GOPATH/bin:$PATH
 
 ZSH_THEME=""
 

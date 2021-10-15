@@ -1,48 +1,43 @@
-" Init autocmd
-autocmd!
+" -------------------------------------------------------------------------------------------------
+" General settings
+" -------------------------------------------------------------------------------------------------
 
-" Encoding
 if has('vim_starting')
-  set encoding=utf-8
+  set encoding=utf-8      " Encoding
 endif
-scriptencoding utf-8
+scriptencoding utf-8      " Script encoding
 
 if &compatible
-  set nocompatible
+  set nocompatible        " Disable compatibility with vi which can cause unexpected issues
 endif
 
-" stop loading config if it's on tiny or small
-if !1 | finish | endif
+if !1 | finish | endif    " Stop loading config if it's on tiny or small
 
-filetype on " Enable filetype detection
-filetype plugin indent on
+filetype on               " Enable filetype detection
+filetype plugin indent on " Fot plugins to load correctly
 
-set nosc noru nosm
-set lazyredraw
-set showcmd
-set cmdheight=1
-set laststatus=2
-set scrolloff=10
+set nosc noru nosm        " Switch off status messages
+set lazyredraw            " Don’t update screen during macro and script execution
+set showcmd               " Show (partial) command in status line
+set cmdheight=1           " Status line height
+set laststatus=2          " Status bar
+set scrolloff=10          " Display 10 lines above/below the cursor when scrolling with a mouse
 
-" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+set hlsearch              " Enable search highlighting
+set incsearch             " Incremental search that shows partial matches
+set ignorecase            " Ignore case when searching
+set smartcase             " Automatically switch search to case-sensitive when search query contains an uppercase letter
 
-set nocompatible
-set noswapfile
-set nobackup
+set noswapfile            " Disable swap files
+set nobackup              " Disable backups 
 
-
-syntax enable
-set number
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set ruler
-set ai
-highlight Comment ctermfg=green
+syntax enable             " Enable syntax highlighting
+set number                " Show line numbers on the sidebar
+set tabstop=2             " Indent using two spaces
+set shiftwidth=2          " When shifting, indent using two spaces
+set expandtab             " Convert tabs to spaces
+set ruler                 " Always show cursor position
+set ai                    " New lines inherit the indentation of previous lines
 
 " -------------------------------------------------------------------------------------------------
 " Imports
@@ -67,63 +62,11 @@ set t_Co=256
 colorscheme gruvbox
 " colorscheme peachpuff
 
+" -------------------------------------------------------------------------------------------------
+" vim-go
+" -------------------------------------------------------------------------------------------------
+
 " disable vim-go :GoDef short cut (gd)
 " this is handled by LanguageClient [LC]
 let g:go_def_mapping_enabled = 0
 
-" -------------------------------------------------------------------------------------------------
-" NERDTree mappings
-" -------------------------------------------------------------------------------------------------
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-
-" -------------------------------------------------------------------------------------------------
-" vim-closetag
-" -------------------------------------------------------------------------------------------------
-
-" filenames like *.xml, *.html, *.xhtml, ...
-" These are the file extensions where this plugin is enabled.
-"
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
-
-" filenames like *.xml, *.xhtml, ...
-" This will make the list of non-closing tags self-closing in the specified files.
-"
-let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
-
-" filetypes like xml, html, xhtml, ...
-" These are the file types where this plugin is enabled.
-"
-let g:closetag_filetypes = 'html,xhtml,phtml'
-
-" filetypes like xml, xhtml, ...
-" This will make the list of non-closing tags self-closing in the specified files.
-"
-let g:closetag_xhtml_filetypes = 'xhtml,jsx'
-
-" integer value [0|1]
-" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
-"
-let g:closetag_emptyTags_caseSensitive = 1
-
-" dict
-" Disables auto-close if not in a "valid" region (based on filetype)
-"
-let g:closetag_regions = {
-    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
-    \ 'javascript.jsx': 'jsxRegion',
-    \ 'typescriptreact': 'jsxRegion,tsxRegion',
-    \ 'javascriptreact': 'jsxRegion',
-    \ }
-
-" Shortcut for closing tags, default is '>'
-"
-let g:closetag_shortcut = '>'
-
-" Add > at current position without closing the current tag, default is ''
-"
-let g:closetag_close_shortcut = '<leader>>'
-
-" set exrc
