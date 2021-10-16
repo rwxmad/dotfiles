@@ -109,4 +109,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 - [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)
 - [pyright](https://github.com/microsoft/pyright)
 - [gopls](https://github.com/golang/tools/tree/master/gopls)
+- [rust-analyzer](https://github.com/rust-analyzer/rust-analyzer)
 
