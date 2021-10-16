@@ -11,6 +11,7 @@ require'nvim-treesitter.configs'.setup {
     "comment",
     "bash",
     "go",
+    "rust",
     "javascript",
     "json",
     "yaml",
