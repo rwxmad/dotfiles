@@ -14,3 +14,4 @@ require("lsp-colors").setup({
   Hint = "#10B981"
 })
 EOF
+

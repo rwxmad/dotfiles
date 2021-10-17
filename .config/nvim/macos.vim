@@ -2,3 +2,4 @@
 set clipboard+=unnamedplus
 " Copy selected text in visual mode
 " set clipboard+=autoselect
+

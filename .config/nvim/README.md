@@ -83,6 +83,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)   | Quickstart configurations for the Nvim LSP client            |
 | [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)      | A light-weight lsp plugin based on neovim built-in lsp with highly a performant UI |
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Nvim Treesitter configurations and abstraction layer         |
+| [nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor) | Refactor module for nvim-treesitter                          |
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)              | A completion plugin for neovim coded in Lua                  |
 | [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)      | nvim-cmp source for neovim builtin LSP client                |
 | [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)          | nvim-cmp source for buffer words                             |

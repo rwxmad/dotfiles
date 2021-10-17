@@ -11,3 +11,4 @@ require('nvim-autopairs').setup({
     hightlight = 'Search'
   },
 })
+

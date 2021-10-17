@@ -10,6 +10,7 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'easymotion/vim-easymotion'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-refactor'
 
 Plug 'hoob3rt/lualine.nvim', {'commit': '82f68c42df9d11e52edb52c86113d0eba5be798d'}
 
@@ -53,3 +54,4 @@ Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'ayu-theme/ayu-vim'
 
 call plug#end() 
+

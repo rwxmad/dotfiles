@@ -26,7 +26,23 @@ require'nvim-treesitter.configs'.setup {
     "typescript",
     "vue"
   },
+  refactor = {
+    smart_rename = { enable = true, keymaps = { smart_rename = "grr" } },
+    highlight_definitions = { enable = true },
+    navigation = {
+      enable = true,
+      keymaps = {
+        goto_definition_lsp_fallback = "gnd",
+        -- list_definitions = "gnD",
+        -- list_definitions_toc = "gO",
+        goto_next_usage = "<a-*>",
+        goto_previous_usage = "<a-#>",
+      },
+    },
+    -- highlight_current_scope = {enable = true}
+  },
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
 parser_config.tsx.used_by = { "javascript", "typescript.tsx" }
+
