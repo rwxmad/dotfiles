@@ -81,6 +81,7 @@ nvim_lsp.rust_analyzer.setup({
     }
 })
 
+-- rust-tools
 require('rust-tools').setup({})
 
 -- Icon
@@ -94,3 +95,4 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     }
   }
 )
+

@@ -45,6 +45,8 @@ Plug 'simrat39/rust-tools.nvim'
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }

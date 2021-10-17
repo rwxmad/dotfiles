@@ -105,7 +105,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | [vim-go](https://github.com/fatih/vim-go)                    | Go development plugin for Vim                                |
 | [rust.vim](https://github.com/rust-lang/rust.vim)            | Vim configuration for Rust                                   |
 | [rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim) | Tools for better development in rust using neovim's builtin lsp |
-|                                                              |                                                              |
+| [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) | Markdown preview plugin for (neo)vim                         |
 
 
 
