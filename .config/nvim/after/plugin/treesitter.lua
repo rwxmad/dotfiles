@@ -28,18 +28,18 @@ require'nvim-treesitter.configs'.setup {
   },
   refactor = {
     smart_rename = { enable = true, keymaps = { smart_rename = "grr" } },
-    highlight_definitions = { enable = true },
+    highlight_definitions = { enable = false },
     navigation = {
       enable = true,
       keymaps = {
-        goto_definition_lsp_fallback = "gnd",
+        goto_definition = "gnd",
         -- list_definitions = "gnD",
         -- list_definitions_toc = "gO",
         goto_next_usage = "<a-*>",
         goto_previous_usage = "<a-#>",
       },
     },
-    -- highlight_current_scope = {enable = true}
+    -- highlight_current_scope = { enable = true },
   },
 }
 
