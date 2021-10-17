@@ -17,6 +17,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'folke/lsp-colors.nvim'
 Plug 'windwp/nvim-autopairs'
+Plug 'ray-x/lsp_signature.nvim'
 
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
@@ -27,6 +28,7 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
 Plug 'tpope/vim-fugitive'
+Plug 'lewis6991/gitsigns.nvim'
 
 Plug 'tpope/vim-commentary'
 
@@ -36,7 +38,9 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'tpope/vim-surround'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 Plug 'rust-lang/rust.vim'
+Plug 'simrat39/rust-tools.nvim'
 
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'

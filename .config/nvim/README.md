@@ -88,6 +88,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)          | nvim-cmp source for buffer words                             |
 | [cmp-path](https://github.com/hrsh7th/cmp-path)              | nvim-cmp source for path                                     |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive)        | Vim plugin for Git                                           |
+| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)  | Git signs written in pure lua                                |
 | [vim-commentary](https://github.com/tpope/vim-commentary)    | Comment stuff out                                            |
 | [vim-easymotion](https://github.com/easymotion/vim-easymotion) | Vim motion on speed                                          |
 | [lualine.nvim](https://github.com/hoob3rt/lualine.nvim)      | A blazing fast and easy to configure neovim statusline plugin written in pure lua |
@@ -96,12 +97,15 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)     | Lua functions                                                |
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Highly extendable fuzzy finder over lists                    |
 | [lsp-colors.nvim](https://github.com/folke/lsp-colors.nvim)  | Plugin that creates missing LSP diagnostics highlight groups for color schemes that don't yet support the Neovim 0.5 builtin LSP client |
+| [lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim) | LSP signature hint as you type                               |
 | [nvim-autopairs](https://github.com/windwp/nvim-autopairs)   | Autopairs for neovim written by lua                          |
 | [vim-surround](https://github.com/tpope/vim-surround)        | Delete/change/add parentheses/quotes/XML-tags/much more with ease |
 | [emmet-vim](https://github.com/mattn/emmet-vim)              | Vim plug-in which provides support for expanding abbreviations similar to [emmet](http://emmet.io/) |
 | [vim-closetag](https://github.com/alvan/vim-closetag)        | Auto close (X)HTML tags                                      |
 | [vim-go](https://github.com/fatih/vim-go)                    | Go development plugin for Vim                                |
 | [rust.vim](https://github.com/rust-lang/rust.vim)            | Vim configuration for Rust                                   |
+| [rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim) | Tools for better development in rust using neovim's builtin lsp |
+|                                                              |                                                              |
 
 
 
