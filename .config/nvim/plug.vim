@@ -4,12 +4,10 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'preservim/nerdtree' 
-Plug 'jistr/vim-nerdtree-tabs'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 Plug 'easymotion/vim-easymotion'
-
-"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -23,6 +21,7 @@ Plug 'windwp/nvim-autopairs'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-path'
 
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
@@ -37,6 +36,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'tpope/vim-surround'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'rust-lang/rust.vim'
 
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
@@ -45,7 +45,5 @@ Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'ayu-theme/ayu-vim'
-
-Plug 'ryanoasis/vim-devicons'
 
 call plug#end() 
