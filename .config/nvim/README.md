@@ -1,7 +1,7 @@
 # Nvim configuration
 
 ## Requirements
-- [curl]()
+- [curl](https://github.com/curl/curl)
 - [neovim](https://github.com/neovim/neovim) (>= 0.5)
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -32,14 +32,14 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ├── README.md
 ├── after # Post init scripts
 │   └── plugin # Plugin configs
-│       ├── autopairs.rc.lua
-│       ├── completion.rc.lua
-│       ├── lsp-colors.rc.vim
-│       ├── lspconfig.rc.lua
-│       ├── lspsaga.rc.vim
-│       ├── lualine.rc.lua
-│       ├── telescope.rc.vim
-│       └── treesitter.rc.lua
+│       ├── autopairs.lua
+│       ├── completion.lua
+│       ├── lsp-colors.vim
+│       ├── lspconfig.lua
+│       ├── lspsaga.vim
+│       ├── lualine.lua
+│       ├── telescope.vim
+│       └── treesitter.lua
 ├── init.vim # Root config file
 ├── macos.vim # MacOS specific config
 ├── mappings.vim # Keymaps
@@ -78,14 +78,15 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 | Plugin                                                       | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [NERDTree](https://github.com/preservim/nerdtree)            | A tree explorer plugin for vim                               |
-| [NERDTree tabs](https://github.com/jistr/vim-nerdtree-tabs)  | NERDTree and tabs together                                   |
+| [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua) | A file explorer tree for neovim written in lua               |
+| [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) | Lua fork of vim-web-devicons for neovim                      |
 | [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)   | Quickstart configurations for the Nvim LSP client            |
 | [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)      | A light-weight lsp plugin based on neovim built-in lsp with highly a performant UI |
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Nvim Treesitter configurations and abstraction layer         |
-| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)              | A completion plugin for neovim coded in Lua.                 |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)              | A completion plugin for neovim coded in Lua                  |
 | [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)      | nvim-cmp source for neovim builtin LSP client                |
 | [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)          | nvim-cmp source for buffer words                             |
+| [cmp-path](https://github.com/hrsh7th/cmp-path)              | nvim-cmp source for path                                     |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive)        | Vim plugin for Git                                           |
 | [vim-commentary](https://github.com/tpope/vim-commentary)    | Comment stuff out                                            |
 | [vim-easymotion](https://github.com/easymotion/vim-easymotion) | Vim motion on speed                                          |
@@ -100,7 +101,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | [emmet-vim](https://github.com/mattn/emmet-vim)              | Vim plug-in which provides support for expanding abbreviations similar to [emmet](http://emmet.io/) |
 | [vim-closetag](https://github.com/alvan/vim-closetag)        | Auto close (X)HTML tags                                      |
 | [vim-go](https://github.com/fatih/vim-go)                    | Go development plugin for Vim                                |
-| [vim-devicons](https://github.com/ryanoasis/vim-devicons)    | Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more |
+| [rust.vim](https://github.com/rust-lang/rust.vim)            | Vim configuration for Rust                                   |
 
 
 
