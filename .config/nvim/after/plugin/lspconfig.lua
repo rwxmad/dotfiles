@@ -73,6 +73,9 @@ require('rust-tools').setup({
                     importGranularity = "module",
                     importPrefix = "by_self",
                 },
+                checkOnSave = {
+                    command = "clippy",
+                },
                 cargo = {
                     loadOutDirsFromCheck = true
                 },
