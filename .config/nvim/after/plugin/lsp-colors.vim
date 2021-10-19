@@ -7,7 +7,7 @@ hi LspDiagnosticsVirtualTextInformation guifg=White ctermfg=White
 hi LspDiagnosticsVirtualTextHint guifg=White ctermfg=White
 
 lua << EOF
-require("lsp-colors").setup({
+require('lsp-colors').setup({
   Error = "#db4b4b",
   Warning = "#e0af68",
   Information = "#0db9d7",

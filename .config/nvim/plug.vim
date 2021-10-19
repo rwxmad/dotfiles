@@ -29,6 +29,8 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
+Plug 'onsails/lspkind-nvim'
+
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
 
