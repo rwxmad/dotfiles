@@ -56,6 +56,22 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- nvim-web-devicons
+require('nvim-web-devicons').setup {
+ -- your personnal icons can go here (to override)
+ -- DevIcon will be appended to `name`
+ override = {
+  zsh = {
+    icon = "",
+    color = "#428850",
+    name = "Zsh"
+  }
+ };
+ -- globally enable default icons (default to false)
+ -- will get overriden by `get_icons` option
+ default = true;
+}
+
 -- nvim-autopairs
 require('nvim-autopairs').setup({
   disable_filetype = { "TelescopePrompt" , "vim" },
