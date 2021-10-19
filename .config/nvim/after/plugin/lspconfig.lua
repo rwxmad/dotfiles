@@ -56,6 +56,21 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- nvim-autopairs
+require('nvim-autopairs').setup({
+  disable_filetype = { "TelescopePrompt" , "vim" },
+  fast_wrap = {
+    map = '<M-e>',
+    chars = { '{', '[', '(', '"', "'" },
+    pattern = string.gsub([[ [%'%"%)%>%]%)%}%,] ]], '%s+', ''),
+    offset = 0, -- Offset from pattern match
+    end_key = '$',
+    keys = 'qwertyuiopzxcvbnmasdfghjkl',
+    check_comma = true,
+    hightlight = 'Search'
+  },
+})
+
 -- tsserver config
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
