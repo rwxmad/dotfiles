@@ -36,10 +36,30 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " lspsaga
 " -------------------------------------------------------------------------------------------------
 
-nnoremap <silent> <C-j> <Cmd>Lspsaga diagnostic_jump_next<CR>
-nnoremap <silent>K <Cmd>Lspsaga hover_doc<CR>
-inoremap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
+" Lsp finder
 nnoremap <silent> gh <Cmd>Lspsaga lsp_finder<CR>
+
+" Hover Doc
+nnoremap <silent>K <Cmd>Lspsaga hover_doc<CR>
+
+" Signature help
+inoremap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
+
+" Jump Diagnostic and Show Diagnostic
+nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>
+nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
+nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
+
+" Code action
+nnoremap <silent><leader>ca :Lspsaga code_action<CR>
+vnoremap <silent><leader>ca :<C-U>Lspsaga range_code_action<CR>
+
+" Rename
+nnoremap <silent>gr :Lspsaga rename<CR>
+
+" Terminal
+nnoremap <silent> <A-d> :Lspsaga open_floaterm<CR>
+tnoremap <silent> <A-d> <C-\><C-n>:Lspsaga close_floaterm<CR>
 
 " -------------------------------------------------------------------------------------------------
 " markdown-preview

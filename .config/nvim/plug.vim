@@ -15,7 +15,8 @@ Plug 'nvim-treesitter/nvim-treesitter-refactor'
 Plug 'hoob3rt/lualine.nvim', {'commit': '82f68c42df9d11e52edb52c86113d0eba5be798d'}
 
 Plug 'neovim/nvim-lspconfig'
-Plug 'glepnir/lspsaga.nvim'
+" Plug 'glepnir/lspsaga.nvim'
+Plug 'tami5/lspsaga.nvim', { 'branch': 'nvim51' }
 Plug 'folke/lsp-colors.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'ray-x/lsp_signature.nvim'

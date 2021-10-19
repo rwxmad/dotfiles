@@ -27,7 +27,7 @@ require'nvim-treesitter.configs'.setup {
     "vue"
   },
   refactor = {
-    smart_rename = { enable = true, keymaps = { smart_rename = "grr" } },
+    smart_rename = { enable = true, keymaps = { smart_rename = "gsr" } },
     highlight_definitions = { enable = false },
     navigation = {
       enable = true,
