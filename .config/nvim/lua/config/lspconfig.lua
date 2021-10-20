@@ -1,4 +1,4 @@
-vim.lsp.set_log_level("debug")
+vim.lsp.set_log_level('debug')
 
 local nvim_lsp = require('lspconfig')
 local protocol = require('vim.lsp.protocol')
@@ -62,9 +62,9 @@ require('nvim-web-devicons').setup {
  -- DevIcon will be appended to `name`
  override = {
   zsh = {
-    icon = "",
-    color = "#428850",
-    name = "Zsh"
+    icon = '',
+    color = '#428850',
+    name = 'Zsh'
   }
  };
  -- globally enable default icons (default to false)
@@ -74,7 +74,7 @@ require('nvim-web-devicons').setup {
 
 -- nvim-autopairs
 require('nvim-autopairs').setup({
-  disable_filetype = { "TelescopePrompt" , "vim" },
+  disable_filetype = { 'TelescopePrompt' , 'vim' },
   fast_wrap = {
     map = '<M-e>',
     chars = { '{', '[', '(', '"', "'" },
@@ -90,7 +90,7 @@ require('nvim-autopairs').setup({
 -- tsserver config
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
+  filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' }
 }
 
 -- rust-tools
@@ -99,13 +99,13 @@ require('rust-tools').setup({
         on_attach=on_attach,
         settings = {
           -- rust_analyzer config
-            ["rust-analyzer"] = {
+            ['rust-analyzer'] = {
                 assist = {
-                    importGranularity = "module",
-                    importPrefix = "by_self",
+                    importGranularity = 'module',
+                    importPrefix = 'by_self',
                 },
                 checkOnSave = {
-                    command = "clippy",
+                    command = 'clippy',
                 },
                 cargo = {
                     loadOutDirsFromCheck = true
@@ -117,16 +117,4 @@ require('rust-tools').setup({
         }
     }
 })
-
--- Icon
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
-    underline = true,
-    -- This sets the spacing and the prefix, obviously.
-    virtual_text = {
-      spacing = 4,
-      prefix = ''
-    }
-  }
-)
 

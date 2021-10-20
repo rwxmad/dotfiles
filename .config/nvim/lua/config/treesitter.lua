@@ -15,6 +15,7 @@ require('nvim-treesitter.configs').setup {
     "javascript",
     "json",
     "yaml",
+    "toml",
     "html",
     "css",
     "scss",
@@ -27,12 +28,12 @@ require('nvim-treesitter.configs').setup {
     "vue"
   },
   refactor = {
-    smart_rename = { enable = true, keymaps = { smart_rename = "gsr" } },
+    smart_rename = { enable = true, keymaps = { smart_rename = 'gsr' } },
     highlight_definitions = { enable = false },
     navigation = {
       enable = true,
       keymaps = {
-        goto_definition = "gnd",
+        goto_definition = 'gnd',
         -- list_definitions = "gnD",
         -- list_definitions_toc = "gO",
         goto_next_usage = "<a-*>",
@@ -44,5 +45,5 @@ require('nvim-treesitter.configs').setup {
 }
 
 local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
-parser_config.tsx.used_by = { "javascript", "typescript.tsx" }
+parser_config.tsx.used_by = { 'javascript', 'typescript.tsx' }
 

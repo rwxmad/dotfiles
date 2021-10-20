@@ -19,6 +19,7 @@ cmp.setup {
   },
 
   sources = {
+    -- 'crates' is lazy loaded
     { name = 'nvim_lsp' },
     { name = 'vsnip' },
     { name = 'buffer' },

@@ -3,47 +3,54 @@
 ## Requirements
 - [curl](https://github.com/curl/curl)
 - [neovim](https://github.com/neovim/neovim) (>= 0.5)
-- [vim-plug](https://github.com/junegunn/vim-plug)
+- [packer.nvim](https://github.com/wbthomason/packer.nvim#specifying-plugins)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Installation
 
 #### Install neovim, tree-sitter, luajit, ripgrep
 
-```bash
+```shell
 brew install --HEAD neovim tree-sitter luajit ripgrep
 ```
 
-#### Install vim-plug
+#### Install packer.nvim
 
-##### Vim
-```bash
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+##### Unix, Linux
+```shell
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
-##### Neovim
-```
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+##### Windows Powershell
+```shell
+git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
 #### Nvim configuration layout
-```bash
+```shell
 ├── README.md
 ├── after # Post init scripts
-│   └── plugin # Plugin configs
-│       ├── autopairs.lua
-│       ├── completion.lua
-│       ├── lsp-colors.vim
-│       ├── lspconfig.lua
-│       ├── lspsaga.vim
-│       ├── lualine.lua
-│       ├── telescope.vim
-│       └── treesitter.lua
-├── init.vim # Root config file
-├── macos.vim # MacOS specific config
-├── mappings.vim # Keymaps
-└── plug.vim # Vim-plug config
+│   └── ftplugin # File type based configs
+│       └── toml.lua
+├── init.lua # Root config file
+├── lua # Lua configs directory
+│   ├── config # Plugin configs
+│   │   ├── closetag.lua
+│   │   ├── completion.lua
+│   │   ├── gitsigns.lua
+│   │   ├── lsp_signature.lua
+│   │   ├── lspconfig.lua
+│   │   ├── lspsaga.lua
+│   │   ├── lualine.lua
+│   │   ├── nvim-tree.lua
+│   │   └── treesitter.lua
+│   └── core # Core configs
+│       ├── macos.vim # MacOS specific config
+│       ├── mappings.lua # Keymaps
+│       ├── plug.lua # Packer config
+│       └── settings.lua # General settings
+└── snippets # Snippets directory
+    └── javascript.json
 ```
 
 
@@ -51,8 +58,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ## Main mappings
 
 - `<Leader>` key set as `,`
-
 - `<Escape>` from insert mode can be applied by `jj`
+- `<leader>` `w` - Write file only if changed
+- `<leader>` `q` - Quit
 
 ### Some basic mappings
 
@@ -63,10 +71,10 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `<leader>` `fg`                              | Search for a string in your current working directory and get results live as you type (respecting .gitignore) |
 | `<C-n>`                                      | Next item in completion list                                 |
 | `<C-p>`                                      | Previous item in completion list                             |
-| `<leader>` `n`                               | NERDTreeFocus                                                |
-| `<C-n>`                                      | NERDTree                                                     |
-| `<C-t>`                                      | NERDTreeToggle                                               |
-| `<C-f>`                                      | NERDTreeFind                                                 |
+| `<C-n>`                                      | NvimTreeToggle                                               |
+| `<leader>` `r`                               | NvimTreeRefresh                                              |
+| `<leader>` `n`                               | NvimTreeFindFile                                             |
+| `<A-d>`                                      | Toggle terminal                                              |
 | `<leader>` `<leader>` `s` + symbol to search | Highlighting all possible choices and allowing you to press one key to jump directly to the target |
 | `gcc`                                        | Comment out a line                                           |
 | `gc`                                         | Comment out the target of a motion                           |
@@ -97,7 +105,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | [vim-vsnip](https://github.com/hrsh7th/vim-vsnip)            | Snippet plugin for vim/nvim that supports LSP/VSCode's snippet format |
 | [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)     | Lua functions                                                |
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Highly extendable fuzzy finder over lists                    |
-| [lsp-colors.nvim](https://github.com/folke/lsp-colors.nvim)  | Plugin that creates missing LSP diagnostics highlight groups for color schemes that don't yet support the Neovim 0.5 builtin LSP client |
+| [packer.nvim](https://github.com/wbthomason/packer.nvim)     | A use-package inspired plugin manager for Neovim             |
 | [lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim) | LSP signature hint as you type                               |
 | [nvim-autopairs](https://github.com/windwp/nvim-autopairs)   | Autopairs for neovim written by lua                          |
 | [vim-surround](https://github.com/tpope/vim-surround)        | Delete/change/add parentheses/quotes/XML-tags/much more with ease |
@@ -106,6 +114,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | [vim-go](https://github.com/fatih/vim-go)                    | Go development plugin for Vim                                |
 | [rust.vim](https://github.com/rust-lang/rust.vim)            | Vim configuration for Rust                                   |
 | [rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim) | Tools for better development in rust using neovim's builtin lsp |
+| [crates.nvim](https://github.com/Saecki/crates.nvim)         | A neovim plugin that helps managing crates.io dependencies   |
 | [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) | Markdown preview plugin for (neo)vim                         |
 
 
