@@ -83,7 +83,7 @@ nnoremap('<leader>ca', ':Lspsaga code_action<CR>', true)
 vnoremap('<leader>ca', ':<C-U>Lspsaga range_code_action<CR>')
 
 -- Rename
-nnoremap('gr', ':Lspsaga rename', true)
+nnoremap('gr', ':Lspsaga rename<CR>', true)
 
 -- Terminal
 nnoremap('<A-d>', ':Lspsaga open_floaterm<CR>', true)
