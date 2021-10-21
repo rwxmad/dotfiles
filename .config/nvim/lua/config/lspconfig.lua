@@ -53,7 +53,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'tsserver', 'gopls', 'rust_analyzer', 'tailwindcss', 'cssls', 'html' }
+local servers = { 'pyright', 'gopls', 'rust_analyzer', 'tailwindcss', 'cssls', 'html' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
@@ -96,15 +96,31 @@ require('nvim-autopairs').setup({
 })
 
 -- tsserver config
-lspconfig.tsserver.setup {
+lspconfig.tsserver.setup({
   on_attach = on_attach,
+  capabilities = capabilities,
   filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' }
-}
+})
+
+-- stylelint-lsp
+lspconfig.stylelint_lsp.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    stylelintplus = {
+      autoFixOnFormat = true,
+      autoFixOnSave = true,
+      validateOnSave = true,
+      validateOnType = true
+    }
+  }
+})
 
 -- rust-tools
 require('rust-tools').setup({
     server = {
-        on_attach=on_attach,
+        on_attach = on_attach,
+        capabilities = capabilities,
         settings = {
           -- rust_analyzer config
             ['rust-analyzer'] = {

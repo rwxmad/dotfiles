@@ -66,7 +66,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 
 - `<Leader>` key set as `,`
 - `<Escape>` from insert mode can be applied by `jj`
-- `<leader>` `w` - Write file only if changed
+- `<leader>` `w` - Write file
 - `<leader>` `q` - Quit
 
 ### Some basic mappings
@@ -135,6 +135,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 - [rust-analyzer](https://github.com/rust-analyzer/rust-analyzer)
 - [tailwind](https://github.com/tailwindlabs/tailwindcss-intellisense)
 - [cssls](https://github.com/hrsh7th/vscode-langservers-extracted)
+- [stylelint-lsp](https://github.com/bmatcuk/stylelint-lsp)
 - [html](https://github.com/hrsh7th/vscode-langservers-extracted)
 
 ## [Full LSP servers list](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)

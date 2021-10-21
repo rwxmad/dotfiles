@@ -30,8 +30,8 @@ vim.g.mapleader = ','
 -- Exit insert mode
 inoremap('jj', '<Esc>')
 
--- Write file like :w command only if changed
-nnoremap('<leader>w', ':up<CR>')
+-- Write file like :w command
+nnoremap('<leader>w', ':w<CR>')
 
 -- Quit nvim like :q command
 nnoremap('<leader>q', ':q<CR>', true)
