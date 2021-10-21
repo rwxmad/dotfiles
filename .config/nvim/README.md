@@ -135,6 +135,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 - [rust-analyzer](https://github.com/rust-analyzer/rust-analyzer)
 - [tailwind](https://github.com/tailwindlabs/tailwindcss-intellisense)
 - [cssls](https://github.com/hrsh7th/vscode-langservers-extracted)
+- [html](https://github.com/hrsh7th/vscode-langservers-extracted)
 
 ## [Full LSP servers list](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
