@@ -48,7 +48,7 @@ return require('packer').startup(
     use 'simrat39/rust-tools.nvim'
     use { 'Saecki/crates.nvim', requires = { 'nvim-lua/plenary.nvim' } }
 
-    use 'alvan/vim-closetag'
+    use 'windwp/nvim-ts-autotag'
     use 'norcalli/nvim-colorizer.lua'
 
     use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
