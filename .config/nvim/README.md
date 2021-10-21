@@ -11,6 +11,7 @@
 - [curl](https://github.com/curl/curl)
 - [neovim](https://github.com/neovim/neovim) (>= 0.5)
 - [packer.nvim](https://github.com/wbthomason/packer.nvim#specifying-plugins)
+- [npm](https://github.com/npm/cli)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Installation
@@ -137,6 +138,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 - [cssls](https://github.com/hrsh7th/vscode-langservers-extracted)
 - [stylelint-lsp](https://github.com/bmatcuk/stylelint-lsp)
 - [html](https://github.com/hrsh7th/vscode-langservers-extracted)
+- [bash-language-server](https://github.com/bash-lsp/bash-language-server)
 
 ## [Full LSP servers list](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
