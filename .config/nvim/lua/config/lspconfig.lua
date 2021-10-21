@@ -101,9 +101,6 @@ lspconfig.tsserver.setup {
   filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' }
 }
 
--- tailwindcss config
--- lspconfig.tailwindcss.setup({})
-
 -- rust-tools
 require('rust-tools').setup({
     server = {

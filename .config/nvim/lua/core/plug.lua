@@ -48,7 +48,6 @@ return require('packer').startup(
     use 'simrat39/rust-tools.nvim'
     use { 'Saecki/crates.nvim', requires = { 'nvim-lua/plenary.nvim' } }
 
-    use 'mattn/emmet-vim'
     use 'alvan/vim-closetag'
     use 'norcalli/nvim-colorizer.lua'
 
