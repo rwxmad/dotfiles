@@ -1,4 +1,11 @@
-# Nvim configuration
+```shell
+███╗   ██╗██╗   ██╗██╗███╗   ███╗     ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ 
+████╗  ██║██║   ██║██║████╗ ████║    ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ 
+██╔██╗ ██║██║   ██║██║██╔████╔██║    ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║    ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║    ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝                                                                           
+```
 
 ## Requirements
 - [curl](https://github.com/curl/curl)
@@ -29,12 +36,12 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 #### Nvim configuration layout
 ```shell
 ├── README.md
-├── after # Post init scripts
-│   └── ftplugin # File type based configs
+├── after # ========================> Post init scripts
+│   └── ftplugin # =================> File type based configs
 │       └── toml.lua
-├── init.lua # Root config file
-├── lua # Lua configs directory
-│   ├── config # Plugin configs
+├── init.lua # =====================> Root config file
+├── lua # ==========================> Lua configs directory
+│   ├── config # ===================> Plugin configs
 │   │   ├── closetag.lua
 │   │   ├── completion.lua
 │   │   ├── gitsigns.lua
@@ -44,12 +51,12 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 │   │   ├── lualine.lua
 │   │   ├── nvim-tree.lua
 │   │   └── treesitter.lua
-│   └── core # Core configs
-│       ├── macos.vim # MacOS specific config
-│       ├── mappings.lua # Keymaps
-│       ├── plug.lua # Packer config
-│       └── settings.lua # General settings
-└── snippets # Snippets directory
+│   └── core # =====================> Core configs
+│       ├── macos.vim # ============> MacOS specific config
+│       ├── mappings.lua # =========> Keymaps
+│       ├── plug.lua # =============> Packer config
+│       └── settings.lua # =========> General settings
+└── snippets # =====================> Snippets directory
     └── javascript.json
 ```
 
