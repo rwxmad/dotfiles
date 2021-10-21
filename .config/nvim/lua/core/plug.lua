@@ -55,5 +55,7 @@ return require('packer').startup(
 
     use 'gruvbox-community/gruvbox'
 
+    use 'andweeb/presence.nvim'
+
   end)
 
