@@ -50,6 +50,7 @@ return require('packer').startup(
 
     use 'mattn/emmet-vim'
     use 'alvan/vim-closetag'
+    use 'norcalli/nvim-colorizer.lua'
 
     use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
 
