@@ -1,7 +1,14 @@
 vim.lsp.set_log_level('debug')
 
-local nvim_lsp = require('lspconfig')
+local lspconfig = require('lspconfig')
 local protocol = require('vim.lsp.protocol')
+
+-- Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+-- Snippets directory
+vim.g.vsnip_snippet_dir = vim.fn.expand('~/.config/nvim/snippets/')
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -46,10 +53,11 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'tsserver', 'gopls', 'rust_analyzer' }
+local servers = { 'pyright', 'tsserver', 'gopls', 'rust_analyzer', 'tailwindcss', 'cssls' }
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
+  lspconfig[lsp].setup {
     on_attach = on_attach,
+    capabilities = capabilities,
     flags = {
       debounce_text_changes = 150,
     }
@@ -88,10 +96,13 @@ require('nvim-autopairs').setup({
 })
 
 -- tsserver config
-nvim_lsp.tsserver.setup {
+lspconfig.tsserver.setup {
   on_attach = on_attach,
   filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' }
 }
+
+-- tailwindcss config
+-- lspconfig.tailwindcss.setup({})
 
 -- rust-tools
 require('rust-tools').setup({

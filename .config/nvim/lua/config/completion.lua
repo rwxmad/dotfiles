@@ -27,14 +27,6 @@ cmp.setup {
   },
 }
 
--- snippets dir
-vim.g.vsnip_snippet_dir = vim.fn.expand '~/.config/nvim/snippets/'
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-
-require('lspconfig').cssls.setup {
-  capabilities = capabilities,
-}
-
 require('nvim-autopairs.completion.cmp').setup({
   map_cr = true, --  map <CR> on insert mode
   map_complete = true, -- it will auto insert `(` (map_char) after select function or method item
