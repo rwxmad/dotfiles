@@ -77,6 +77,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 | `<leader><space>`                            | Turn off search highlight                                    |
 | `<leader>` `ff`                              | Lists files in your current working directory, respects .gitignore |
 | `<leader>` `fg`                              | Search for a string in your current working directory and get results live as you type (respecting .gitignore) |
+| `<leader>` `fd`                              | Telescope file browser, `file.ext` + `<C-e>` to create file in current directory, `directory/` + `<C-e>` to create directory in current directory |
 | `<C-n>`                                      | Next item in completion list                                 |
 | `<C-p>`                                      | Previous item in completion list                             |
 | `<C-n>`                                      | NvimTreeToggle                                               |
