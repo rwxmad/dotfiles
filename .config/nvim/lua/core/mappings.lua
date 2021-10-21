@@ -27,7 +27,7 @@ vim.g.mapleader = ','
 
 -- Keymaps
 
--- inoremap jj <Esc>
+-- Exit insert mode
 inoremap('jj', '<Esc>')
 
 -- Write file like :w command only if changed
@@ -36,14 +36,14 @@ nnoremap('<leader>w', ':up<CR>')
 -- Quit nvim like :q command
 nnoremap('<leader>q', ':q<CR>', true)
 
---Turn off search highlight
+-- Turn off search highlight
 nnoremap('<leader><space>', ':nohlsearch<CR>')
 
 -- -------------------------------------------------------------------------------------------------
 -- Plugins
 -- -------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------
+-- -------------------------------------------------------------------------------------------------
 -- nvim-tree
 -- -------------------------------------------------------------------------------------------------
 
@@ -76,7 +76,7 @@ nnoremap('<C-k>', '<cmd>Lspsaga signature_help<CR>', true)
 -- Jump Diagnostic and Show Diagnostic
 nnoremap('[e', ':Lspsaga diagnostic_jump_next<CR>', true)
 nnoremap(']e', ':Lspsaga diagnostic_jump_prev<CR>', true)
-nnoremap('<leader>cd', ':Lspsaga show_line_diagnostics<CR>', true)
+nnoremap('<leader>ld', ':Lspsaga show_line_diagnostics<CR>', true)
 
 -- Code action
 nnoremap('<leader>ca', ':Lspsaga code_action<CR>', true)

@@ -53,10 +53,7 @@ return require('packer').startup(
 
     use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
 
-    use 'eddyekofo94/gruvbox-flat.nvim'
-    use 'morhetz/gruvbox'
-    use 'mhartington/oceanic-next'
-    use 'ayu-theme/ayu-vim'
+    use 'gruvbox-community/gruvbox'
 
   end)
 

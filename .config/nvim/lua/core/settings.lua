@@ -1,7 +1,10 @@
 local set = vim.opt
 
+set.mouse = "a"               -- Enable mouse
+
 set.syntax = "enable"         -- Enable syntax highlighting
 set.termguicolors = true      -- Enable termguicolors
+set.background = "dark"       -- Set dark background
 
 set.encoding = "utf-8"        -- Encoding
 set.fileencoding = "utf-8"    -- File encoding

@@ -2,8 +2,8 @@ require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'gruvbox',
-    section_separators = "",
-    component_separators = "",
+    section_separators = '',
+    component_separators = '',
     disabled_filetypes = {}
   },
   sections = {
@@ -15,7 +15,7 @@ require('lualine').setup {
       path = 0 -- 0 = just filename, 1 = relative path, 2 = absolute path
     }},
     lualine_x = {
-      { 'diagnostics', sources = {"nvim_lsp"}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} },
+      { 'diagnostics', sources = {'nvim_lsp'}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} },
       'encoding',
       'filetype'
     },
