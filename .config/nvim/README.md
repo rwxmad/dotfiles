@@ -119,7 +119,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 | [nvim-autopairs](https://github.com/windwp/nvim-autopairs)   | Autopairs for neovim written by lua                          |
 | [vim-surround](https://github.com/tpope/vim-surround)        | Delete/change/add parentheses/quotes/XML-tags/much more with ease |
 | [emmet-vim](https://github.com/mattn/emmet-vim)              | Vim plug-in which provides support for expanding abbreviations similar to [emmet](http://emmet.io/) |
-| [vim-closetag](https://github.com/alvan/vim-closetag)        | Auto close (X)HTML tags                                      |
+| [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) | Use treesitter to auto close and auto rename html tag        |
 | [vim-go](https://github.com/fatih/vim-go)                    | Go development plugin for Vim                                |
 | [rust.vim](https://github.com/rust-lang/rust.vim)            | Vim configuration for Rust                                   |
 | [rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim) | Tools for better development in rust using neovim's builtin lsp |
