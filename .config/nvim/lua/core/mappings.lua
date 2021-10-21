@@ -31,13 +31,13 @@ vim.g.mapleader = ','
 inoremap('jj', '<Esc>')
 
 -- Write file like :w command
-nnoremap('<leader>w', ':w<CR>')
+nnoremap('<leader>w', '<cmd>w<CR>')
 
 -- Quit nvim like :q command
-nnoremap('<leader>q', ':q<CR>', true)
+nnoremap('<leader>q', '<cmd>q<CR>', true)
 
 -- Turn off search highlight
-nnoremap('<leader><space>', ':nohlsearch<CR>')
+nnoremap('<leader><space>', '<cmd>nohlsearch<CR>')
 
 -- -------------------------------------------------------------------------------------------------
 -- Plugins
@@ -47,9 +47,9 @@ nnoremap('<leader><space>', ':nohlsearch<CR>')
 -- nvim-tree
 -- -------------------------------------------------------------------------------------------------
 
-nnoremap('<C-n>', ':NvimTreeToggle<CR>')
-nnoremap('<leader>r', ':NvimTreeRefresh<CR>')
-nnoremap('<leader>n', ':NvimTreeFindFile<CR>')
+nnoremap('<C-n>',     '<cmd>NvimTreeToggle<CR>')
+nnoremap('<leader>r', '<cmd>NvimTreeRefresh<CR>')
+nnoremap('<leader>n', '<cmd>NvimTreeFindFile<CR>')
 
 -- -------------------------------------------------------------------------------------------------
 -- Telescope
@@ -66,35 +66,35 @@ nnoremap('<leader>fd', '<cmd>Telescope file_browser<CR>')
 -- -------------------------------------------------------------------------------------------------
 
 -- Lsp finder
-nnoremap('gh', '<cmd>Lspsaga lsp_finder<CR>', true)
+nnoremap('gh',         '<cmd>Lspsaga lsp_finder<CR>', true)
 
 -- Hover Doc
-nnoremap('K', '<cmd>Lspsaga hover_doc<CR>', true)
+nnoremap('K',          '<cmd>Lspsaga hover_doc<CR>', true)
 
 --Signature help
-nnoremap('<C-k>', '<cmd>Lspsaga signature_help<CR>', true)
+nnoremap('<C-k>',      '<cmd>Lspsaga signature_help<CR>', true)
 
 -- Jump Diagnostic and Show Diagnostic
-nnoremap('[e', ':Lspsaga diagnostic_jump_next<CR>', true)
-nnoremap(']e', ':Lspsaga diagnostic_jump_prev<CR>', true)
-nnoremap('<leader>ld', ':Lspsaga show_line_diagnostics<CR>', true)
+nnoremap('[e',         '<cmd>Lspsaga diagnostic_jump_next<CR>', true)
+nnoremap(']e',         '<cmd>Lspsaga diagnostic_jump_prev<CR>', true)
+nnoremap('<leader>ld', '<cmd>Lspsaga show_line_diagnostics<CR>', true)
 
 -- Code action
-nnoremap('<leader>ca', ':Lspsaga code_action<CR>', true)
-vnoremap('<leader>ca', ':<C-U>Lspsaga range_code_action<CR>')
+nnoremap('<leader>ca', '<cmd>Lspsaga code_action<CR>', true)
+vnoremap('<leader>ca', '<cmd><C-U>Lspsaga range_code_action<CR>')
 
 -- Rename
-nnoremap('gr', ':Lspsaga rename<CR>', true)
+nnoremap('gr',         '<cmd>Lspsaga rename<CR>', true)
 
 -- Terminal
-nnoremap('<A-d>', ':Lspsaga open_floaterm<CR>', true)
-tnoremap('<A-d>', '<C-\\><C-n>:Lspsaga close_floaterm<CR>', true)
+nnoremap('<A-d>',      '<cmd>Lspsaga open_floaterm<CR>', true)
+tnoremap('<A-d>',      '<C-\\><C-n><cmd>Lspsaga close_floaterm<CR>', true)
 
 -- -------------------------------------------------------------------------------------------------
 -- markdown-preview
 -- -------------------------------------------------------------------------------------------------
  
-nnoremap('<C-s>', ':MarkdownPreview<CR>')
-nnoremap('<M-s>', ':MarkdownPreviewStop<CR>')
-nnoremap('<C-p>', ':MarkdownPreviewToggle<CR>')
+nnoremap('<C-s>', '<cmd>MarkdownPreview<CR>')
+nnoremap('<M-s>', '<cmd>MarkdownPreviewStop<CR>')
+nnoremap('<C-p>', '<cmd>MarkdownPreviewToggle<CR>')
 
