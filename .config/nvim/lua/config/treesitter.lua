@@ -14,6 +14,7 @@ require('nvim-treesitter.configs').setup {
     "rust",
     "javascript",
     "json",
+    "json5",
     "yaml",
     "toml",
     "html",
@@ -25,7 +26,8 @@ require('nvim-treesitter.configs').setup {
     "regex",
     "tsx",
     "typescript",
-    "vue"
+    "vue",
+    "vim"
   },
   refactor = {
     smart_rename = { enable = true, keymaps = { smart_rename = 'gsr' } },
