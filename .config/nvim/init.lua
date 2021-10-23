@@ -34,7 +34,6 @@ require('config/lspsaga')
 require('config/nvim-tree')
 require('config/lsp_signature')
 require('config/gitsigns')
-require('config/closetag')
 require('config/colorizer')
 
 -- -------------------------------------------------------------------------------------------------
