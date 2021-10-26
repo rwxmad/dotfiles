@@ -38,7 +38,7 @@ alias ns="npm start"
 alias c="clear"
 
 # Scripts
-alias ip="sh $HOME/scripts/myip.sh"
+alias ip="sh $HOME/scripts/ip.sh"
 alias extract="sh $HOME/scripts/extract.sh"
 
 export NVM_DIR="$HOME/.nvm"
