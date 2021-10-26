@@ -6,6 +6,11 @@
 cwd=`pwd`
 
 # ====================
+# Alacritty
+# ====================
+ln -sfn "$cwd"/.config/alacritty ~/.config/alacritty
+
+# ====================
 # ZSH
 # ====================
 ln -sfn "$cwd"/.zshrc ~/.zshrc
