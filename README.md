@@ -14,7 +14,7 @@ ______         _     __  _  _
 
 ## Scripts
 
-You can find aliases for all scripts in [.zshrc](https://github.com/themadnesstony/dotfiles/blob/master/.zshrc)
+You can find aliases for all scripts in [aliases.zsh](https://github.com/themadnesstony/dotfiles/blob/master/.config/zsh/aliases.zsh)
 
 |                            Script                            |          Description           |                Alias |
 | :----------------------------------------------------------: | :----------------------------: | -------------------: |
