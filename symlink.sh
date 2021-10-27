@@ -11,9 +11,14 @@ cwd=`pwd`
 ln -sfn "$cwd"/.config/alacritty ~/.config/alacritty
 
 # ====================
+# ZSHENV
+# ====================
+ln -sfn "$cwd"/.zshenv ~/.zshenv
+
+# ====================
 # ZSH
 # ====================
-ln -sfn "$cwd"/.zshrc ~/.zshrc
+ln -sfn "$cwd"/.config/zsh ~/.config/zsh
 
 # ====================
 # VIM

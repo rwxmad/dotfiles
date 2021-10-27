@@ -1,3 +1,8 @@
 .DS_Store
 
+.config/zsh/.oh*
+.config/zsh/.zsh_history
+.config/zsh/.zcompdump-*
+.config/zsh/.zcompdump
+
 .config/nvim/plugin
