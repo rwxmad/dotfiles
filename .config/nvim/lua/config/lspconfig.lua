@@ -146,7 +146,7 @@ require('rust-tools').setup({
 lspconfig.diagnosticls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown' },
+  filetypes = { 'javascript', 'javascriptreact', 'vue', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown' },
   init_options = {
     linters = {
       eslint = {
@@ -195,6 +195,7 @@ lspconfig.diagnosticls.setup {
       css = {'prettier', 'stylelint'},
       javascript = 'eslint_d',
       javascriptreact = 'eslint_d',
+      vue = 'prettier',
       json = 'prettier',
       scss = {'prettier', 'stylelint'},
       less = {'prettier', 'stylelint'},
