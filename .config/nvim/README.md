@@ -138,6 +138,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 - [tailwind](https://github.com/tailwindlabs/tailwindcss-intellisense)
 - [cssls](https://github.com/hrsh7th/vscode-langservers-extracted)
 - [stylelint-lsp](https://github.com/bmatcuk/stylelint-lsp)
+- [vetur](https://github.com/vuejs/vetur/tree/master/server)
 - [html](https://github.com/hrsh7th/vscode-langservers-extracted)
 - [bash-language-server](https://github.com/bash-lsp/bash-language-server)
 - [diagnosticls](https://github.com/iamcco/diagnostic-languageserver)
