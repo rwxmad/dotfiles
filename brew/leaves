@@ -15,6 +15,7 @@ postgresql
 pyenv
 ripgrep
 rust-analyzer
+starship
 telnet
 tmux
 vifm
