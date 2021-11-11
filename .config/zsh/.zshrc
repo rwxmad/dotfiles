@@ -111,6 +111,9 @@ export PS1="%m@%n:%F{2}%~%f$ "
 # Aliases
 source $HOME/.config/zsh/aliases.zsh
 
+# Starship
+eval "$(starship init zsh)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

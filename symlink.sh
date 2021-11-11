@@ -21,6 +21,11 @@ ln -sfn "$cwd"/.zshenv ~/.zshenv
 ln -sfn "$cwd"/.config/zsh ~/.config/zsh
 
 # ====================
+# ZSH
+# ====================
+ln -sfn "$cwd"/.config/starship ~/.config/starship
+
+# ====================
 # VIM
 # ====================
 ln -sfn "$cwd"/.vimrc ~/.vimrc
