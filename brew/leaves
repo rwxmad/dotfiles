@@ -1,9 +1,12 @@
 automake
+bat
+cmake
 exa
 fd
 ffmpeg
 fzf
 gcc
+gh
 git
 htop
 imagemagick
