@@ -12,6 +12,12 @@ ______         _     __  _  _
 1. Clone this repo
 2. Run ```symlink.sh```
 
+## Requirements
+* ripgrep
+* exa
+* zsh
+* alacritty
+
 ## Scripts
 
 You can find aliases for all scripts in [aliases.zsh](https://github.com/themadnesstony/dotfiles/blob/master/.config/zsh/aliases.zsh)
