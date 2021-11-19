@@ -55,8 +55,6 @@ return require('packer').startup(
 
     use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
 
-    use 'iloginow/vim-stylus'
-
     use 'gruvbox-community/gruvbox'
 
     use 'andweeb/presence.nvim'
