@@ -123,6 +123,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 | [vim-go](https://github.com/fatih/vim-go)                    | Go development plugin for Vim                                |
 | [rust.vim](https://github.com/rust-lang/rust.vim)            | Vim configuration for Rust                                   |
 | [rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim) | Tools for better development in rust using neovim's builtin lsp |
+| [nvim-lsp-ts-utils](https://github.com/jose-elias-alvarez/nvim-lsp-ts-utils) | Utilities to improve the TypeScript development experience for Neovim's built-in LSP client |
 | [crates.nvim](https://github.com/Saecki/crates.nvim)         | A neovim plugin that helps managing crates.io dependencies   |
 | [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) | Markdown preview plugin for (neo)vim                         |
 | [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) | A high-performance color highlighter for Neovim which has **no external dependencies**! Written in performant Luajit |

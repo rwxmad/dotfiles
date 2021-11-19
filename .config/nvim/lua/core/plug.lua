@@ -51,6 +51,8 @@ return require('packer').startup(
     use 'windwp/nvim-ts-autotag'
     use 'norcalli/nvim-colorizer.lua'
 
+    use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+
     use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
 
     use 'iloginow/vim-stylus'
