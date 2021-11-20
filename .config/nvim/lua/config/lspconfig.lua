@@ -53,7 +53,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'tsserver', 'gopls', 'rust_analyzer', 'tailwindcss', 'cssls', 'html', 'stylelint_lsp', 'vuels', 'bashls', 'diagnosticls' }
+local servers = { 'pyright', 'gopls', 'tailwindcss', 'cssls', 'html', 'vuels', 'bashls' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
@@ -99,7 +99,6 @@ require('nvim-autopairs').setup({
 lspconfig.tsserver.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' },
   -- Needed for inlayHints. Merge this table with your settings or copy
   -- it from the source if you want to add your own init_options.
   init_options = require("nvim-lsp-ts-utils").init_options,
