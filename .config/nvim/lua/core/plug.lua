@@ -36,6 +36,7 @@ return require('packer').startup(
     use 'lewis6991/gitsigns.nvim'
 
     use 'tpope/vim-commentary'
+    use 'JoosepAlviste/nvim-ts-context-commentstring'
 
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
