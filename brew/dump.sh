@@ -1,3 +1,2 @@
 #!/bin/bash
-brew leaves -r > leaves
-brew list --cask > casks
+brew bundle dump --describe --force --no-lock
