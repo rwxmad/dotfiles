@@ -37,6 +37,12 @@ return require('packer').startup(
 
     use 'tpope/vim-commentary'
     use 'JoosepAlviste/nvim-ts-context-commentstring'
+    use {
+      'numToStr/Comment.nvim',
+      config = function()
+        require('Comment').setup()
+      end,
+    }
 
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
