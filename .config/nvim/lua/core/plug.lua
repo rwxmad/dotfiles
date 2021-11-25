@@ -35,8 +35,6 @@ return require('packer').startup(
     use 'tpope/vim-fugitive'
     use 'lewis6991/gitsigns.nvim'
 
-    use 'tpope/vim-commentary'
-    use 'JoosepAlviste/nvim-ts-context-commentstring'
     use {
       'numToStr/Comment.nvim',
       config = function()
