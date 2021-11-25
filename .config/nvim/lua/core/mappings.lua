@@ -109,6 +109,9 @@ nnoremap('bd',         '<cmd>BufferLineSortByDirectory<CR>', true)
 -- Search and jump to buffer
 nnoremap('<leader>bb', '<cmd>BufferLinePick<CR>', true)
 
+-- Find the buffer and close
+nnoremap('<leader>bc', '<cmd>BufferLinePickClose<CR>', true)
+
 -- Jump to buffer by number
 nnoremap('<leader>1', '<cmd>BufferLineGoToBuffer 1<CR>', true)
 nnoremap('<leader>2', '<cmd>BufferLineGoToBuffer 2<CR>', true)
