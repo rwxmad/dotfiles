@@ -94,14 +94,31 @@ tnoremap('<A-d>',      '<C-\\><C-n><cmd>Lspsaga close_floaterm<CR>', true)
 -- Bufferline
 -- -------------------------------------------------------------------------------------------------
 
+-- Jump to start or end of buffer line
 nnoremap('[b',         '<cmd>BufferLineCycleNext<CR>', true)
 nnoremap('b]',         '<cmd>BufferLineCyclePrev<CR>', true)
 
+-- Move current buffer in line
 nnoremap('<leader>bn', '<cmd>BufferLineMoveNext<CR>', true)
 nnoremap('<leader>bp', '<cmd>BufferLineMovePrev<CR>', true)
 
+-- Sort buffers
 nnoremap('be',         '<cmd>BufferLineSortByExtension<CR>', true)
 nnoremap('bd',         '<cmd>BufferLineSortByDirectory<CR>', true)
+
+-- Search and jump to buffer
+nnoremap('<leader>bb', '<cmd>BufferLinePick<CR>', true)
+
+-- Jump to buffer by number
+nnoremap('<leader>1', '<cmd>BufferLineGoToBuffer 1<CR>', true)
+nnoremap('<leader>2', '<cmd>BufferLineGoToBuffer 2<CR>', true)
+nnoremap('<leader>3', '<cmd>BufferLineGoToBuffer 3<CR>', true)
+nnoremap('<leader>4', '<cmd>BufferLineGoToBuffer 4<CR>', true)
+nnoremap('<leader>5', '<cmd>BufferLineGoToBuffer 5<CR>', true)
+nnoremap('<leader>6', '<cmd>BufferLineGoToBuffer 6<CR>', true)
+nnoremap('<leader>7', '<cmd>BufferLineGoToBuffer 7<CR>', true)
+nnoremap('<leader>8', '<cmd>BufferLineGoToBuffer 8<CR>', true)
+nnoremap('<leader>9', '<cmd>BufferLineGoToBuffer 9<CR>', true)
 
 -- -------------------------------------------------------------------------------------------------
 -- markdown-preview
