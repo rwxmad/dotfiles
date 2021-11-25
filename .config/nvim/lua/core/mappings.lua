@@ -91,6 +91,19 @@ nnoremap('<A-d>',      '<cmd>Lspsaga open_floaterm<CR>', true)
 tnoremap('<A-d>',      '<C-\\><C-n><cmd>Lspsaga close_floaterm<CR>', true)
 
 -- -------------------------------------------------------------------------------------------------
+-- Bufferline
+-- -------------------------------------------------------------------------------------------------
+
+nnoremap('[b',         '<cmd>BufferLineCycleNext<CR>', true)
+nnoremap('b]',         '<cmd>BufferLineCyclePrev<CR>', true)
+
+nnoremap('<leader>bn', '<cmd>BufferLineMoveNext<CR>', true)
+nnoremap('<leader>bp', '<cmd>BufferLineMovePrev<CR>', true)
+
+nnoremap('be',         '<cmd>BufferLineSortByExtension<CR>', true)
+nnoremap('bd',         '<cmd>BufferLineSortByDirectory<CR>', true)
+
+-- -------------------------------------------------------------------------------------------------
 -- markdown-preview
 -- -------------------------------------------------------------------------------------------------
  
