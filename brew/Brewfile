@@ -32,6 +32,10 @@ brew "libheif"
 brew "imagemagick"
 # Enhanced version of john, a UNIX password cracker
 brew "john-jumbo"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Small build system for use with gyp or CMake
