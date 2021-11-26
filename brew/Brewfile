@@ -58,6 +58,8 @@ brew "pyenv"
 brew "ripgrep"
 # Experimental Rust compiler front-end for IDEs
 brew "rust-analyzer"
+# Terminal-based client for Spotify
+brew "spotify-tui"
 # Cross-shell prompt for astronauts
 brew "starship"
 # User interface to the TELNET protocol
