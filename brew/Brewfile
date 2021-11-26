@@ -40,6 +40,8 @@ brew "lazygit"
 brew "neovim"
 # Small build system for use with gyp or CMake
 brew "ninja"
+# Tiny, lightning fast, feature-packed file manager
+brew "nnn"
 # Platform built on V8 to build network applications
 brew "node", link: false
 # General-purpose scripting language
@@ -58,8 +60,6 @@ brew "starship"
 brew "telnet"
 # Terminal multiplexer
 brew "tmux"
-# Ncurses-based file manager with vi-like keybindings
-brew "vifm"
 # Vi 'workalike' with many additional features
 brew "vim", link: false
 # Simple terminal image viewer written in Rust
