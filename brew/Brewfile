@@ -24,6 +24,8 @@ brew "gcc"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Render markdown on the CLI
+brew "glow"
 # Improved top (interactive process viewer)
 brew "htop"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
