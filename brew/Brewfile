@@ -36,6 +36,8 @@ brew "john-jumbo"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Small build system for use with gyp or CMake
