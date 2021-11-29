@@ -39,6 +39,10 @@ nnoremap('<leader>q', '<cmd>q<CR>', true)
 -- Turn off search highlight
 nnoremap('<leader><space>', '<cmd>nohlsearch<CR>')
 
+-- Insert newline without leaving normal mode
+nnoremap('<leader>o', 'o<Esc>')
+nnoremap('<leader>O', 'O<Esc>')
+
 -- -------------------------------------------------------------------------------------------------
 -- Plugins
 -- -------------------------------------------------------------------------------------------------
