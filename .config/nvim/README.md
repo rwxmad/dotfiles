@@ -133,6 +133,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 ## Language servers
 
 - [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server)
+- [eslint](https://github.com/hrsh7th/vscode-langservers-extracted)
 - [pyright](https://github.com/microsoft/pyright)
 - [gopls](https://github.com/golang/tools/tree/master/gopls)
 - [rust-analyzer](https://github.com/rust-analyzer/rust-analyzer)
