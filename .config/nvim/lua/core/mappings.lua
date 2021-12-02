@@ -135,3 +135,9 @@ nnoremap('<C-s>', '<cmd>MarkdownPreview<CR>')
 nnoremap('<M-s>', '<cmd>MarkdownPreviewStop<CR>')
 nnoremap('<C-p>', '<cmd>MarkdownPreviewToggle<CR>')
 
+-- -------------------------------------------------------------------------------------------------
+-- Glow
+-- -------------------------------------------------------------------------------------------------
+
+nnoremap('<leader>p', '<cmd>Glow<CR>')
+

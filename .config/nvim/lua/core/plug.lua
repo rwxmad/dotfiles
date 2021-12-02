@@ -60,6 +60,7 @@ return require('packer').startup(
     use 'jose-elias-alvarez/nvim-lsp-ts-utils'
 
     use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
+    use 'ellisonleao/glow.nvim'
 
     use 'gruvbox-community/gruvbox'
 
