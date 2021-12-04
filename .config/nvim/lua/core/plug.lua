@@ -9,7 +9,7 @@ return require('packer').startup(
         config = function() require('nvim-tree').setup {} end
     }
 
-    use 'easymotion/vim-easymotion'
+    use 'ggandor/lightspeed.nvim'
 
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/nvim-treesitter-refactor'
