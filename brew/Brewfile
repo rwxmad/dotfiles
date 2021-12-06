@@ -38,6 +38,8 @@ brew "john-jumbo"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Mac App Store command-line interface
+brew "mas"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -49,7 +51,7 @@ brew "nnn"
 # Platform built on V8 to build network applications
 brew "node", link: false
 # General-purpose scripting language
-brew "php"
+brew "php", restart_service: true
 # Object-relational database system
 brew "postgresql", restart_service: true
 # Python version management
@@ -84,6 +86,8 @@ cask "dbeaver-community"
 cask "firefox"
 # Free and open-source image editor
 cask "gimp"
+# Fork of Nylas Mail
+cask "mailspring"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Move and resize windows using keyboard shortcuts or snap areas
