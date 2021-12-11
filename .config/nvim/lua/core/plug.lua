@@ -19,7 +19,7 @@ return require('packer').startup(
 
     use 'neovim/nvim-lspconfig'
     --use 'glepnir/lspsaga.nvim'
-    use { 'tami5/lspsaga.nvim', branch = 'nvim51' }
+    use { 'tami5/lspsaga.nvim' }
     use 'windwp/nvim-autopairs'
     use 'ray-x/lsp_signature.nvim'
 
