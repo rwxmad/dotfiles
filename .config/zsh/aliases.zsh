@@ -39,4 +39,5 @@ alias nrb="npm run build"
 alias ns="npm start"
 alias nrd="npm run dev"
 alias nrl="npm run lint"
+alias nrt="npm run test"
 
