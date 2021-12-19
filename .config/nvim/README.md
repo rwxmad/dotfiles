@@ -14,6 +14,7 @@
 - [packer.nvim](https://github.com/wbthomason/packer.nvim#specifying-plugins)
 - [npm](https://github.com/npm/cli)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [glow](https://github.com/charmbracelet/glow)
 
 ## Installation
 
@@ -97,6 +98,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 | Plugin                                                                                  | Description                                                                                                                      |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)                            | A file explorer tree for neovim written in lua                                                                                   |
+| [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)                           | A snazzy bufferline for Neovim                                                                                                   |
 | [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)                    | Lua fork of vim-web-devicons for neovim                                                                                          |
 | [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)                              | Quickstart configurations for the Nvim LSP client                                                                                |
 | [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)                                 | A light-weight lsp plugin based on neovim built-in lsp with highly a performant UI                                               |
@@ -106,9 +108,10 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 | [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)                                 | nvim-cmp source for neovim builtin LSP client                                                                                    |
 | [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)                                     | nvim-cmp source for buffer words                                                                                                 |
 | [cmp-path](https://github.com/hrsh7th/cmp-path)                                         | nvim-cmp source for path                                                                                                         |
+| [lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)                           | Next-generation motion plugin with incremental input processing, allowing for unparalleled speed with near-zero cognitive effor  |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive)                                   | Vim plugin for Git                                                                                                               |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                             | Git signs written in pure lua                                                                                                    |
-| [vim-commentary](https://github.com/tpope/vim-commentary)                               | Comment stuff out                                                                                                                |
+| [Comment.nvim](https://github.com/numToStr/Comment.nvim)                                | Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more       |
 | [lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)                           | Next-generation motion plugin with incremental input processing, allowing for unparalleled speed with near-zero cognitive effort |
 | [lualine.nvim](https://github.com/hoob3rt/lualine.nvim)                                 | A blazing fast and easy to configure neovim statusline plugin written in pure lua                                                |
 | [cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip)                                       | nvim-cmp source for vim-vsnip                                                                                                    |
@@ -119,12 +122,13 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 | [lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim)                       | LSP signature hint as you type                                                                                                   |
 | [nvim-autopairs](https://github.com/windwp/nvim-autopairs)                              | Autopairs for neovim written by lua                                                                                              |
 | [vim-surround](https://github.com/tpope/vim-surround)                                   | Delete/change/add parentheses/quotes/XML-tags/much more with ease                                                                |
-| [emmet-vim](https://github.com/mattn/emmet-vim)                                         | Vim plug-in which provides support for expanding abbreviations similar to [emmet](http://emmet.io/)                              |
 | [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)                            | Use treesitter to auto close and auto rename html tag                                                                            |
 | [vim-go](https://github.com/fatih/vim-go)                                               | Go development plugin for Vim                                                                                                    |
 | [rust.vim](https://github.com/rust-lang/rust.vim)                                       | Vim configuration for Rust                                                                                                       |
 | [rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim)                          | Tools for better development in rust using neovim's builtin lsp                                                                  |
 | [nvim-lsp-ts-utils](https://github.com/jose-elias-alvarez/nvim-lsp-ts-utils)            | Utilities to improve the TypeScript development experience for Neovim's built-in LSP client                                      |
+| [lspkind.nvim](https://github.com/onsails/lspkind-nvim)                                 | vscode-like pictograms for neovim lsp completion items                                                                           |
+| [glow.nvim](https://github.com/ellisonleao/glow.nvim)                                   | A markdown preview directly in your neovim.                                                                                      |
 | [crates.nvim](https://github.com/Saecki/crates.nvim)                                    | A neovim plugin that helps managing crates.io dependencies                                                                       |
 | [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)                | Markdown preview plugin for (neo)vim                                                                                             |
 | [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)                    | A high-performance color highlighter for Neovim which has **no external dependencies**! Written in performant Luajit             |
