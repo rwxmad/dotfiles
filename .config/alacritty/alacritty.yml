@@ -165,8 +165,8 @@ draw_bold_text_with_bright_colors: true
 schemes:
 
   breeze:
-    &breeze
     # Default colors
+    &breeze
     primary:
       background: '#232627'
       foreground: '#fcfcfc'
@@ -210,8 +210,8 @@ schemes:
       white: '#63686d'
 
   hyper:
-    &hyper
     # Default colors
+    &hyper
     primary:
       background: '#000000'
       foreground: '#ffffff'
@@ -242,8 +242,8 @@ schemes:
       white: '#FFFFFF'
 
   gruvbox:
-    &gruvbox
     # Default colors
+    &gruvbox
     primary:
       # hard contrast: background = '#1d2021'
       background: '#282828'
@@ -272,12 +272,75 @@ schemes:
       cyan: '#8ec07c'
       white: '#ebdbb2'
 
+  # TokyoNight Alacritty Colors
+  tokyonight:
+    # Default colors
+    &tokyonight
+    primary:
+      background: '0x1a1b26'
+      foreground: '0xc0caf5'
+
+    # Normal colors
+    normal:
+      black: '0x15161E'
+      red: '0xf7768e'
+      green: '0x9ece6a'
+      yellow: '0xe0af68'
+      blue: '0x7aa2f7'
+      magenta: '0xbb9af7'
+      cyan: '0x7dcfff'
+      white: '0xa9b1d6'
+
+    # Bright colors
+    bright:
+      black: '0x414868'
+      red: '0xf7768e'
+      green: '0x9ece6a'
+      yellow: '0xe0af68'
+      blue: '0x7aa2f7'
+      magenta: '0xbb9af7'
+      cyan: '0x7dcfff'
+      white: '0xc0caf5'
+
+    indexed_colors:
+      - { index: 16, color: '0xff9e64' }
+      - { index: 17, color: '0xdb4b4b' }
+
+  dracula:
+    &dracula
+    primary:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+
+    # Normal colors
+    normal:
+      black: '#000000'
+      red: '#ff5555'
+      green: '#50fa7b'
+      yellow: '#f1fa8c'
+      blue: '#caa9fa'
+      magenta: '#ff79c6'
+      cyan: '#8be9fd'
+      white: '#bfbfbf'
+
+    # Bright colors
+    bright:
+      black: '#575b70'
+      red: '#ff6e67'
+      green: '#5af78e'
+      yellow: '#f4f99d'
+      blue: '#caa9fa'
+      magenta: '#ff92d0'
+      cyan: '#9aedfe'
+      white: '#e6e6e6'
+
+
 # Colorscheme
 # Available:
 #   *breeze
 #   *hyper
 #   *gruvbox
-colors: *gruvbox
+colors: *dracula
 
 # Colors (Tomorrow Night)
 # Default colors
