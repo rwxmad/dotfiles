@@ -63,6 +63,7 @@ return require('packer').startup(
     use 'ellisonleao/glow.nvim'
 
     use 'gruvbox-community/gruvbox'
+    use 'folke/tokyonight.nvim'
 
     use 'andweeb/presence.nvim'
 
