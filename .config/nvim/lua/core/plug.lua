@@ -64,6 +64,8 @@ return require('packer').startup(
 
     use 'gruvbox-community/gruvbox'
     use 'folke/tokyonight.nvim'
+    use 'tiagovla/tokyodark.nvim'
+    use 'sainnhe/sonokai'
 
     use 'andweeb/presence.nvim'
 
