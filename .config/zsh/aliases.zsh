@@ -5,6 +5,7 @@
 alias c="clear"
 
 alias notes="cd ~/notes"
+alias kb="cd ~/code/knowledge_base"
 alias v="nvim"
 
 # --------------------------------------------------------------------------------------------------
