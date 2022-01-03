@@ -82,6 +82,8 @@ cask "brave-browser"
 cask "burp-suite"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
 # Web browser
 cask "firefox"
 # Free and open-source image editor
