@@ -14,7 +14,7 @@ return require('packer').startup(
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/nvim-treesitter-refactor'
 
-    use { 'hoob3rt/lualine.nvim', commit = '82f68c42df9d11e52edb52c86113d0eba5be798d'}
+    use 'hoob3rt/lualine.nvim'
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
     use 'neovim/nvim-lspconfig'
