@@ -86,6 +86,7 @@ cask "dbeaver-community"
 cask "dropbox"
 # Web browser
 cask "firefox"
+cask "font-fira-code"
 # Free and open-source image editor
 cask "gimp"
 # Fork of Nylas Mail
