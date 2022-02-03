@@ -97,5 +97,6 @@ cask "qbittorrent"
 cask "rectangle"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
+cask "via"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
