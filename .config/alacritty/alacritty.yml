@@ -340,7 +340,7 @@ schemes:
 #   *breeze
 #   *hyper
 #   *gruvbox
-colors: *tokyonight
+colors: *breeze
 
 # Colors (Tomorrow Night)
 # Default colors
