@@ -19,17 +19,17 @@ return require('packer').startup(
 
     use 'neovim/nvim-lspconfig'
     use({
-      "glepnir/lspsaga.nvim",
+      'glepnir/lspsaga.nvim',
       branch = "main",
       config = function()
-          local saga = require("lspsaga")
+          local saga = require('lspsaga')
 
           saga.init_lsp_saga({
               -- your configuration
           })
       end,
     })
-    -- use { 'tami5/lspsaga.nvim' }
+
     use 'windwp/nvim-autopairs'
     use 'ray-x/lsp_signature.nvim'
 
@@ -55,6 +55,7 @@ return require('packer').startup(
 
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-file-browser.nvim'
 
     use 'tpope/vim-surround'
 
@@ -72,7 +73,7 @@ return require('packer').startup(
     use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
     use 'ellisonleao/glow.nvim'
 
-    use "ellisonleao/gruvbox.nvim"
+    use 'ellisonleao/gruvbox.nvim'
     use 'gruvbox-community/gruvbox'
     use 'folke/tokyonight.nvim'
 

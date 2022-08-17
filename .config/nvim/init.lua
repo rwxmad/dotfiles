@@ -28,6 +28,7 @@ require('core/plug')
 
 require('config/lspconfig')
 require('config/treesitter')
+require('config/telescope')
 require('config/completion')
 require('config/lualine')
 require('config/bufferline')
