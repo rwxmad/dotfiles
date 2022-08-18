@@ -97,7 +97,6 @@ require('nvim-autopairs').setup({
 
 -- tsserver config
 lspconfig.tsserver.setup({
-  on_attach = on_attach,
   capabilities = capabilities,
   -- Needed for inlayHints. Merge this table with your settings or copy
   -- it from the source if you want to add your own init_options.
@@ -198,6 +197,21 @@ require('rust-tools').setup({
                 },
             }
         }
+    }
+})
+
+-- Emmet
+lspconfig.emmet_ls.setup({
+    -- on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' },
+    init_options = {
+      html = {
+        options = {
+          -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+          ["bem.enabled"] = true,
+        },
+      },
     }
 })
 
