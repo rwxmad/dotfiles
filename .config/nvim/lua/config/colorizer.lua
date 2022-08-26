@@ -4,6 +4,7 @@ require('colorizer').setup {
   'javascript';
   'json';
   'yaml';
+  'lua';
   html = {
     mode = 'foreground';
   }
