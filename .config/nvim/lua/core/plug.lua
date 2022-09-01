@@ -9,8 +9,6 @@ return require('packer').startup(
         config = function() require('nvim-tree').setup {} end
     }
 
-    use 'ggandor/lightspeed.nvim'
-
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/nvim-treesitter-refactor'
 
@@ -58,8 +56,6 @@ return require('packer').startup(
     use 'nvim-telescope/telescope-file-browser.nvim'
 
     use 'tpope/vim-surround'
-
-    use  { 'fatih/vim-go', run = ':GoUpdateBinaries' }
 
     use 'rust-lang/rust.vim'
     use 'simrat39/rust-tools.nvim'
