@@ -1,4 +1,4 @@
-local signs = require('rwxmad.configs.lsp.diagnostics').signs
+local signs = require('rwxmad.config.lsp.diagnostics').signs
 
 signs = {
   error = signs.Error,

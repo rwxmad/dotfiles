@@ -14,7 +14,7 @@ end
 
 function M.setup(client, buf)
   local ft = vim.api.nvim_buf_get_option(buf, 'filetype')
-  local nls = require('rwxmad.configs.lsp.null-ls')
+  local nls = require('rwxmad.config.lsp.null-ls')
 
   local enable = false
   if nls.has_formatter(ft) then
@@ -33,7 +33,7 @@ function M.setup(client, buf)
     vim.cmd([[
       augroup LspFormat
         autocmd! * <buffer>
-        autocmd BufWritePre <buffer> lua require("rwxmad.configs.lsp.formatting").format()
+        autocmd BufWritePre <buffer> lua require("rwxmad.config.lsp.formatting").format()
       augroup END
     ]])
   end

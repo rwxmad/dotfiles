@@ -61,7 +61,7 @@ return require('packer').startup({
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate',
       config = function()
-        require('rwxmad.configs.treesitter')
+        require('rwxmad.config.treesitter')
       end,
     })
     use('nvim-treesitter/nvim-treesitter-refactor')
@@ -75,7 +75,7 @@ return require('packer').startup({
     use({
       'neovim/nvim-lspconfig',
       config = function()
-        require('rwxmad.configs.lsp.lspconfig')
+        require('rwxmad.config.lsp.lspconfig')
       end,
     })
     use('jose-elias-alvarez/null-ls.nvim')
@@ -91,14 +91,14 @@ return require('packer').startup({
     use({
       'ray-x/lsp_signature.nvim',
       config = function()
-        require('rwxmad.configs.lsp_signature')
+        require('rwxmad.config.lsp_signature')
       end,
     })
     use({
       'glepnir/lspsaga.nvim',
       branch = 'main',
       config = function()
-        require('rwxmad.configs.lspsaga')
+        require('rwxmad.config.lspsaga')
       end,
     })
 
@@ -108,7 +108,7 @@ return require('packer').startup({
     use({
       'hrsh7th/nvim-cmp',
       config = function()
-        require('rwxmad.configs.lsp.nvim-cmp')
+        require('rwxmad.config.lsp.nvim-cmp')
       end,
     })
     use('hrsh7th/cmp-nvim-lsp')
@@ -119,7 +119,7 @@ return require('packer').startup({
     use({
       'L3MON4D3/LuaSnip',
       config = function()
-        require('rwxmad.configs.lsp.luasnip')
+        require('rwxmad.config.lsp.luasnip')
       end,
     })
     use('rafamadriz/friendly-snippets')
@@ -130,7 +130,7 @@ return require('packer').startup({
     use({
       'nvim-telescope/telescope.nvim',
       config = function()
-        require('rwxmad.configs.telescope')
+        require('rwxmad.config.telescope')
       end,
     })
     use('nvim-telescope/telescope-file-browser.nvim')
@@ -147,7 +147,7 @@ return require('packer').startup({
     use({
       'ellisonleao/glow.nvim',
       config = function()
-        require('rwxmad.configs.glow')
+        require('rwxmad.config.glow')
       end,
     })
     use({ 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' })
@@ -158,19 +158,19 @@ return require('packer').startup({
     use({
       'nvim-lualine/lualine.nvim',
       config = function()
-        require('rwxmad.configs.lualine')
+        require('rwxmad.config.lualine')
       end,
     })
     use({
       'akinsho/bufferline.nvim',
       config = function()
-        require('rwxmad.configs.bufferline')
+        require('rwxmad.config.bufferline')
       end,
     })
     use({
       'lewis6991/gitsigns.nvim',
       config = function()
-        require('rwxmad.configs.gitsigns')
+        require('rwxmad.config.gitsigns')
       end,
     })
     use('tpope/vim-fugitive')

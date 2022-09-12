@@ -1,12 +1,12 @@
 local lspconfig = require('lspconfig')
-local utils = require('rwxmad.configs.lsp.utils')
-require('rwxmad.configs.lsp.diagnostics').setup()
+local utils = require('rwxmad.config.lsp.utils')
+require('rwxmad.config.lsp.diagnostics').setup()
 
 -- Common capabilities including lsp snippets and autocompletion
 local capabilities = utils.capabilities()
 
 local function on_attach(client, bufnr)
-  require('rwxmad.configs.lsp.formatting').setup(client, bufnr)
+  require('rwxmad.config.lsp.formatting').setup(client, bufnr)
   utils.mappings(bufnr)
 end
 
@@ -83,7 +83,7 @@ for server, opts in pairs(servers) do
 end
 
 -- null-ls
-require('rwxmad.configs.lsp.null-ls').setup({
+require('rwxmad.config.lsp.null-ls').setup({
   on_attach = on_attach,
   capabilities = capabilities,
   flags = flags,
