@@ -46,7 +46,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 ├── init.lua # =========================> Root config file
 ├── lua # ==============================> Lua configs directory
 │   └── rwxmad
-│       ├── colors.lua =================> Colorscheme config
+│       ├── colors.lua #================> Colorscheme config
 │       ├── config # ===================> Plugin configs
 │       │   ├── bufferline.lua
 │       │   ├── gitsigns.lua
@@ -83,7 +83,10 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 | ----------------- | -------------------------------------------------------------------------------------------------------------- |
 | `<leader><space>` | Turn off search highlight                                                                                      |
 | `<leader>` `ff`   | Lists files in your current working directory                                                                  |
+| `<leader>` `fb`   | Telescope file browser                                                                                         |
 | `<leader>` `fg`   | Search for a string in your current working directory and get results live as you type (respecting .gitignore) |
+| `<leader>` `bg`   | Search for a string in your current buffer                                                                     |
+| `<leader>` `g`    | Jump to any word in buffer                                                                                     |
 | `<C-n>`           | Next item in completion list                                                                                   |
 | `<C-p>`           | Previous item in completion list                                                                               |
 | `<C-n>`           | NvimTreeToggle                                                                                                 |
