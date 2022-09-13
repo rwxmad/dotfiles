@@ -8,6 +8,8 @@ tap "homebrew/services"
 brew "automake"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Core application library for C
+brew "glib"
 # Cross-platform make
 brew "cmake"
 # Modern replacement for 'ls'
@@ -28,6 +30,8 @@ brew "git"
 brew "glow"
 # Improved top (interactive process viewer)
 brew "htop"
+# Command-line benchmarking tool
+brew "hyperfine"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
 # Tools and libraries to manipulate images in many formats
@@ -38,22 +42,28 @@ brew "john-jumbo"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Language Server for the Lua language
+brew "lua-language-server"
+# Package manager for the Lua programming language
+brew "luarocks"
 # Mac App Store command-line interface
 brew "mas"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
+brew "neovim", args: ["HEAD"]
 # Small build system for use with gyp or CMake
 brew "ninja"
 # Tiny, lightning fast, feature-packed file manager
 brew "nnn"
 # Platform built on V8 to build network applications
 brew "node", link: false
+# Password manager
+brew "pass"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php"
 # Object-relational database system
-brew "postgresql", restart_service: true
+brew "postgresql@14"
 # Python version management
 brew "pyenv"
 # Search tool like grep and The Silver Searcher
@@ -76,6 +86,8 @@ brew "viu"
 brew "weechat"
 # Internet file retriever
 brew "wget"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Web security testing toolkit
@@ -89,6 +101,8 @@ cask "firefox"
 cask "font-fira-code"
 # Free and open-source image editor
 cask "gimp"
+# Vector graphics editor
+cask "inkscape"
 # Fork of Nylas Mail
 cask "mailspring"
 # Peer to peer Bitorrent client
@@ -97,6 +111,7 @@ cask "qbittorrent"
 cask "rectangle"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
+# Keyboard configurator
 cask "via"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
