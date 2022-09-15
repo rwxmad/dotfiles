@@ -15,6 +15,7 @@ ______         _     __  _  _
 ## Requirements
 
 - ripgrep
+- fd
 - exa
 - zsh
 - alacritty
