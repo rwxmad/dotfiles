@@ -46,6 +46,7 @@ vim.keymap.set('n', '<leader>bg', '<cmd>Telescope current_buffer_fuzzy_find<CR>'
 -- -------------------------------------------------------------------------------------------------
 
 vim.keymap.set('n', '<leader>fb', '<cmd>Telescope file_browser<CR>')
+vim.keymap.set('n', '<leader>fn', '<cmd>Telescope neoclip<CR>')
 
 -- -------------------------------------------------------------------------------------------------
 -- Hop

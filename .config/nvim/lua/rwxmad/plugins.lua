@@ -145,6 +145,12 @@ return require('packer').startup({
       end,
     })
     use({
+      'AckslD/nvim-neoclip.lua',
+      config = function()
+        require('neoclip').setup()
+      end,
+    })
+    use({
       'ellisonleao/glow.nvim',
       config = function()
         require('rwxmad.config.glow')
