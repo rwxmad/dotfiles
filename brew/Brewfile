@@ -88,6 +88,8 @@ brew "weechat"
 brew "wget"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# GPU-accelerated terminal emulator
+cask "alacritty"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Web security testing toolkit
