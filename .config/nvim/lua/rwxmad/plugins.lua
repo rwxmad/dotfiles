@@ -139,6 +139,13 @@ return require('packer').startup({
     -- UI
     -- -------------------------------------------------------------------------------------------------
     use({
+      'SmiteshP/nvim-navic',
+      config = function()
+        vim.g.navic_silence = true
+        require('nvim-navic').setup({ highlight = true, depth_limit = 5 })
+      end,
+    })
+    use({
       'norcalli/nvim-colorizer.lua',
       config = function()
         require('colorizer').setup()

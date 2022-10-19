@@ -8,6 +8,9 @@ local capabilities = utils.capabilities()
 local function on_attach(client, bufnr)
   require('rwxmad.config.lsp.formatting').setup(client, bufnr)
   utils.mappings(bufnr)
+  if client.server_capabilities.documentSymbolProvider then
+    require('nvim-navic').attach(client, bufnr)
+  end
 end
 
 local flags = {
