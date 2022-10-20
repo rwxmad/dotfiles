@@ -22,6 +22,10 @@ vim.keymap.set('n', '<leader><space>', '<cmd>nohlsearch<CR>')
 -- Delete a word backwards
 vim.keymap.set('n', 'db', 'vb"_d')
 
+-- Move to start or end of line in insert mode
+vim.keymap.set('i', '<C-l>', '<ESC>A')
+vim.keymap.set('i', '<C-h>', '<ESC>I')
+
 -- -------------------------------------------------------------------------------------------------
 -- Plugins
 -- -------------------------------------------------------------------------------------------------
