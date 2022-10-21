@@ -146,6 +146,12 @@ return require('packer').startup({
       end,
     })
     use({
+      'glepnir/dashboard-nvim',
+      config = function()
+        require('rwxmad.config.dashboard')
+      end,
+    })
+    use({
       'norcalli/nvim-colorizer.lua',
       config = function()
         require('colorizer').setup()
