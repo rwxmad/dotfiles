@@ -9,6 +9,9 @@ require('telescope').setup({
       hidden = true,
     },
   },
+  defaults = {
+    prompt_prefix = ' ',
+  },
 })
 
 -- Extensions
