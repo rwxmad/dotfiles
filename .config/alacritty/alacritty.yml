@@ -164,6 +164,35 @@ draw_bold_text_with_bright_colors: true
 # Color shemes
 schemes:
 
+  spacecat:
+    &spacecat
+    # Default colors
+    primary:
+      background: "#171717"
+      foreground: "#cbcbcb"
+
+    # Normal colors
+    normal:
+      black: "#121212"
+      red: "#f40041"
+      green: "#25b455"
+      yellow: "#e1bc83"
+      blue: "#2c9ad9"
+      magenta: "#e487d5"
+      cyan: "#6fc8c2"
+      white: "#cbcbcb"
+
+    # Bright colors
+    bright:
+      black: "#121010"
+      red: "#f40041"
+      green: "#12b449"
+      yellow: "#e1b36c"
+      blue: "#1692d9"
+      magenta: "#e475d2"
+      cyan: "#5bc8c1"
+      white: "#cbb7b7"
+
   breeze:
     # Default colors
     &breeze
@@ -340,7 +369,7 @@ schemes:
 #   *breeze
 #   *hyper
 #   *gruvbox
-colors: *breeze
+colors: *spacecat
 
 # Colors (Tomorrow Night)
 # Default colors
