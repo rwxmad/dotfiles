@@ -12,8 +12,6 @@ set.fileencoding = 'utf-8'
 
 set.filetype = 'on'
 
-set.lazyredraw = true
-
 set.showcmd = false
 set.cmdheight = 1
 set.laststatus = 2
