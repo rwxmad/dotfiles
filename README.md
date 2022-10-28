@@ -12,14 +12,15 @@ ______         _     __  _  _
 1. Clone this repo
 2. Run `symlink.sh`
 
-## Requirements
+## Shell setup
 
-- ripgrep
-- fd
-- exa
-- zsh
-- alacritty
-- starship
+- [alacritty](https://github.com/alacritty/alacritty) - A cross-platform, OpenGL terminal emulator
+- [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) - Unix shell that is built on top of bash with additional features
+- [starship](https://github.com/starship/starship) - Cross-shell prompt
+- [tmux](https://github.com/tmux/tmux) - Terminal multiplexer
+- [ripgrep](https://github.com/BurntSushi/ripgrep) - A line-oriented search tool that recursively searches the current directory for a regex pattern
+- [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
+- [exa](https://github.com/ogham/exa) - A modern replacement for ‘ls’
 
 ## Scripts
 
