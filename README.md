@@ -24,7 +24,7 @@ ______         _     __  _  _
 
 ## Scripts
 
-You can find aliases for all scripts in [aliases.zsh](config/zsh/aliases.zsh)
+You can find aliases for all scripts in [aliases.zsh](.config/zsh/aliases.zsh)
 
 |                                          Script                                          |          Description           |            Alias |
 | :--------------------------------------------------------------------------------------: | :----------------------------: | ---------------: |
