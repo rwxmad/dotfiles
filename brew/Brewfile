@@ -4,6 +4,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+# Record and share terminal sessions
+brew "asciinema"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -114,8 +116,8 @@ cask "font-monocraft"
 cask "gimp"
 # Vector graphics editor
 cask "inkscape"
-# Fork of Nylas Mail
-cask "mailspring"
+# Keyboard customizer
+cask "karabiner-elements"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Move and resize windows using keyboard shortcuts or snap areas
