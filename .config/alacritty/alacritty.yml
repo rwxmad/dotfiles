@@ -184,38 +184,36 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Color schemes
 schemes:
-  spacecat:
-    &spacecat
-    # Default colors
+  spacecat: &spacecat # Default colors
     primary:
-        background: "#171717"
-        foreground: "#cbcbcb"
+      background: "#171717"
+      foreground: "#cbcbcb"
 
     # Normal colors
     normal:
-        black: "#121212"
-        red: "#f40041"
-        green: "#25b455"
-        yellow: "#e1b36c"
-        blue: "#2c9ad9"
-        magenta: "#e487d5"
-        cyan: "#6fc8c2"
-        white: "#cbcbcb"
+      black: "#121212"
+      red: "#f40041"
+      green: "#25b455"
+      yellow: "#e1b36c"
+      blue: "#2c9ad9"
+      magenta: "#e487d5"
+      cyan: "#6fc8c2"
+      white: "#cbcbcb"
 
     # Bright colors
     bright:
-        black: "#6f6f6f"
-        red: "#f40041"
-        green: "#12b449"
-        yellow: "#e7b159"
-        blue: "#1692d9"
-        magenta: "#e475d2"
-        cyan: "#5bc8c1"
-        white: "#cbb7b7"
+      black: "#6f6f6f"
+      red: "#f40041"
+      green: "#12b449"
+      yellow: "#e7b159"
+      blue: "#1692d9"
+      magenta: "#e475d2"
+      cyan: "#5bc8c1"
+      white: "#cbb7b7"
 
 colors: *spacecat
+
   # Default colors
   #primary:
   #  background: '#1d1f21'
@@ -788,7 +786,7 @@ mouse:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
@@ -799,7 +797,7 @@ mouse:
   #- { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
 
   # Vi Mode
-  #- { key: Space,  mods: Shift|Control, mode: ~Search,    action: ToggleViMode            }
+  - { key: Space,  mods: Shift, mode: ~Search,    action: ToggleViMode            }
   #- { key: Space,  mods: Shift|Control, mode: Vi|~Search, action: ScrollToBottom          }
   #- { key: Escape,                      mode: Vi|~Search, action: ClearSelection          }
   #- { key: I,                           mode: Vi|~Search, action: ToggleViMode            }
