@@ -38,7 +38,7 @@ ln -sfn "$cwd"/.tmux.conf ~/.tmux.conf
 # ====================
 # Scripts
 # ====================
-ln -sfn "$cwd"/scripts ~/scripts
+ln -sfn "$cwd"/.config/scripts ~/.config/scripts
 
 # ====================
 # Misc

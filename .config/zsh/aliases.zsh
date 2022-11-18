@@ -23,8 +23,8 @@ alias l.='exa -a | egrep "^\."'
 # Scripts
 # --------------------------------------------------------------------------------------------------
 
-alias ip="sh $HOME/scripts/ip.sh"
-alias extract="sh $HOME/scripts/extract.sh"
+alias ip="sh $HOME/.config/scripts/ip.sh"
+alias extract="sh $HOME/.config/scripts/extract.sh"
 
 # --------------------------------------------------------------------------------------------------
 # Dotfiles
@@ -42,4 +42,3 @@ alias ns="npm start"
 alias nrd="npm run dev"
 alias nrl="npm run lint"
 alias nrt="npm run test"
-
