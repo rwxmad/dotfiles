@@ -69,7 +69,7 @@ brew "pass"
 # General-purpose scripting language
 brew "php"
 # Object-relational database system
-brew "postgresql@14"
+brew "postgresql@14", restart_service: true
 # Python version management
 brew "pyenv"
 # Search tool like grep and The Silver Searcher
@@ -118,6 +118,8 @@ cask "gimp"
 cask "inkscape"
 # Keyboard customizer
 cask "karabiner-elements"
+# Administration and development platform for PostgreSQL
+cask "pgadmin4"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Move and resize windows using keyboard shortcuts or snap areas
