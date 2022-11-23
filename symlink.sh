@@ -33,7 +33,7 @@ ln -sfn "$cwd"/.config/nvim ~/.config/nvim
 # ====================
 # TMUX
 # ====================
-ln -sfn "$cwd"/.tmux.conf ~/.tmux.conf
+ln -sfn "$cwd"/.config/tmux/.tmux.conf ~/.tmux.conf
 
 # ====================
 # Scripts
