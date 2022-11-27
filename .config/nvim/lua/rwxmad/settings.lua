@@ -24,6 +24,7 @@ set.smartcase = true
 
 set.swapfile = false
 set.backup = false
+set.undofile = true
 
 set.number = true
 set.ruler = true
