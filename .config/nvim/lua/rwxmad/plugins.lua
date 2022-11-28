@@ -82,10 +82,7 @@ return require('packer').startup({
     use({
       'j-hui/fidget.nvim',
       config = function()
-        require('fidget').setup({
-          -- HACK: prevent error when exiting Neovim
-          vim.api.nvim_create_autocmd('VimLeavePre', { command = [[silent! FidgetClose]] }),
-        })
+        require('fidget').setup()
       end,
     })
     use({
