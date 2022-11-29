@@ -63,7 +63,6 @@ local servers = {
     },
   },
   pyright = {},
-  gopls = {},
   vuels = {},
   bashls = {},
 }
@@ -74,8 +73,11 @@ local options = {
   on_attach = on_attach,
 }
 
+local server_list = {}
+
 for server, opts in pairs(servers) do
   opts = vim.tbl_deep_extend('force', {}, options, opts or {})
+  table.insert(server_list, server)
   if server == 'tsserver' then
     require('typescript').setup({ server = opts })
   elseif server == 'rust_analyzer' then
@@ -84,6 +86,12 @@ for server, opts in pairs(servers) do
     lspconfig[server].setup(opts)
   end
 end
+
+-- mason-lspconfig
+require('mason-lspconfig').setup({
+  ensure_installed = server_list,
+  automatic_installation = true,
+})
 
 -- null-ls
 require('rwxmad.config.lsp.null-ls').setup({

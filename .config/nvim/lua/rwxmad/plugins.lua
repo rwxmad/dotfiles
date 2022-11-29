@@ -80,6 +80,19 @@ return require('packer').startup({
     })
     use('jose-elias-alvarez/null-ls.nvim')
     use({
+      'williamboman/mason.nvim',
+      config = function()
+        require('mason').setup()
+      end,
+    })
+    use('williamboman/mason-lspconfig.nvim')
+    use({
+      'jayp0521/mason-null-ls.nvim',
+      config = function()
+        require('rwxmad.config.mason-null-ls')
+      end,
+    })
+    use({
       'j-hui/fidget.nvim',
       config = function()
         require('fidget').setup()

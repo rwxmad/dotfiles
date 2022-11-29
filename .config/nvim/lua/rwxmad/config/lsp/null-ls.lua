@@ -22,10 +22,6 @@ function M.setup(options)
       formatting.eslint_d, -- Eslint
       formatting.stylelint, -- Stylelint
       formatting.stylua, -- Lua
-      formatting.gofmt, -- Golang
-      -- fmt.shfmt.with({
-      --   extra_args = { '-i', 4, '-ci', '-sr' },
-      -- }),
 
       -- -------------------------------------------------------------------------------------------------
       -- Diagnostics
