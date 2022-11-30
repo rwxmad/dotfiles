@@ -154,9 +154,7 @@ return require('packer').startup({
     use({
       'folke/noice.nvim',
       config = function()
-        require('noice').setup({
-          -- add any options here
-        })
+        require('rwxmad.config.noice')
       end,
       requires = {
         -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
