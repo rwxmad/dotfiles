@@ -83,8 +83,8 @@ vim.keymap.set('n', '<leader>ca', '<cmd>Lspsaga code_action<CR>', { silent = tru
 vim.keymap.set('n', 'gr', '<cmd>Lspsaga rename<CR>', { silent = true })
 
 -- Terminal
-vim.keymap.set('n', '<A-d>', '<cmd>Lspsaga open_floaterm<CR>', { silent = true })
-vim.keymap.set({ 't', 'n' }, '<A-d>', '<C-\\><C-n><cmd>Lspsaga close_floaterm<CR>', { silent = true })
+vim.keymap.set('n', '<C-t>', '<cmd>Lspsaga open_floaterm<CR>', { silent = true })
+vim.keymap.set({ 't', 'n' }, '<C-d>', '<C-\\><C-n><cmd>Lspsaga close_floaterm<CR>', { silent = true })
 
 -- -------------------------------------------------------------------------------------------------
 -- Bufferline
