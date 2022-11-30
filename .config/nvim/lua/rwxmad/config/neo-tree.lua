@@ -1,5 +1,6 @@
 require('neo-tree').setup({
   close_if_last_window = true,
+  enable_diagnostics = false,
   content_layout = 'center',
   source_selector = {
     winbar = true,
