@@ -64,6 +64,7 @@ return require('packer').startup({
         require('rwxmad.config.treesitter')
       end,
     })
+    use('p00f/nvim-ts-rainbow')
     use('nvim-treesitter/nvim-treesitter-refactor')
     use('nvim-treesitter/playground')
     use('windwp/nvim-ts-autotag')

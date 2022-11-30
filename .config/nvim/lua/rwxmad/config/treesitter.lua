@@ -45,6 +45,12 @@ require('nvim-treesitter.configs').setup({
     -- highlight_definitions = { enable = true },
     -- highlight_current_scope = { enable = false },
   },
+  rainbow = {
+    enable = true,
+    disable = { 'html' },
+    extended_mode = false,
+    max_file_lines = nil,
+  },
   context_commentstring = {
     enable = true,
     enable_autocmd = false,
