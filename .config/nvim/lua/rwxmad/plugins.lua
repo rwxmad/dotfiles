@@ -48,9 +48,13 @@ return require('packer').startup({
     -- Navigation
     -- -------------------------------------------------------------------------------------------------
     use({
-      'kyazdani42/nvim-tree.lua',
+      'nvim-neo-tree/neo-tree.nvim',
+      branch = 'v2.x',
+      requires = {
+        'MunifTanjim/nui.nvim',
+      },
       config = function()
-        require('nvim-tree').setup()
+        require('rwxmad.config.neo-tree')
       end,
     })
 
@@ -137,6 +141,10 @@ return require('packer').startup({
       config = function()
         require('rwxmad.config.telescope')
       end,
+    })
+    use({
+      'nvim-telescope/telescope-fzf-native.nvim',
+      run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build',
     })
     use('nvim-telescope/telescope-file-browser.nvim')
 
