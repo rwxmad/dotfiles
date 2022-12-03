@@ -43,6 +43,12 @@ return require('packer').startup({
         require('nvim-surround').setup()
       end,
     })
+    use({
+      'lukas-reineke/indent-blankline.nvim',
+      config = function()
+        require('rwxmad.config.indent-line')
+      end,
+    })
 
     -- -------------------------------------------------------------------------------------------------
     -- Navigation
