@@ -43,6 +43,7 @@ local servers = {
     },
   },
   emmet_ls = {},
+  tailwindcss = {},
   jsonls = {},
   sumneko_lua = {
     settings = {
