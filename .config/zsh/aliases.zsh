@@ -38,9 +38,10 @@ alias dots="cd ~/dotfiles/"
 # --------------------------------------------------------------------------------------------------
 
 alias nr="npm run"
-alias nrw="npm run watch"
-alias nrb="npm run build"
 alias ns="npm start"
+alias nrw="npm run watch"
 alias nrd="npm run dev"
+alias nrs="npm run serve"
+alias nrb="npm run build"
 alias nrl="npm run lint"
 alias nrt="npm run test"
