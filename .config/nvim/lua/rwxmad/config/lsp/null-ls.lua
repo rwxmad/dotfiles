@@ -38,6 +38,7 @@ function M.setup(options)
       -- -------------------------------------------------------------------------------------------------
       code_actions.eslint_d,
       code_actions.shellcheck,
+      require('typescript.extensions.null-ls.code-actions'),
     },
     on_attach = options.on_attach,
   })
