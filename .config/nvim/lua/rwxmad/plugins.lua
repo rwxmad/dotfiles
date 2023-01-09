@@ -181,9 +181,9 @@ return require('packer').startup({
       end,
     })
     use({
-      'norcalli/nvim-colorizer.lua',
+      'NvChad/nvim-colorizer.lua',
       config = function()
-        require('colorizer').setup()
+        require('rwxmad.config.colorizer')
       end,
     })
     use({
