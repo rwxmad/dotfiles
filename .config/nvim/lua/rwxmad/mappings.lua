@@ -90,17 +90,13 @@ vim.keymap.set({ 't', 'n' }, '<C-d>', '<C-\\><C-n><cmd>Lspsaga close_floaterm<CR
 -- Bufferline
 -- -------------------------------------------------------------------------------------------------
 
--- Jump to start or end of buffer line
-vim.keymap.set('n', '[b', '<cmd>BufferLineCycleNext<CR>', { silent = true })
-vim.keymap.set('n', 'b]', '<cmd>BufferLineCyclePrev<CR>', { silent = true })
-
 -- Move current buffer in line
 vim.keymap.set('n', '<leader>bn', '<cmd>BufferLineMoveNext<CR>', { silent = true })
 vim.keymap.set('n', '<leader>bp', '<cmd>BufferLineMovePrev<CR>', { silent = true })
 
 -- Sort buffers
-vim.keymap.set('n', 'be', '<cmd>BufferLineSortByExtension<CR>', { silent = true })
-vim.keymap.set('n', 'bd', '<cmd>BufferLineSortByDirectory<CR>', { silent = true })
+vim.keymap.set('n', '<leader>be', '<cmd>BufferLineSortByExtension<CR>', { silent = true })
+vim.keymap.set('n', '<leader>bd', '<cmd>BufferLineSortByDirectory<CR>', { silent = true })
 
 -- Search and jump to buffer
 vim.keymap.set('n', '<leader>bb', '<cmd>BufferLinePick<CR>', { silent = true })
