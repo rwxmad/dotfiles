@@ -1,4 +1,4 @@
-require('lspsaga').init_lsp_saga({
+require('lspsaga').setup({
   code_action_lightbulb = {
     enable = false,
   },
