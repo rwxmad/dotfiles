@@ -171,6 +171,7 @@ return require('packer').startup({
       'SmiteshP/nvim-navic',
       config = function()
         vim.g.navic_silence = true
+        vim.opt.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
         require('nvim-navic').setup({ highlight = true, depth_limit = 5 })
       end,
     })
