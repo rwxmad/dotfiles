@@ -22,6 +22,8 @@ require('nvim-treesitter.configs').setup({
     'typescript',
     'vue',
     'vim',
+    'markdown',
+    'markdown_inline',
   },
   sync_install = false,
   auto_install = true,
