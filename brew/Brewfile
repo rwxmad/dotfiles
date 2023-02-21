@@ -4,6 +4,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+# Command-line interface for SQLite
+brew "sqlite"
 # Record and share terminal sessions
 brew "asciinema"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -46,8 +48,6 @@ brew "lazydocker"
 brew "lazygit"
 # Rainbows and unicorns in your console!
 brew "lolcat"
-# Language Server for the Lua language
-brew "lua-language-server"
 # Package manager for the Lua programming language
 brew "luarocks"
 # Mac App Store command-line interface
@@ -110,7 +110,7 @@ cask "dropbox"
 cask "firefox"
 # Free monospaced font with programming ligatures
 cask "font-fira-code"
-# Programming font based on the typeface used in Minecraft
+# Monospaced programming font inspired by the Minecraft typeface
 cask "font-monocraft"
 # Free and open-source image editor
 cask "gimp"
