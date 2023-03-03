@@ -63,7 +63,7 @@ brew "ninja"
 # Tiny, lightning fast, feature-packed file manager
 brew "nnn"
 # Platform built on V8 to build network applications
-brew "node", link: false
+brew "node"
 # Password manager
 brew "pass"
 # General-purpose scripting language
@@ -120,6 +120,8 @@ cask "inkscape"
 cask "karabiner-elements"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
+# Collaboration platform for API development
+cask "postman"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Move and resize windows using keyboard shortcuts or snap areas
