@@ -7,7 +7,7 @@ alias c="clear"
 alias code="cd ~/code"
 alias notes="cd ~/notes"
 alias kb="cd ~/notes/knowledge_base"
-alias v="nvim"
+alias vim="nvim"
 
 # --------------------------------------------------------------------------------------------------
 # Changing 'ls' to 'exa'
