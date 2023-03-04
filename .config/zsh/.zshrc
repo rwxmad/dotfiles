@@ -118,6 +118,9 @@ eval "$(starship init zsh)"
 # Zoxide
 eval "$(zoxide init zsh)"
 
+# Fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
