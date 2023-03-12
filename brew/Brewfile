@@ -98,14 +98,14 @@ brew "wget"
 brew "zoxide"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# 3D creation suite
+cask "blender"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Web security testing toolkit
 cask "burp-suite"
 # Universal database tool and SQL client
 cask "dbeaver-community"
-# Client for the Dropbox cloud storage service
-cask "dropbox"
 # Web browser
 cask "firefox"
 # Free monospaced font with programming ligatures
@@ -118,6 +118,10 @@ cask "gimp"
 cask "inkscape"
 # Keyboard customizer
 cask "karabiner-elements"
+# Calculator and converter application
+cask "numi"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
 # Collaboration platform for API development
