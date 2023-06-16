@@ -33,6 +33,11 @@ local aliases = {
   luasnip = 'snippet',
 }
 
+local border_opts = {
+  border = 'single',
+  winhighlight = 'Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None',
+}
+
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ['<C-e>'] = cmp.config.disable,
@@ -49,6 +54,10 @@ cmp.setup({
       end
     end,
   }),
+  window = {
+    completion = cmp.config.window.bordered(border_opts),
+    documentation = cmp.config.window.bordered(border_opts),
+  },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
