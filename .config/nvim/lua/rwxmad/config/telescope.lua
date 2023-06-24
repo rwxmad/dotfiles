@@ -7,6 +7,10 @@ require('telescope').setup({
   extensions = {
     file_browser = {
       hidden = true,
+      grouped = true,
+      theme = 'dropdown',
+      previewer = false,
+      initial_mode = 'normal',
     },
   },
   defaults = {
