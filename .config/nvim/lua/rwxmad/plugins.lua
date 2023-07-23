@@ -246,6 +246,13 @@ return require('packer').startup({
     -- Colorscheme
     -- -------------------------------------------------------------------------------------------------
     use('ellisonleao/gruvbox.nvim')
+    use({
+      'svrana/neosolarized.nvim',
+      requires = { 'tjdevries/colorbuddy.nvim' },
+      config = function()
+        require('neosolarized').setup()
+      end,
+    })
     use('rwxmad/spacecat.nvim')
 
     -- -------------------------------------------------------------------------------------------------
