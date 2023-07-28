@@ -8,8 +8,13 @@ local capabilities = utils.capabilities()
 local function on_attach(client, bufnr)
   require('rwxmad.config.lsp.formatting').setup(client, bufnr)
   utils.mappings(bufnr)
+
   if client.server_capabilities.documentSymbolProvider then
     require('nvim-navic').attach(client, bufnr)
+  end
+
+  if client.server_capabilities.inlayHintProvider then
+    vim.lsp.inlay_hint(bufnr, true)
   end
 end
 
@@ -81,7 +86,17 @@ for server, opts in pairs(servers) do
   opts = vim.tbl_deep_extend('force', {}, options, opts or {})
   table.insert(server_list, server)
   if server == 'tsserver' then
-    require('typescript').setup({ server = opts })
+    require('typescript-tools').setup({
+      on_attach = on_attach,
+      settings = {
+        separate_diagnostic_server = true,
+        tsserver_file_preferences = {
+          includeInlayParameterNameHints = 'all',
+          includeCompletionsForModuleExports = true,
+          quotePreference = 'auto',
+        },
+      },
+    })
   elseif server == 'rust_analyzer' then
     require('rust-tools').setup({ server = opts })
   else

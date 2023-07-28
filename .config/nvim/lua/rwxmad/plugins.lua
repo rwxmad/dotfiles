@@ -228,7 +228,10 @@ return require('packer').startup({
     -- -------------------------------------------------------------------------------------------------
 
     -- Typescript
-    use('jose-elias-alvarez/typescript.nvim')
+    use({
+      'pmizio/typescript-tools.nvim',
+      requires = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    })
 
     -- Rust
     use('simrat39/rust-tools.nvim')
