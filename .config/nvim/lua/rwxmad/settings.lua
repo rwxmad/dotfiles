@@ -30,6 +30,7 @@ set.number = true
 set.ruler = true
 set.signcolumn = 'yes'
 set.autoindent = true
+set.cursorline = true
 
 set.tabstop = 2
 set.shiftwidth = 2
