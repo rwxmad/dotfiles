@@ -10,11 +10,12 @@
 ## Requirements
 
 - [curl](https://github.com/curl/curl)
-- [neovim](https://github.com/neovim/neovim) (>= 0.8)
+- [neovim](https://github.com/neovim/neovim) (>= 0.10)
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
 - [npm](https://github.com/npm/cli)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [glow](https://github.com/charmbracelet/glow)
+- [chafa](https://github.com/hpjansson/chafa)
 
 ## Installation
 
