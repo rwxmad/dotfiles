@@ -13,6 +13,10 @@ require('telescope').setup({
       previewer = false,
       initial_mode = 'normal',
     },
+    media_files = {
+      filetypes = { 'png', 'webp', 'jpg', 'jpeg' },
+      find_cmd = 'rg',
+    },
   },
   defaults = {
     prompt_prefix = '  ',
@@ -22,4 +26,5 @@ require('telescope').setup({
 -- Extensions
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('file_browser')
+require('telescope').load_extension('media_files')
 require('telescope').load_extension('neoclip')

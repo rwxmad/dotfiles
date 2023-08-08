@@ -52,6 +52,7 @@ vim.keymap.set('n', '<leader>fo', '<cmd>Telescope oldfiles<CR>')
 
 vim.keymap.set('n', '<leader>fb', '<cmd>Telescope file_browser<CR>')
 vim.keymap.set('n', '<leader>fn', '<cmd>Telescope neoclip<CR>')
+vim.keymap.set('n', '<leader>fm', '<cmd>Telescope media_files<CR>')
 
 -- -------------------------------------------------------------------------------------------------
 -- Hop
