@@ -10,12 +10,22 @@ brew "sqlite"
 brew "asciinema"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Core application library for C
 brew "glib"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
 # Cross-platform make
 brew "cmake"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
@@ -32,6 +42,8 @@ brew "gh"
 brew "git"
 # Render markdown on the CLI
 brew "glow"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Improved top (interactive process viewer)
 brew "htop"
 # Command-line benchmarking tool
@@ -87,13 +99,15 @@ brew "telnet"
 # Terminal multiplexer
 brew "tmux"
 # Vi 'workalike' with many additional features
-brew "vim", link: false
-# Simple terminal image viewer written in Rust
-brew "viu"
+brew "vim"
 # Extensible IRC client
 brew "weechat"
 # Internet file retriever
 brew "wget"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # GPU-accelerated terminal emulator
@@ -122,6 +136,8 @@ cask "karabiner-elements"
 cask "numi"
 # Open-source software for live streaming and screen recording
 cask "obs"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
 # Collaboration platform for API development
@@ -134,5 +150,7 @@ cask "rectangle"
 cask "scroll-reverser"
 # Keyboard configurator
 cask "via"
+# Multimedia player
+cask "vlc"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
