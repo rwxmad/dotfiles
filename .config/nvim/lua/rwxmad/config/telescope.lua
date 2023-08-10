@@ -9,6 +9,8 @@ require('telescope').setup({
   },
   extensions = {
     file_browser = {
+      path = '%:p:h',
+      cwd = vim.fn.expand('%:p:h'),
       hidden = true,
       grouped = true,
       theme = 'dropdown',
