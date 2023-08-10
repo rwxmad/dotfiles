@@ -1,3 +1,5 @@
+local fb_actions = require('telescope').extensions.file_browser.actions
+
 require('telescope').setup({
   pickers = {
     find_files = {
@@ -12,6 +14,12 @@ require('telescope').setup({
       theme = 'dropdown',
       previewer = false,
       initial_mode = 'normal',
+      mappings = {
+        ['n'] = {
+          ['N'] = fb_actions.create,
+          ['D'] = fb_actions.remove,
+        },
+      },
     },
     media_files = {
       filetypes = { 'png', 'webp', 'jpg', 'jpeg' },
