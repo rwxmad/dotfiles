@@ -70,7 +70,7 @@ local servers = {
     },
   },
   pyright = {},
-  vuels = {},
+  volar = {},
   bashls = {},
 }
 
