@@ -75,6 +75,7 @@ return require('packer').startup({
       end,
     })
     use('nvim-treesitter/nvim-treesitter-refactor')
+    use('nvim-treesitter/nvim-treesitter-textobjects')
     use('nvim-treesitter/playground')
     use('windwp/nvim-ts-autotag')
     use('JoosepAlviste/nvim-ts-context-commentstring')

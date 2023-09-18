@@ -47,6 +47,23 @@ require('nvim-treesitter.configs').setup({
     -- highlight_definitions = { enable = true },
     -- highlight_current_scope = { enable = false },
   },
+  textobjects = {
+    select = {
+      enable = true,
+      lookahead = true,
+      keymaps = {
+        ['af'] = '@function.outer',
+        ['if'] = '@function.inner',
+        ['ac'] = '@class.outer',
+        ['ic'] = '@class.inner',
+        ['al'] = '@loop.outer',
+        ['il'] = '@loop.inner',
+        ['aa'] = '@parameter.outer',
+        ['ia'] = '@parameter.inner',
+        ['uc'] = '@comment.outer',
+      },
+    },
+  },
   context_commentstring = {
     enable = true,
     enable_autocmd = false,
