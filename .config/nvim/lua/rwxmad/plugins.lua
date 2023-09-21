@@ -63,6 +63,12 @@ return require('packer').startup({
         require('rwxmad.config.neo-tree')
       end,
     })
+    use({
+      'folke/todo-comments.nvim',
+      config = function()
+        require('todo-comments').setup()
+      end,
+    })
 
     -- -------------------------------------------------------------------------------------------------
     -- Treesitter
