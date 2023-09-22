@@ -64,13 +64,13 @@ vim.keymap.set('n', '<leader>g', '<cmd>HopWord<CR>')
 -- -------------------------------------------------------------------------------------------------
 
 -- Lsp finder
-vim.keymap.set('n', 'gh', '<cmd>Lspsaga lsp_finder<CR>', { silent = true })
+vim.keymap.set('n', 'gh', '<cmd>Lspsaga finder<CR>', { silent = true })
 
 -- Hover Doc
 vim.keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<CR>', { silent = true })
 
 -- Outline
-vim.keymap.set('n', '<leader>o', '<cmd>LSoutlineToggle<CR>', { silent = true })
+vim.keymap.set('n', '<leader>o', '<cmd>Lspsaga outline<CR>', { silent = true })
 
 -- Jump Diagnostic and Show Diagnostic
 vim.keymap.set('n', '[e', '<cmd>Lspsaga diagnostic_jump_next<CR>', { silent = true })
@@ -84,8 +84,8 @@ vim.keymap.set('n', '<leader>ca', '<cmd>Lspsaga code_action<CR>', { silent = tru
 vim.keymap.set('n', 'gr', '<cmd>Lspsaga rename<CR>', { silent = true })
 
 -- Terminal
-vim.keymap.set('n', '<C-t>', '<cmd>Lspsaga open_floaterm<CR>', { silent = true })
-vim.keymap.set({ 't', 'n' }, '<C-d>', '<C-\\><C-n><cmd>Lspsaga close_floaterm<CR>', { silent = true })
+vim.keymap.set('n', '<C-t>', '<cmd>Lspsaga term_toggle<CR>', { silent = true })
+vim.keymap.set({ 't', 'n' }, '<C-d>', '<C-\\><C-n><cmd>Lspsaga term_toggle<CR>', { silent = true })
 
 -- -------------------------------------------------------------------------------------------------
 -- Bufferline
