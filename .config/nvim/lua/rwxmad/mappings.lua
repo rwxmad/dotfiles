@@ -120,6 +120,16 @@ vim.keymap.set('n', '<leader>8', '<cmd>BufferLineGoToBuffer 8<CR>', { silent = t
 vim.keymap.set('n', '<leader>9', '<cmd>BufferLineGoToBuffer 9<CR>', { silent = true })
 
 -- -------------------------------------------------------------------------------------------------
+-- Gitsigns
+-- -------------------------------------------------------------------------------------------------
+
+vim.keymap.set('n', '<leader>hs', '<cmd>Gitsigns stage_hunk<CR>')
+vim.keymap.set('n', '<leader>hy', '<cmd>Gitsigns undo_stage_hunk<CR>')
+vim.keymap.set('n', '<leader>hr', '<cmd>Gitsigns reset_hunk<CR>')
+vim.keymap.set('n', '<leader>hp', '<cmd>Gitsigns preview_hunk<CR>')
+vim.keymap.set('n', '<leader>hb', '<cmd>Gitsigns blame_line<CR>')
+
+-- -------------------------------------------------------------------------------------------------
 -- markdown-preview
 -- -------------------------------------------------------------------------------------------------
 
