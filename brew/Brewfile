@@ -1,11 +1,7 @@
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "homebrew/services"
-# Command-line interface for SQLite
-brew "sqlite"
 # Record and share terminal sessions
 brew "asciinema"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -60,6 +56,8 @@ brew "lazydocker"
 brew "lazygit"
 # Rainbows and unicorns in your console!
 brew "lolcat"
+# Just-In-Time Compiler (JIT) for the Lua programming language
+brew "luajit"
 # Package manager for the Lua programming language
 brew "luarocks"
 # Mac App Store command-line interface
@@ -74,8 +72,6 @@ brew "neovim"
 brew "ninja"
 # Tiny, lightning fast, feature-packed file manager
 brew "nnn"
-# Platform built on V8 to build network applications
-brew "node"
 # Password manager
 brew "pass"
 # General-purpose scripting language
@@ -126,12 +122,16 @@ cask "firefox"
 cask "font-fira-code"
 # Monospaced programming font inspired by the Minecraft typeface
 cask "font-monocraft"
+# GIT client
+cask "fork"
 # Free and open-source image editor
 cask "gimp"
 # Vector graphics editor
 cask "inkscape"
 # Keyboard customizer
 cask "karabiner-elements"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
 # Calculator and converter application
 cask "numi"
 # Open-source software for live streaming and screen recording
@@ -148,6 +148,8 @@ cask "qbittorrent"
 cask "rectangle"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
+# Music streaming service
+cask "spotify"
 # Keyboard configurator
 cask "via"
 # Multimedia player
