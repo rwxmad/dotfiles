@@ -4,7 +4,7 @@
 
 alias c="clear"
 
-alias code="cd ~/code"
+alias dev="cd ~/dev"
 alias notes="cd ~/notes"
 alias kb="cd ~/notes/knowledge_base"
 alias vim="nvim"
