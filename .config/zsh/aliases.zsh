@@ -5,8 +5,8 @@
 alias c="clear"
 
 alias dev="cd ~/dev"
-alias notes="cd ~/notes"
-alias kb="cd ~/notes/knowledge_base"
+alias docs="cd ~/Documents/Documents - rwxmad/"
+alias notes="cd ~/Documents/Documents - rwxmad/notes"
 alias vim="nvim"
 
 # --------------------------------------------------------------------------------------------------
