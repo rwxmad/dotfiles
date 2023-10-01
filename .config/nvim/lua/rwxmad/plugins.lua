@@ -57,6 +57,10 @@ require('lazy').setup({
       require('rwxmad.config.indent-line')
     end,
   },
+  {
+    'mg979/vim-visual-multi',
+    branch = 'master',
+  },
 
   -- -------------------------------------------------------------------------------------------------
   -- Navigation
