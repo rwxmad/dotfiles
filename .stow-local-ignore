@@ -1,0 +1,12 @@
+# ~./dotfiles/.stow-local-ignore: Files to be ignored by gnu 'stow'
+
+\.git
+\.gitignore
+
+brew
+fonts
+
+install.sh
+
+^/README.*
+^/LICENSE.*
