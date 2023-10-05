@@ -21,6 +21,7 @@ ______         _     __  _  _
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - A line-oriented search tool that recursively searches the current directory for a regex pattern
 - [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
 - [exa](https://github.com/ogham/exa) - A modern replacement for ‘ls’
+- [delta](https://github.com/dandavison/delta) - A syntax-highlighting pager for git, diff, and grep output
 
 ## Scripts
 
