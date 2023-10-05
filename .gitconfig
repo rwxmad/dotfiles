@@ -1,0 +1,20 @@
+# This is Git's per-user configuration file.
+[user]
+	name = rwxmad
+	email = rwxmad@gmail.com
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    light = false
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
