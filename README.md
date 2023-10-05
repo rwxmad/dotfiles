@@ -10,7 +10,7 @@ ______         _     __  _  _
 ## Installation
 
 1. Clone this repo
-2. Run `symlink.sh`
+2. Run `install.sh`
 
 ## Shell setup
 
