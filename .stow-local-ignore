@@ -3,7 +3,6 @@
 \.git
 \.gitignore
 
-brew
 fonts
 
 install.sh

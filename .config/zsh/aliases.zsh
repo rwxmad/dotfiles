@@ -26,6 +26,8 @@ alias l.='exa -a | egrep "^\."'
 
 alias ip="sh $HOME/.config/scripts/ip.sh"
 alias extract="sh $HOME/.config/scripts/extract.sh"
+alias brewd="sh $HOME/.config/scripts/brew/dump.sh"
+alias brewi="sh $HOME/.config/scripts/brew/install.sh"
 
 # --------------------------------------------------------------------------------------------------
 # Dotfiles
