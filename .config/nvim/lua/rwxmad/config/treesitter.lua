@@ -24,6 +24,7 @@ require('nvim-treesitter.configs').setup({
     'vim',
     'markdown',
     'markdown_inline',
+    'glsl',
   },
   sync_install = false,
   auto_install = true,
