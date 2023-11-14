@@ -263,14 +263,17 @@ require('lazy').setup({
   -- Colorscheme
   -- -------------------------------------------------------------------------------------------------
   { 'ellisonleao/gruvbox.nvim' },
+
   {
-    'svrana/neosolarized.nvim',
-    dependencies = { 'tjdevries/colorbuddy.nvim' },
-    config = function()
-      require('neosolarized').setup()
+    'craftzdog/solarized-osaka.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = function()
+      return {
+        transparent = true,
+      }
     end,
   },
-
   -- -------------------------------------------------------------------------------------------------
   -- Other
   -- -------------------------------------------------------------------------------------------------
