@@ -86,14 +86,9 @@ for server, opts in pairs(servers) do
   opts = vim.tbl_deep_extend('force', {}, options, opts or {})
   table.insert(server_list, server)
   if server == 'tsserver' then
-    -- NOTE: specify the path to the server, because the Mason register is incorrectly called tsserver
-    local mason_registry = require('mason-registry')
-    local tsserver_path = mason_registry.get_package('typescript-language-server'):get_install_path()
-
     require('typescript-tools').setup({
       on_attach = on_attach,
       settings = {
-        tsserver_path = tsserver_path .. '/node_modules/typescript/lib/tsserver.js',
         separate_diagnostic_server = true,
         tsserver_file_preferences = {
           includeInlayParameterNameHints = 'all',
