@@ -103,7 +103,7 @@ require('lazy').setup({
       require('rwxmad.config.lsp.lspconfig')
     end,
   },
-  { 'jose-elias-alvarez/null-ls.nvim' },
+  { 'nvimtools/none-ls.nvim' },
   {
     'williamboman/mason.nvim',
     config = function()
