@@ -149,6 +149,7 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 | [typescript-tools.nvim](https://github.com/pmizio/typescript-tools.nvim)                        | TypeScript integration NeoVim deserves                                                                                                            |
 | [rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim)                                  | Tools for better development in rust using neovim's builtin lsp                                                                                   |
 | [crates.nvim](https://github.com/Saecki/crates.nvim)                                            | A neovim plugin that helps managing crates.io dependencies                                                                                        |
+| [neodev.nvim](https://github.com/folke/neodev.nvim)                                             | Neovim setup for init.lua and plugin development with full signature help, docs and completion for the nvim lua API.                              |
 | [presence.nvim](https://github.com/andweeb/presence.nvim)                                       | Discord Rich Presence for Neovim                                                                                                                  |
 
 ## Language servers
