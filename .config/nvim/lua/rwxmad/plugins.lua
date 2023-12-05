@@ -275,6 +275,9 @@ require('lazy').setup({
     opts = function()
       return {
         transparent = true,
+        on_highlights = function(highlights, colors)
+          highlights.LspInlayHint = { fg = colors.base01 }
+        end,
       }
     end,
   },
