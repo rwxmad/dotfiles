@@ -22,6 +22,7 @@ function M.setup(options)
       formatting.eslint_d, -- Eslint
       formatting.stylelint, -- Stylelint
       formatting.stylua, -- Lua
+      formatting.ruff_format, -- Python
 
       -- -------------------------------------------------------------------------------------------------
       -- Diagnostics

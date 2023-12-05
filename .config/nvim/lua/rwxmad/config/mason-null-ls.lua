@@ -6,5 +6,6 @@ require('mason-null-ls').setup({
     'eslint_d',
     'stylelint',
     'shellcheck',
+    'ruff',
   },
 })
