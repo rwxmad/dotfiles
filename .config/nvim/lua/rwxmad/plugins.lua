@@ -147,6 +147,7 @@ require('lazy').setup({
 
   {
     'L3MON4D3/LuaSnip',
+    version = 'v2.*',
     config = function()
       require('rwxmad.config.lsp.luasnip')
     end,
