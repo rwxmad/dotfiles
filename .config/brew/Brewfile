@@ -2,6 +2,10 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
+tap "koekeishiya/formulae"
+tap "neovim/neovim"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # Record and share terminal sessions
 brew "asciinema"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -22,8 +26,8 @@ brew "ruby"
 brew "cocoapods"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Modern replacement for 'ls'
-brew "exa"
+# Modern, maintained replacement for ls
+brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Play, record, convert, and stream audio and video
@@ -36,6 +40,8 @@ brew "gcc"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Render markdown on the CLI
 brew "glow"
 # GNU Pretty Good Privacy (PGP) package
@@ -80,8 +86,12 @@ brew "php"
 brew "postgresql@14", restart_service: true
 # Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
 # Experimental Rust compiler front-end for IDEs
 brew "rust-analyzer"
 # Terminal-based client for Spotify
@@ -106,6 +116,10 @@ brew "youtube-dl"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Simple hotkey-daemon for macOS.
+brew "koekeishiya/formulae/skhd"
+# A tiling window manager for macOS based on binary space partitioning.
+brew "koekeishiya/formulae/yabai"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # 3D creation suite
@@ -150,6 +164,8 @@ cask "rectangle"
 cask "scroll-reverser"
 # Music streaming service
 cask "spotify"
+# System monitor for the menu bar
+cask "stats"
 # Keyboard configurator
 cask "via"
 # Multimedia player
