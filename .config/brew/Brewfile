@@ -20,8 +20,6 @@ brew "glib"
 brew "chafa"
 # Cross-platform make
 brew "cmake"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -30,12 +28,12 @@ brew "curl"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# GNU compiler collection
+brew "gcc"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU compiler collection
-brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -56,6 +54,8 @@ brew "libheif"
 brew "imagemagick"
 # Enhanced version of john, a UNIX password cracker
 brew "john-jumbo"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Simple terminal UI for git commands
@@ -68,6 +68,10 @@ brew "luajit"
 brew "luarocks"
 # Mac App Store command-line interface
 brew "mas"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
+# Media player based on MPlayer and mplayer2
+brew "mpv"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Parser generator tool and incremental parsing library
@@ -88,6 +92,8 @@ brew "postgresql@14", restart_service: true
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# File browser
+brew "ranger"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Extremely fast Python linter, written in Rust
@@ -112,8 +118,6 @@ brew "weechat"
 brew "wget"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-# Fork of youtube-dl with additional features and fixes
-brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Simple hotkey-daemon for macOS.
@@ -158,8 +162,6 @@ cask "pgadmin4"
 cask "postman"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
-# Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
 # Music streaming service
