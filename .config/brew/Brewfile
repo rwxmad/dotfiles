@@ -68,10 +68,6 @@ brew "luajit"
 brew "luarocks"
 # Mac App Store command-line interface
 brew "mas"
-# Fork of youtube-dl with additional features and fixes
-brew "yt-dlp"
-# Media player based on MPlayer and mplayer2
-brew "mpv"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Parser generator tool and incremental parsing library
@@ -118,6 +114,8 @@ brew "weechat"
 brew "wget"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Simple hotkey-daemon for macOS.
@@ -150,6 +148,8 @@ cask "inkscape"
 cask "karabiner-elements"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# Media player based on MPlayer and mplayer2
+cask "mpv"
 # Calculator and converter application
 cask "numi"
 # Open-source software for live streaming and screen recording
