@@ -20,14 +20,16 @@ ______         _     __  _  _
 - [tmux](https://github.com/tmux/tmux) - Terminal multiplexer
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - A line-oriented search tool that recursively searches the current directory for a regex pattern
 - [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
-- [exa](https://github.com/ogham/exa) - A modern replacement for ‘ls’
+- [eza](https://github.com/eza-community/eza) - A modern replacement for ‘ls’
 - [delta](https://github.com/dandavison/delta) - A syntax-highlighting pager for git, diff, and grep output
+
+More tools in [Brewfile](.config/brew/Brewfile)
 
 ## Scripts
 
 You can find aliases for all scripts in [aliases.zsh](.config/zsh/aliases.zsh)
 
-|                                          Script                                          |          Description           |            Alias |
-| :--------------------------------------------------------------------------------------: | :----------------------------: | ---------------: |
-|   [`myip.sh`](https://github.com/themadnesstony/dotfiles/blob/master/scripts/myip.sh)    | Return local and external ipv4 |             `ip` |
-| [`extract.sh`](https://github.com/themadnesstony/dotfiles/blob/master/scripts/extact.sh) |    Extract compressed files    | `extract {file}` |
+|                   Script                   |          Description           |            Alias |
+| :----------------------------------------: | :----------------------------: | ---------------: |
+|      [`ip.sh`](.config/scripts/ip.sh)      | Return local and external ipv4 |             `ip` |
+| [`extract.sh`](.config/scripts/extract.sh) |    Extract compressed files    | `extract {file}` |
