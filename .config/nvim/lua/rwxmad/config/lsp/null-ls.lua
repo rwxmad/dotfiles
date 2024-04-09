@@ -19,7 +19,7 @@ function M.setup(options)
       -- 1. both needs to be enabled to so prettier can apply eslint fixes
       -- 2. prettierd should come first to prevent occassional race condition
       formatting.prettierd, -- Prettier
-      formatting.eslint_d, -- Eslint
+      formatting.eslint, -- Eslint
       formatting.stylelint, -- Stylelint
       formatting.stylua, -- Lua
       formatting.ruff_format, -- Python
@@ -27,7 +27,7 @@ function M.setup(options)
       -- -------------------------------------------------------------------------------------------------
       -- Diagnostics
       -- -------------------------------------------------------------------------------------------------
-      diagnostics.eslint_d,
+      diagnostics.eslint,
       diagnostics.stylelint,
       diagnostics.shellcheck,
       diagnostics.luacheck.with({
@@ -37,7 +37,7 @@ function M.setup(options)
       -- -------------------------------------------------------------------------------------------------
       -- Code actions
       -- -------------------------------------------------------------------------------------------------
-      code_actions.eslint_d,
+      code_actions.eslint,
       code_actions.shellcheck,
     },
     on_attach = options.on_attach,

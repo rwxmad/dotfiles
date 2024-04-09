@@ -58,7 +58,8 @@ cmd - 6 : yabai -m space --focus 6
 cmd - 7 : yabai -m space --focus 7
 cmd - 8 : yabai -m space --focus 8
 cmd - 9 : yabai -m space --focus 9
-cmd - 0 : yabai -m space --focus 10
+# TODO: make something with this, conflict with zoom
+# cmd - 0 : yabai -m space --focus 10
 
 # send window to desktop and follow focus
 shift + cmd - p : yabai -m window --space prev && yabai -m space --focus prev

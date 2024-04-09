@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
 
 # global settings
 yabai -m config mouse_follows_focus off
@@ -33,6 +33,6 @@ yabai -m config window_gap 10
 # yabai -m config --space 6 layout float
 
 # window rules
-yabai -m rule --add app="^(System Settings|Alfred|Activity Monitor|Installer|Telegram)" manage=off
+yabai -m rule --add app="^(System Settings|Alfred|Activity Monitor|Installer|Telegram|Finder|Notes)" manage=off
 
 echo "yabai configuration loaded..."
