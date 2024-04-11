@@ -3,9 +3,6 @@ require('mason-null-ls').setup({
     'stylua',
     'luacheck',
     'prettierd',
-    'eslint_d',
     'stylelint',
-    'shellcheck',
-    'ruff',
   },
 })

@@ -26,7 +26,57 @@ local flags = {
 local servers = {
   html = {},
   cssls = {},
-  tsserver = {},
+  tsserver = {
+    init_options = {
+      plugins = {
+        -- NOTE: for typescript + vue work
+        {
+          name = '@vue/typescript-plugin',
+          -- location = '/usr/local/lib/node_modules/@vue/typescript-plugin',
+          location = '/Users/rwxmad/.npm/lib/node_modules/@vue/typescript-plugin',
+          languages = { 'javascript', 'typescript', 'vue' },
+        },
+      },
+    },
+    single_file_support = true,
+    settings = {
+      typescript = {
+        inlayHints = {
+          includeInlayParameterNameHints = 'literal',
+          includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+          includeInlayFunctionParameterTypeHints = true,
+          includeInlayVariableTypeHints = false,
+          includeInlayPropertyDeclarationTypeHints = true,
+          includeInlayFunctionLikeReturnTypeHints = true,
+          includeInlayEnumMemberValueHints = true,
+        },
+      },
+      javascript = {
+        inlayHints = {
+          includeInlayParameterNameHints = 'all',
+          includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+          includeInlayFunctionParameterTypeHints = true,
+          includeInlayVariableTypeHints = true,
+          includeInlayPropertyDeclarationTypeHints = true,
+          includeInlayFunctionLikeReturnTypeHints = true,
+          includeInlayEnumMemberValueHints = true,
+        },
+      },
+    },
+    filetypes = {
+      'javascript',
+      'javascriptreact',
+      'typescript',
+      'typescriptreact',
+      'vue',
+    },
+  },
+  eslint = {
+    -- TODO: finish this
+    enable = true,
+    format = { enable = true },
+    autoFixOnSave = true,
+  },
   rust_analyzer = {
     settings = {
       ['rust-analyzer'] = {
@@ -70,6 +120,14 @@ local servers = {
           enable = true,
           arrayIndex = 'Disable',
         },
+        format = {
+          enable = true,
+          defaultConfig = {
+            indent_style = 'space',
+            indent_size = '2',
+            continuation_indent_size = '2',
+          },
+        },
       },
     },
   },
@@ -89,19 +147,30 @@ local server_list = {}
 for server, opts in pairs(servers) do
   opts = vim.tbl_deep_extend('force', {}, options, opts or {})
   table.insert(server_list, server)
-  if server == 'tsserver' then
-    require('typescript-tools').setup({
-      on_attach = on_attach,
-      settings = {
-        separate_diagnostic_server = true,
-        tsserver_file_preferences = {
-          includeInlayParameterNameHints = 'all',
-          includeCompletionsForModuleExports = true,
-          quotePreference = 'auto',
-        },
-      },
-    })
-  elseif server == 'rust_analyzer' then
+  -- FIXME: remove or configure
+  -- if server == 'tsserver' then
+  --   require('typescript-tools').setup({
+  --     on_attach = on_attach,
+  --     filetypes = {
+  --       'javascript',
+  --       'javascriptreact',
+  --       'typescript',
+  --       'typescriptreact',
+  --       'vue',
+  --     },
+  --     settings = {
+  --       separate_diagnostic_server = true,
+  --       tsserver_file_preferences = {
+  --         includeInlayParameterNameHints = 'all',
+  --         includeCompletionsForModuleExports = true,
+  --         quotePreference = 'auto',
+  --       },
+  --       tsserver_plugins = {
+  --         '@vue/typescript-plugin',
+  --       },
+  --     },
+  --   })
+  if server == 'rust_analyzer' then
     require('rust-tools').setup({ server = opts })
   else
     lspconfig[server].setup(opts)

@@ -12,33 +12,14 @@ function M.setup(options)
       -- -------------------------------------------------------------------------------------------------
       -- Formatting
       -- -------------------------------------------------------------------------------------------------
-      formatting.trim_whitespace.with({
-        filetypes = { 'text', 'zsh', 'toml', 'make', 'conf', 'tmux' },
-      }),
-      -- NOTE:
-      -- 1. both needs to be enabled to so prettier can apply eslint fixes
-      -- 2. prettierd should come first to prevent occassional race condition
-      formatting.prettierd, -- Prettier
-      formatting.eslint, -- Eslint
-      formatting.stylelint, -- Stylelint
-      formatting.stylua, -- Lua
-      formatting.ruff_format, -- Python
+      nls.builtins.formatting.prettierd, -- Prettier
+      nls.builtins.formatting.stylelint, -- Stylelint
+      nls.builtins.formatting.stylua,    -- Lua
 
       -- -------------------------------------------------------------------------------------------------
       -- Diagnostics
       -- -------------------------------------------------------------------------------------------------
-      diagnostics.eslint,
-      diagnostics.stylelint,
-      diagnostics.shellcheck,
-      diagnostics.luacheck.with({
-        extra_args = { '--globals', 'vim', '--std', 'luajit' },
-      }),
-
-      -- -------------------------------------------------------------------------------------------------
-      -- Code actions
-      -- -------------------------------------------------------------------------------------------------
-      code_actions.eslint,
-      code_actions.shellcheck,
+      nls.builtins.diagnostics.stylelint,
     },
     on_attach = options.on_attach,
   })

@@ -244,10 +244,11 @@ require('lazy').setup({
   -- -------------------------------------------------------------------------------------------------
 
   -- Typescript
-  {
-    'pmizio/typescript-tools.nvim',
-    requires = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
-  },
+  -- {
+  --   'pmizio/typescript-tools.nvim',
+  --   requires = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+  --   opts = {},
+  -- },
 
   -- Rust
   { 'simrat39/rust-tools.nvim' },
