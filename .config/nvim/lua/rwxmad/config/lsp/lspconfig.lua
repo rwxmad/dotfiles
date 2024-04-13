@@ -14,7 +14,7 @@ local function on_attach(client, bufnr)
   end
 
   if client.server_capabilities.inlayHintProvider then
-    vim.lsp.inlay_hint.enable(bufnr, true)
+    vim.lsp.inlay_hint.enable(bufnr, not vim.lsp.inlay_hint.is_enabled())
   end
 end
 
@@ -132,7 +132,13 @@ local servers = {
     },
   },
   pyright = {},
-  volar = {},
+  volar = {
+    init_options = {
+      vue = {
+        hybridMode = true,
+      },
+    },
+  },
   bashls = {},
 }
 
