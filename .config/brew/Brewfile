@@ -2,26 +2,51 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
+tap "jstkdng/programs"
 tap "koekeishiya/formulae"
 tap "neovim/neovim"
+# TIFF library and utilities
+brew "libtiff"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Companion library to apr, the Apache Portable Runtime library
+brew "apr-util"
 # Record and share terminal sessions
 brew "asciinema"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# C library implementing the SSH2 protocol
+brew "libssh2"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# High performance key/value database
+brew "berkeley-db"
 # Core application library for C
 brew "glib"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Cross-platform make
 brew "cmake"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
+# Tool for downloading RTMP streaming media
+brew "rtmpdump"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Modern, maintained replacement for ls
@@ -30,12 +55,38 @@ brew "eza"
 brew "fd"
 # GNU compiler collection
 brew "gcc"
+# Asynchronous event library
+brew "libevent"
+# Library to load and enumerate PKCS#11 modules
+brew "p11-kit"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
+# Image processing and image analysis library
+brew "leptonica"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
+# Secure Reliable Transport
+brew "srt"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# High performance message passing library
+brew "open-mpi"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Graphics library to dynamically manipulate images
+brew "gd"
 # GitHub command-line tool
 brew "gh"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
 # Distributed revision control system
 brew "git"
 # Syntax-highlighting pager for git and diff output
@@ -60,6 +111,8 @@ brew "jq"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# C library for reading, creating, and modifying zip archives
+brew "libzip"
 # Rainbows and unicorns in your console!
 brew "lolcat"
 # Just-In-Time Compiler (JIT) for the Lua programming language
@@ -70,6 +123,8 @@ brew "luarocks"
 brew "mas"
 # Fast, highly customisable system info script
 brew "neofetch"
+# E-mail reader with support for Notmuch, NNTP and much more
+brew "neomutt"
 # Parser generator tool and incremental parsing library
 brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -78,10 +133,18 @@ brew "neovim"
 brew "ninja"
 # Tiny, lightning fast, feature-packed file manager
 brew "nnn"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Password manager
 brew "pass"
+# Highly capable, feature-rich programming language
+brew "perl"
 # General-purpose scripting language
 brew "php"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Object-relational database system
 brew "postgresql@14", restart_service: true
 # Python version management
@@ -114,14 +177,14 @@ brew "weechat"
 brew "wget"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-# Fork of youtube-dl with additional features and fixes
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
+brew "koekeishiya/formulae/yabai", args: ["HEAD"]
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # 3D creation suite
@@ -144,12 +207,10 @@ cask "fork"
 cask "gimp"
 # Vector graphics editor
 cask "inkscape"
-# Keyboard customizer
+# Keyboard customiser
 cask "karabiner-elements"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
-# Media player based on MPlayer and mplayer2
-cask "mpv"
 # Calculator and converter application
 cask "numi"
 # Open-source software for live streaming and screen recording
@@ -168,9 +229,23 @@ cask "scroll-reverser"
 cask "spotify"
 # System monitor for the menu bar
 cask "stats"
+# Media player based on MPlayer and mplayer2
+cask "stolendata-mpv"
 # Keyboard configurator
 cask "via"
 # Multimedia player
 cask "vlc"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
+mas "Boop", id: 1518425043
+mas "GarageBand", id: 682658836
+mas "hide.me VPN", id: 953040671
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Mattermost", id: 1614666244
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "SnippetsLab", id: 1006087419
+mas "Telegram", id: 747648890
+mas "Turbo VPN", id: 1493508424
+mas "Xcode", id: 497799835
