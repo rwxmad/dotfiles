@@ -5,5 +5,6 @@
 .config/zsh/.zcompdump-*
 .config/zsh/.zcompdump
 .config/zsh/.zsh_sessions
+.config/zsh/antigen
 
 .config/nvim/plugin

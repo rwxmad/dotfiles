@@ -6,6 +6,10 @@ export CONFIG_HOME=$HOME/.config
 
 DISABLE_AUTO_TITLE="true"
 
+# locale
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # --------------------------------------------------------------------------------------------------
 # Plugins
 # --------------------------------------------------------------------------------------------------
@@ -22,6 +26,18 @@ antigen bundle 'zsh-users/zsh-autosuggestions'
 antigen bundle 'agkozak/zsh-z'
 
 antigen apply
+
+# --------------------------------------------------------------------------------------------------
+# Modules
+# --------------------------------------------------------------------------------------------------
+
+sources=(
+  'aliases'
+)
+
+for s in "${sources[@]}"; do
+  source $HOME/.config/zsh/modules/${s}.zsh
+done
 
 # --------------------------------------------------------------------------------------------------
 # User configuration
@@ -54,20 +70,19 @@ export LSCOLORS=fxgxfxexbxegedabagacad
 export PS1="%m@%n:%F{2}%~%f$ "
 
 # --------------------------------------------------------------------------------------------------
-# Modules
+# Other
 # --------------------------------------------------------------------------------------------------
-
-# Aliases
-source $HOME/.config/zsh/aliases.zsh
 
 # Starship
 eval "$(starship init zsh)"
 
-# Zoxide
-eval "$(zoxide init zsh)"
-
-# Fzf
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+if [ -f "$HOME/.asdf/asdf.sh" ]; then
+  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+fi
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
