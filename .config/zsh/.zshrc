@@ -2,9 +2,7 @@
 # General settings
 # --------------------------------------------------------------------------------------------------
 
-export ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME=""
+export CONFIG_HOME=$HOME/.config
 
 DISABLE_AUTO_TITLE="true"
 
@@ -12,13 +10,18 @@ DISABLE_AUTO_TITLE="true"
 # Plugins
 # --------------------------------------------------------------------------------------------------
 
-plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-)
+source $CONFIG_HOME/antigen/antigen.zsh
 
-source $ZSH/oh-my-zsh.sh
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle 'zsh-users/zsh-syntax-highlighting'
+antigen bundle 'zsh-users/zsh-autosuggestions'
+# antigen bundle 'zsh-users/zsh-completions'
+
+antigen bundle 'agkozak/zsh-z'
+
+antigen apply
 
 # --------------------------------------------------------------------------------------------------
 # User configuration
