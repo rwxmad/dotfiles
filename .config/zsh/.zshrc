@@ -30,6 +30,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR="nvim"
 export PAGER="bat"
+# enable vi mode
+bindkey -v
 
 # --------------------------------------------------------------------------------------------------
 # Custom LSCOLORS, PS1
