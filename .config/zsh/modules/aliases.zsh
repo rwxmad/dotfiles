@@ -5,6 +5,7 @@
 alias c="clear"
 
 alias dev="cd ~/dev"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias docs="cd ~/Documents/Documents - rwxmad/"
 alias notes="cd ~/Documents/Documents - rwxmad/notes"
 alias vim="nvim"
