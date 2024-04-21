@@ -119,6 +119,7 @@ require('lazy').setup({
   },
   {
     'ray-x/lsp_signature.nvim',
+    event = 'VeryLazy',
     config = function()
       require('rwxmad.config.lsp_signature')
     end,
