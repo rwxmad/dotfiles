@@ -19,15 +19,41 @@ config.window_padding = {
 config.hide_tab_bar_if_only_one_tab = true
 
 -- Font
-config.font = wezterm.font_with_fallback({
-  { family = "BlexMono Nerd Font", weight = "Medium" },
-  { family = "BlexMono Nerd Font", weight = "Bold" },
-  { family = "BlexMono Nerd Font", weight = "Medium", italic = true },
-  { family = "BlexMono Nerd Font", weight = "Bold", italic = true },
-})
-config.font_size = 12
+-- TODO: try to change font, to display like in alacritty
+config.font = wezterm.font({ family = "BlexMono Nerd Font", weight = "Medium" })
+config.font_rules = {
+  {
+    intensity = "Bold",
+    font = wezterm.font("BlexMono Nerd Font", { weight = "Bold" }),
+  },
+  {
+    intensity = "Bold",
+    italic = true,
+    font = wezterm.font("BlexMono Nerd Font", { weight = "Bold", italic = true }),
+  },
+  {
+    italic = true,
+    font = wezterm.font("BlexMono Nerd Font", { weight = "Medium", italic = true }),
+  },
+  {
+    intensity = "Half",
+    font = wezterm.font("BlexMono Nerd Font", { weight = "Bold", stretch = "Normal" }),
+  },
+  {
+    intensity = "Half",
+    italic = true,
+    font = wezterm.font("BlexMono Nerd Font", { weight = "Bold", stretch = "Normal", italic = true }),
+  },
+  {
+    intensity = "Half",
+    italic = false,
+    font = wezterm.font("BlexMono Nerd Font", { weight = "Bold", stretch = "Normal" }),
+  },
+}
 
-config.freetype_load_flags = "NO_HINTING"
+config.font_size = 12.0
+
+config.freetype_load_target = "Light"
 
 -- Solarized theme
 config.colors = {
