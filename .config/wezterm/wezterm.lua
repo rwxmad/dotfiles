@@ -19,9 +19,11 @@ config.window_padding = {
 config.hide_tab_bar_if_only_one_tab = true
 
 -- Font
-config.font = wezterm.font({
-  family = "BlexMono Nerd Font",
-  weight = "Medium",
+config.font = wezterm.font_with_fallback({
+  { family = "BlexMono Nerd Font", weight = "Medium" },
+  { family = "BlexMono Nerd Font", weight = "Bold" },
+  { family = "BlexMono Nerd Font", weight = "Medium", italic = true },
+  { family = "BlexMono Nerd Font", weight = "Bold", italic = true },
 })
 config.font_size = 12
 
