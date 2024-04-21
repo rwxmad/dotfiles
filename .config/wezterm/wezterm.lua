@@ -8,7 +8,7 @@ config.front_end = "WebGpu"
 
 -- Window
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.95
 config.window_padding = {
   left = 2,
   right = 2,
