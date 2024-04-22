@@ -1,6 +1,13 @@
 local wezterm = require("wezterm")
 
-local config = wezterm.config_builder()
+-- This table will hold the configuration.
+local config = {}
+
+-- In newer versions of wezterm, use the config_builder which will
+-- help provide clearer error messages
+if wezterm.config_builder then
+  config = wezterm.config_builder()
+end
 
 config.automatically_reload_config = true
 
@@ -53,21 +60,12 @@ config.font_rules = {
 
 config.font_size = 12.0
 
-config.freetype_load_target = "Light"
+-- config.freetype_load_target = "Light"
 
--- Solarized theme
-config.colors = {
-  foreground = "#708183",
-  background = "#001217",
-  cursor_bg = "#708183",
-  cursor_border = "#708183",
-  cursor_fg = "#001217",
-  selection_bg = "#708183",
-  selection_fg = "#001217",
+-- Colorscheme
+config.color_scheme_dirs = { os.getenv("HOME") .. "/.config/wezterm/colors" }
+config.color_scheme = "Solarized"
 
-  ansi = { "#002b36", "#dc322f", "#859900", "#b58900", "#268bd2", "#d33682", "#2aa198", "#eee8d5" },
-  brights = { "#002b36", "#cb4b16", "#586e75", "#657b83", "#839496", "#6c71c4", "#93a1a1", "#fdf6e3" },
-}
 config.bold_brightens_ansi_colors = true
 
 return config

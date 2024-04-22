@@ -1,0 +1,13 @@
+[colors]
+foreground = "#708183"
+background = "#001217"
+cursor_bg = "#708183"
+cursor_border = "#708183"
+cursor_fg = "#001217"
+selection_bg = "#708183"
+selection_fg = "#001217"
+ansi = [ "#002b36", "#dc322f", "#859900", "#b58900", "#268bd2", "#d33682", "#2aa198", "#eee8d5" ]
+brights = [ "#002b36", "#cb4b16", "#586e75", "#657b83", "#839496", "#6c71c4", "#93a1a1", "#fdf6e3" ]
+
+[metadata]
+name = 'Solarized'
