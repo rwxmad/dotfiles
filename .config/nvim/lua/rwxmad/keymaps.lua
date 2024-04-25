@@ -46,6 +46,9 @@ vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<CR>')
 vim.keymap.set('n', '<leader>bg', '<cmd>Telescope current_buffer_fuzzy_find<CR>')
 vim.keymap.set('n', '<leader>fo', '<cmd>Telescope oldfiles<CR>')
 
+-- Telescope lsp
+vim.keymap.set('n', '<leader>gr', '<cmd>Telescope lsp_references<CR>')
+
 -- -------------------------------------------------------------------------------------------------
 -- Telescope plugins
 -- -------------------------------------------------------------------------------------------------
