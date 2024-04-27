@@ -286,5 +286,14 @@ require('lazy').setup({
   -- -------------------------------------------------------------------------------------------------
   -- Other
   -- -------------------------------------------------------------------------------------------------
-  { 'andweeb/presence.nvim' },
+  {
+    'andweeb/presence.nvim',
+    config = function()
+      require('presence').setup({
+        main_image = 'file',
+        enable_line_number = true,
+        line_number_text = 'Working on secret project %s:%s',
+      })
+    end,
+  },
 })
