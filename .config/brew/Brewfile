@@ -192,6 +192,8 @@ brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai", args: ["HEAD"]
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Chromium based browser
+cask "arc"
 # 3D creation suite
 cask "blender"
 # Web browser focusing on privacy
@@ -224,16 +226,14 @@ cask "numi"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Retro video game emulation
+cask "openemu"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
 # Collaboration platform for API development
 cask "postman"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
-# Tool to reverse the direction of scrolling
-cask "scroll-reverser"
-# Music streaming service
-cask "spotify"
 # System monitor for the menu bar
 cask "stats"
 # Media player based on MPlayer and mplayer2
@@ -254,6 +254,7 @@ mas "Keynote", id: 409183694
 mas "Mattermost", id: 1614666244
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Planet VPN", id: 1410235921
 mas "SnippetsLab", id: 1006087419
 mas "Telegram", id: 747648890
 mas "Turbo VPN", id: 1493508424
