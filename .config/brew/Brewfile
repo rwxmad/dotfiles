@@ -234,6 +234,8 @@ cask "pgadmin4"
 cask "postman"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
+# Tool to reverse the direction of scrolling
+cask "scroll-reverser"
 # System monitor for the menu bar
 cask "stats"
 # Media player based on MPlayer and mplayer2
