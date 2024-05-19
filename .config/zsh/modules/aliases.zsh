@@ -25,10 +25,10 @@ alias l.='eza -a | egrep "^\."'
 # Scripts
 # --------------------------------------------------------------------------------------------------
 
-alias ip="sh $HOME/.config/scripts/ip.sh"
-alias extract="sh $HOME/.config/scripts/extract.sh"
-alias brewd="sh $HOME/.config/scripts/brew/dump.sh"
-alias brewi="sh $HOME/.config/scripts/brew/install.sh"
+alias ip="sh $XDG_CONFIG_HOME/scripts/ip.sh"
+alias extract="sh $XDG_CONFIG_HOME/scripts/extract.sh"
+alias brewd="sh $XDG_CONFIG_HOME/scripts/brew/dump.sh"
+alias brewi="sh $XDG_CONFIG_HOME/scripts/brew/install.sh"
 
 # --------------------------------------------------------------------------------------------------
 # Dotfiles

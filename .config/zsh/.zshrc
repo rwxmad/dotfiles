@@ -38,7 +38,7 @@ sources=(
 )
 
 for s in "${sources[@]}"; do
-  source $HOME/.config/zsh/modules/${s}.zsh
+  source $XDG_CONFIG_HOME/zsh/modules/${s}.zsh
 done
 
 # --------------------------------------------------------------------------------------------------
