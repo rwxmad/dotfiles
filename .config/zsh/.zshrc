@@ -2,7 +2,7 @@
 # General settings
 # --------------------------------------------------------------------------------------------------
 
-export CONFIG_HOME=$HOME/.config
+export XDG_CONFIG_HOME=$HOME/.config
 
 DISABLE_AUTO_TITLE="true"
 
@@ -14,7 +14,7 @@ export LC_ALL=en_US.UTF-8
 # Plugins
 # --------------------------------------------------------------------------------------------------
 
-source $CONFIG_HOME/antigen/antigen.zsh
+source $XDG_CONFIG_HOME/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
