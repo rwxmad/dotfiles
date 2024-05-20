@@ -28,35 +28,29 @@ return {
       'mason.nvim',
       'williamboman/mason-lspconfig.nvim',
     },
-    opts = {
-      inlay_hints = {
-        enabled = true,
-      },
-      -- add any global capabilities here
-      capabilities = {},
-      -- options for vim.lsp.buf.format
-      -- `bufnr` and `filter` is handled by the LazyVim formatter,
-      -- but can be also overridden when specified
-      format = {
-        formatting_options = nil,
-        timeout_ms = nil,
-      },
-      servers = {
-        html = {},
-        cssls = {},
+    opts = function(_, opts)
+      local vue_typescript_plugin = require('mason-registry').get_package('vue-language-server'):get_install_path()
+        .. '/node_modules/@vue/language-server'
+        .. '/node_modules/@vue/typescript-plugin'
+
+      opts.inlay_hints.enabled = true
+
+      opts.servers = vim.tbl_deep_extend('force', opts.servers, {
+        volar = {},
+        -- Volar 2.0 has discontinued their "take over mode" which in previous version provided support for typescript in vue files.
+        -- The new approach to get typescript support involves using the typescript language server along side volar.
         tsserver = {
+          single_file_support = true,
           init_options = {
             plugins = {
-              -- NOTE: for typescript + vue work
+              -- Use typescript language server along with vue typescript plugin
               {
                 name = '@vue/typescript-plugin',
-                -- location = '/usr/local/lib/node_modules/@vue/typescript-plugin',
-                location = '/Users/rwxmad/.npm/lib/node_modules/@vue/typescript-plugin',
+                location = vue_typescript_plugin,
                 languages = { 'javascript', 'typescript', 'vue' },
               },
             },
           },
-          single_file_support = true,
           settings = {
             typescript = {
               inlayHints = {
@@ -84,11 +78,15 @@ return {
           filetypes = {
             'javascript',
             'javascriptreact',
+            'javascript.jsx',
             'typescript',
             'typescriptreact',
+            'typescript.tsx',
             'vue',
           },
         },
+        html = {},
+        cssls = {},
         -- eslint = {
         --   -- TODO: finish this
         --   enable = true,
@@ -155,16 +153,9 @@ return {
           },
         },
         pyright = {},
-        volar = {
-          init_options = {
-            vue = {
-              hybridMode = true,
-            },
-          },
-        },
         bashls = {},
-      },
-    },
+      })
+    end,
   },
 
   {
