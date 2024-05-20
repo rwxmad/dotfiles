@@ -8,3 +8,4 @@
 .config/zsh/antigen
 
 .config/nvim/plugin
+.config/nvim.bak

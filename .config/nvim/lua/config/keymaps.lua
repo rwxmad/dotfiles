@@ -2,9 +2,6 @@
 -- General mappings
 -- -------------------------------------------------------------------------------------------------
 
--- Map leader to ,
-vim.g.mapleader = ','
-
 -- Keymaps
 
 -- Exit insert mode

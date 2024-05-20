@@ -1,5 +1,8 @@
 local set = vim.opt
 
+-- Map leader to ,
+vim.g.mapleader = ','
+
 set.mouse = 'a'
 
 set.syntax = 'enable'
