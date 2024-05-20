@@ -98,8 +98,12 @@ brew "git-delta"
 brew "glow"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # GNU grep, egrep and fgrep
 brew "grep"
+# Uses CSS selectors to extract bits content from HTML files
+brew "htmlq"
 # Improved top (interactive process viewer)
 brew "htop"
 # Command-line benchmarking tool
