@@ -1,18 +1,21 @@
 return {
   {
     'nvim-telescope/telescope.nvim',
-    requires = {
+    dependencies = {
       'nvim-lua/plenary.nvim',
-      'nvim-telescope/telescope-fzf-native.nvim',
+      {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        build = 'make',
+      },
       'nvim-telescope/telescope-file-browser.nvim',
       'nvim-telescope/telescope-media-files.nvim',
       'AckslD/nvim-neoclip.lua',
     },
     run = 'make',
-    config = function()
+    opts = function()
       local fb_actions = require('telescope').extensions.file_browser.actions
 
-      require('telescope').setup({
+      return {
         defaults = {
           prompt_prefix = '  ',
         },
@@ -43,12 +46,11 @@ return {
             find_cmd = 'rg',
           },
         },
-      })
-
-      require('telescope').load_extension('fzf')
-      require('telescope').load_extension('file_browser')
-      require('telescope').load_extension('media_files')
-      require('telescope').load_extension('neoclip')
+      }
+    end,
+    config = function(_, opts)
+      require('telescope').setup(opts)
+      -- TODO: move keys to keys section
 
       vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<CR>')
       vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<CR>')
@@ -60,11 +62,11 @@ return {
       vim.keymap.set('n', '<leader>fb', '<cmd>Telescope file_browser<CR>')
       vim.keymap.set('n', '<leader>fn', '<cmd>Telescope neoclip<CR>')
       vim.keymap.set('n', '<leader>fm', '<cmd>Telescope media_files<CR>')
+
+      require('telescope').load_extension('fzf')
+      require('telescope').load_extension('file_browser')
+      require('telescope').load_extension('media_files')
+      require('telescope').load_extension('neoclip')
     end,
   },
-
-  { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
-  { 'nvim-telescope/telescope-file-browser.nvim' },
-  { 'nvim-telescope/telescope-media-files.nvim' },
-  { 'AckslD/nvim-neoclip.lua' },
 }

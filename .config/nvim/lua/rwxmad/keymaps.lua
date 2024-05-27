@@ -2,6 +2,9 @@
 -- General mappings
 -- -------------------------------------------------------------------------------------------------
 
+-- Map leader to ,
+vim.g.mapleader = ','
+
 -- Keymaps
 
 -- Exit insert mode
@@ -33,26 +36,6 @@ vim.keymap.set('i', '<C-h>', '<ESC>I')
 
 vim.keymap.set('n', '<leader>n', '<cmd>NeoTreeFocus<CR>')
 vim.keymap.set('n', '<C-n>', '<cmd>NeoTreeFocusToggle<CR>')
-
--- -------------------------------------------------------------------------------------------------
--- Telescope
--- -------------------------------------------------------------------------------------------------
-
-vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<CR>')
-vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<CR>')
-vim.keymap.set('n', '<leader>bg', '<cmd>Telescope current_buffer_fuzzy_find<CR>')
-vim.keymap.set('n', '<leader>fo', '<cmd>Telescope oldfiles<CR>')
-
--- Telescope lsp
-vim.keymap.set('n', '<leader>gr', '<cmd>Telescope lsp_references<CR>')
-
--- -------------------------------------------------------------------------------------------------
--- Telescope plugins
--- -------------------------------------------------------------------------------------------------
-
-vim.keymap.set('n', '<leader>fb', '<cmd>Telescope file_browser<CR>')
-vim.keymap.set('n', '<leader>fn', '<cmd>Telescope neoclip<CR>')
-vim.keymap.set('n', '<leader>fm', '<cmd>Telescope media_files<CR>')
 
 -- -------------------------------------------------------------------------------------------------
 -- Hop

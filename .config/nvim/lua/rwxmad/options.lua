@@ -1,8 +1,5 @@
 local set = vim.opt
 
--- Map leader to ,
-vim.g.mapleader = ','
-
 set.mouse = 'a'
 
 set.syntax = 'enable'
@@ -12,6 +9,8 @@ set.clipboard = 'unnamedplus'
 
 set.encoding = 'utf-8'
 set.fileencoding = 'utf-8'
+
+set.filetype = 'on'
 
 set.showcmd = false
 set.cmdheight = 1
@@ -28,7 +27,6 @@ set.backup = false
 set.undofile = true
 
 set.number = true
-set.relativenumber = false
 set.ruler = true
 set.signcolumn = 'yes'
 set.autoindent = true
