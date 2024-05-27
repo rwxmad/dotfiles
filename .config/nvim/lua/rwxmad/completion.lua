@@ -9,6 +9,7 @@ lspkind.init({})
 local cmp = require('cmp')
 
 cmp.setup({
+  auto_brackets = {},
   sources = {
     { name = 'nvim_lsp' },
     { name = 'cody' },
@@ -32,6 +33,11 @@ cmp.setup({
       }),
       { 'i', 'c' }
     ),
+  },
+  experimental = {
+    ghost_text = {
+      hl_group = 'CmpGhostText',
+    },
   },
 
   -- Enable luasnip to handle snippet expansion for nvim-cmp

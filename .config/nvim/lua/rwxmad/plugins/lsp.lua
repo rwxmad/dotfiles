@@ -233,13 +233,23 @@ return {
 
       vim.api.nvim_create_autocmd('BufWritePre', {
         callback = function(args)
-          print('format')
           require('conform').format({
             bufnr = args.buf,
             lsp_fallback = true,
             quiet = true,
           })
         end,
+      })
+    end,
+  },
+
+  {
+    'nvimdev/lspsaga.nvim',
+    config = function()
+      require('lspsaga').setup({
+        lightbulb = {
+          enable = false,
+        },
       })
     end,
   },
