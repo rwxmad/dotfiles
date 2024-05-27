@@ -19,15 +19,12 @@ return {
 
       local lspconfig = require('lspconfig')
       local capabilities = nil
+
       if pcall(require, 'cmp_nvim_lsp') then
         capabilities = require('cmp_nvim_lsp').default_capabilities()
       end
 
       local function on_attach(client, bufnr)
-        if client.server_capabilities.documentSymbolProvider then
-          -- require('nvim-navic').attach(client, bufnr)
-        end
-
         if client.server_capabilities.inlayHintProvider then
           vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({}))
         end
@@ -77,6 +74,9 @@ return {
                 includeInlayEnumMemberValueHints = true,
               },
             },
+            completions = {
+              completeFunctionCalls = true,
+            },
           },
           filetypes = {
             'javascript',
@@ -123,6 +123,9 @@ return {
               },
               diagnostics = {
                 globals = { 'vim' },
+              },
+              completion = {
+                callSnippet = 'Replace',
               },
               workspace = {
                 library = vim.api.nvim_get_runtime_file('', true),
@@ -208,9 +211,7 @@ return {
 
       local ensure_installed = {
         'stylua',
-        'lua_ls',
-        'delve',
-        -- "tailwind-language-server",
+        'shfmt',
       }
 
       vim.list_extend(ensure_installed, servers)

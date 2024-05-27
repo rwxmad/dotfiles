@@ -1,8 +1,5 @@
 require('rwxmad.snippets')
 
-vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
-vim.opt.shortmess:append('c')
-
 local lspkind = require('lspkind')
 lspkind.init({})
 
@@ -10,9 +7,12 @@ local cmp = require('cmp')
 
 cmp.setup({
   auto_brackets = {},
+  completion = {
+    completeopt = 'menu,menuone,noinsert',
+  },
   sources = {
     { name = 'nvim_lsp' },
-    { name = 'cody' },
+
     { name = 'path' },
     { name = 'buffer' },
   },
