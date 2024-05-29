@@ -17,6 +17,22 @@ return {
         -- },
       })
 
+      local lsp = require('rwxmad.util.lsp')
+
+      lsp.on_attach(function(client, buffer)
+        vim.opt_local.omnifunc = 'v:lua.vim.lsp.omnifunc'
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = 0 })
+        -- vim.keymap.set('n', 'gr', vim.lsp.buf.references, { buffer = 0 })
+        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { buffer = 0 })
+        vim.keymap.set('n', 'gT', vim.lsp.buf.type_definition, { buffer = 0 })
+        -- vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = 0 })
+
+        vim.keymap.set('n', '<leader>cr', vim.lsp.buf.rename, { buffer = 0 })
+        -- vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { buffer = 0 })
+      end)
+
+      lsp.setup()
+
       local lspconfig = require('lspconfig')
       local capabilities = nil
 
@@ -24,16 +40,20 @@ return {
         capabilities = require('cmp_nvim_lsp').default_capabilities()
       end
 
-      local function on_attach(client, bufnr)
-        if client.server_capabilities.inlayHintProvider then
-          vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({}))
-        end
-      end
+      local inlay_hints_exclude = { 'vue' }
 
-      local flags = {
-        allow_incremental_sync = true,
-        debounce_text_changes = 150,
-      }
+      -- inlay hints
+      if vim.fn.has('nvim-0.10') == 1 then
+        lsp.on_supports_method('textDocument/inlayHint', function(client, buffer)
+          if
+            vim.api.nvim_buf_is_valid(buffer)
+            and vim.bo[buffer].buftype == ''
+            and not vim.tbl_contains(inlay_hints_exclude, vim.bo[buffer].filetype)
+          then
+            lsp.toggle_inlay_hints(buffer, true)
+          end
+        end)
+      end
 
       local servers = {
         html = {},
@@ -161,9 +181,7 @@ return {
       }
 
       local options = {
-        flags = flags,
         capabilities = capabilities,
-        on_attach = on_attach,
       }
 
       local server_list = {}
@@ -225,6 +243,7 @@ return {
           javascriptreact = { { 'prettierd', 'prettier' } },
           typescript = { { 'prettierd', 'prettier' } },
           typescriptreact = { { 'prettierd', 'prettier' } },
+          css = { { 'stylelint', 'prettierd', 'prettier' } },
           vue = { { 'prettierd', 'prettier' } },
           python = { { 'ruff_fix', 'ruff_format', 'ruff_organize_imports' } },
           rust = { 'rustfmt' },
