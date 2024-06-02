@@ -86,4 +86,10 @@ return {
   { 'nvim-treesitter/nvim-treesitter-refactor' },
   { 'nvim-treesitter/nvim-treesitter-textobjects' },
   { 'nvim-treesitter/playground' },
+
+  -- Automatically add closing tags for HTML and JSX
+  {
+    'windwp/nvim-ts-autotag',
+    opts = {},
+  },
 }
