@@ -230,6 +230,8 @@ return {
       local ensure_installed = {
         'stylua',
         'shfmt',
+        'prettierd',
+        'prettier',
       }
 
       vim.list_extend(ensure_installed, servers)
