@@ -1,4 +1,4 @@
-require('rwxmad.snippets')
+require('rwxmad.util.snippets')
 
 local lspkind = require('lspkind')
 lspkind.init({})

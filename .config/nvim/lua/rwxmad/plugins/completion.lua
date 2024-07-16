@@ -12,7 +12,7 @@ return {
       'saadparwaiz1/cmp_luasnip',
     },
     config = function()
-      require('rwxmad.completion')
+      require('rwxmad.util.completion')
     end,
   },
 }
