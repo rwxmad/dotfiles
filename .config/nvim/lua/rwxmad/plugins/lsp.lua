@@ -58,7 +58,7 @@ return {
       local servers = {
         html = {},
         cssls = {},
-        tsserver = {
+        ts_ls = {
           init_options = {
             plugins = {
               -- NOTE: for typescript + vue work
@@ -213,7 +213,8 @@ return {
         --     },
         --   })
         if server == 'rust_analyzer' then
-        -- require('rust-tools').setup({ server = opts })
+          -- require('rust-tools').setup({ server = opts })
+          lspconfig[server].setup(opts)
         else
           lspconfig[server].setup(opts)
         end

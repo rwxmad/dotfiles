@@ -2,7 +2,6 @@ local ls = require('luasnip')
 
 vim.snippet.expand = ls.lsp_expand
 
----@diagnostic disable-next-line: duplicate-set-field
 vim.snippet.active = function(filter)
   filter = filter or {}
   filter.direction = filter.direction or 1
@@ -14,7 +13,6 @@ vim.snippet.active = function(filter)
   end
 end
 
----@diagnostic disable-next-line: duplicate-set-field
 vim.snippet.jump = function(direction)
   if direction == 1 then
     if ls.expandable() then
