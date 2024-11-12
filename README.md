@@ -10,7 +10,7 @@ ______         _     __  _  _
 ## Installation
 1. Clone this repo with submodules
 ```bash
-git clone --recurse-submodules https://github.com/rwxmad/dotfiles
+git clone --recurse-submodules git@github.com:rwxmad/dotfiles.git
 ```
 2. Run `install.sh`
 
