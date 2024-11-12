@@ -8,8 +8,10 @@ ______         _     __  _  _
 ```
 
 ## Installation
-
-1. Clone this repo
+1. Clone this repo with submodules
+```bash
+git clone --recurse-submodules https://github.com/rwxmad/dotfiles
+```
 2. Run `install.sh`
 
 ## Shell setup
@@ -18,6 +20,7 @@ ______         _     __  _  _
 - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) - Unix shell that is built on top of bash with additional features
 - [starship](https://github.com/starship/starship) - Cross-shell prompt
 - [tmux](https://github.com/tmux/tmux) - Terminal multiplexer
+- [nvim](https://github.com/neovim/neovim) - Vim-fork focused on extensibility and usability
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - A line-oriented search tool that recursively searches the current directory for a regex pattern
 - [fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
 - [eza](https://github.com/eza-community/eza) - A modern replacement for ‘ls’
