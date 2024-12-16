@@ -1,11 +1,14 @@
+tap "candid82/brew"
 tap "eddieantonio/eddieantonio"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
+tap "jesseduffield/lazynpm"
 tap "jstkdng/programs"
 tap "koekeishiya/formulae"
 tap "neovim/neovim"
+tap "yqrashawn/goku"
 # TIFF library and utilities
 brew "libtiff"
 # Color management engine supporting ICC profiles
@@ -36,6 +39,8 @@ brew "bat"
 brew "berkeley-db"
 # Core application library for C
 brew "glib"
+# Vector graphics library with cross-device output support
+brew "cairo"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Framework for layout and rendering of i18n text
@@ -56,8 +61,6 @@ brew "curl"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# GNU compiler collection
-brew "gcc"
 # Asynchronous event library
 brew "libevent"
 # Library to load and enumerate PKCS#11 modules
@@ -70,20 +73,18 @@ brew "gnutls"
 brew "openjpeg"
 # Image processing and image analysis library
 brew "leptonica"
-# Open Visual Inference And Optimization toolkit for AI inference
-brew "openvino"
 # Secure Reliable Transport
 brew "srt"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# High performance message passing library
-brew "open-mpi"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # GitHub command-line tool
@@ -106,6 +107,8 @@ brew "grep"
 brew "htmlq"
 # Improved top (interactive process viewer)
 brew "htop"
+# Add GitHub support to git on the command-line
+brew "hub"
 # Command-line benchmarking tool
 brew "hyperfine"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
@@ -142,8 +145,12 @@ brew "neovim"
 brew "ninja"
 # Tiny, lightning fast, feature-packed file manager
 brew "nnn"
+# High performance message passing library
+brew "open-mpi"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Open Visual Inference And Optimization toolkit for AI inference
+brew "openvino"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Password manager
@@ -152,6 +159,8 @@ brew "pass"
 brew "perl"
 # General-purpose scripting language
 brew "php"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Object-relational database system
@@ -176,6 +185,8 @@ brew "starship"
 brew "stow"
 # User interface to the TELNET protocol
 brew "telnet"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Terminal multiplexer
 brew "tmux"
 # Vi 'workalike' with many additional features
@@ -198,28 +209,36 @@ brew "koekeishiya/formulae/yabai", args: ["HEAD"]
 cask "alacritty"
 # Chromium based browser
 cask "arc"
+# Compact TeX distribution as alternative to the full TeX Live / MacTeX
+cask "basictex"
 # 3D creation suite
 cask "blender"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Web security testing toolkit
 cask "burp-suite"
+# Free and open-source web browser
+cask "chromium"
+# API documentation browser and code snippet manager
+cask "dash"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # Web browser
 cask "firefox"
-# Free monospaced font with programming ligatures
 cask "font-fira-code"
-# Monospaced programming font inspired by the Minecraft typeface
 cask "font-monocraft"
 # GIT client
 cask "fork"
 # Free and open-source image editor
 cask "gimp"
+# Desktop client for GitHub repositories
+cask "github"
 # Free and open-source media player
 cask "iina"
 # Vector graphics editor
 cask "inkscape"
+# Driver for SM76x with UI
+cask "instantview"
 # Keyboard customiser
 cask "karabiner-elements"
 # Tool to control external monitor brightness & volume
@@ -238,6 +257,8 @@ cask "pgadmin4"
 cask "postman"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
+# Control your tools with a few keystrokes
+cask "raycast"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
 # System monitor for the menu bar
