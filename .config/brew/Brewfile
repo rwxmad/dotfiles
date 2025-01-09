@@ -55,8 +55,6 @@ brew "cmake"
 brew "cocoapods"
 # Tool for downloading RTMP streaming media
 brew "rtmpdump"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
@@ -133,6 +131,8 @@ brew "luajit"
 brew "luarocks"
 # Mac App Store command-line interface
 brew "mas"
+# Menu-driven communications program
+brew "minicom"
 # Fast, highly customisable system info script
 brew "neofetch"
 # E-mail reader with support for Notmuch, NNTP and much more
@@ -195,6 +195,8 @@ brew "vim"
 brew "weechat"
 # Internet file retriever
 brew "wget"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Feature-rich command-line audio/video downloader
@@ -261,6 +263,8 @@ cask "qbittorrent"
 cask "raycast"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
+# Music streaming service
+cask "spotify"
 # System monitor for the menu bar
 cask "stats"
 # Media player based on MPlayer and mplayer2
@@ -281,6 +285,7 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Mattermost", id: 1614666244
 mas "Numbers", id: 409203825
+mas "Outline", id: 1356178125
 mas "Pages", id: 409201541
 mas "SnippetsLab", id: 1006087419
 mas "Telegram", id: 747648890
