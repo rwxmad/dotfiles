@@ -164,13 +164,11 @@ brew "pkgconf"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Object-relational database system
-brew "postgresql@14", restart_service: true
+brew "postgresql@14", restart_service: :changed
 # Python version management
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
-# File browser
-brew "ranger"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Extremely fast Python linter, written in Rust
@@ -225,6 +223,8 @@ cask "chromium"
 cask "dash"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Web browser
 cask "firefox"
 cask "font-fira-code"
