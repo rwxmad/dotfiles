@@ -27,10 +27,10 @@ brew "libssh2"
 brew "aria2"
 # Record and share terminal sessions
 brew "asciinema"
-# Tool for generating GNU Standards-compliant Makefiles
-brew "automake"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -219,8 +219,6 @@ cask "brave-browser"
 cask "burp-suite"
 # Free and open-source web browser
 cask "chromium"
-# API documentation browser and code snippet manager
-cask "dash"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # App to build and share containerised applications and microservices
@@ -267,8 +265,6 @@ cask "scroll-reverser"
 cask "spotify"
 # System monitor for the menu bar
 cask "stats"
-# Media player based on MPlayer and mplayer2
-cask "stolendata-mpv"
 # Keyboard configurator
 cask "via"
 # Multimedia player
