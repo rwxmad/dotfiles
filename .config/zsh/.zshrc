@@ -71,10 +71,7 @@ eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # asdf
-if [ -f "$HOME/.asdf/asdf.sh" ]; then
-  . /opt/homebrew/opt/asdf/libexec/asdf.sh
-fi
-export PATH="$PATH:/Users/rwxmad/.asdf/shims/"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
