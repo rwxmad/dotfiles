@@ -22,4 +22,4 @@ export PATH=/opt/homebrew/bin:$PATH
 # Starship
 # --------------------------------------------------------------------------------------------------
 
-export STARSHIP_CONFIG=~/.config/starship/config.toml
+export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/config.toml"
