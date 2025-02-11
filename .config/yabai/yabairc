@@ -40,6 +40,6 @@ yabai -m rule --add app="Obsidian" space=4
 yabai -m rule --add app="Figma" space=5
 
 # window rules
-yabai -m rule --add app="^(System Settings|Books|Alfred|Activity Monitor|Installer|Telegram|Finder|Notes|Mail|OBS|Numi)" manage=off
+yabai -m rule --add app="^(System Settings|Books|Alfred|Activity Monitor|Installer|Telegram|Finder|Notes|Reminders|Mail|OBS|Numi)" manage=off
 
 echo "yabai configuration loaded..."
