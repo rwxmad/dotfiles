@@ -1,3 +1,3 @@
 #!/bin/bash
 
-brew bundle install --no-lock --file="$HOME/.config/brew/Brewfile"
+brew bundle install --no-lock --file="${XDG_CONFIG_HOME}/brew/Brewfile"
