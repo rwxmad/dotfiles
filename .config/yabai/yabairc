@@ -29,6 +29,31 @@ yabai -m config left_padding $gap
 yabai -m config right_padding $gap
 yabai -m config window_gap 10
 
+function setup_space {
+  local idx="$1"
+  local name="$2"
+  local space=
+  echo "setup space $idx : $name"
+
+  space=$(yabai -m query --spaces --space "$idx")
+  if [ -z "$space" ]; then
+    yabai -m space --create
+  fi
+
+  yabai -m space "$idx" --label "$name"
+}
+
+setup_space 1 code
+setup_space 2 web
+setup_space 3 music
+setup_space 4 notes
+setup_space 5 design
+setup_space 6 other
+
+# setup_space 7 other
+setup_space 8 discord
+setup_space 9 term
+
 # specific space settings
 # yabai -m config --space 6 layout float
 
