@@ -49,7 +49,6 @@ setup_space 3 music
 setup_space 4 notes
 setup_space 5 design
 setup_space 6 other
-
 # setup_space 7 other
 setup_space 8 discord
 
@@ -57,19 +56,22 @@ setup_space 8 discord
 # yabai -m config --space 6 layout float
 
 # bind apps to specific spaces
-yabai -m rule --add app="Alacritty" space=1
-yabai -m rule --add app="Arc" space=2
-yabai -m rule --add app="Spotify" space=3
-yabai -m rule --add app="Obsidian" space=4
-yabai -m rule --add app="Figma" space=5
+yabai -m rule --add app="Alacritty" space=code
+yabai -m rule --add app="Arc" space=web
+yabai -m rule --add app="Spotify" space=music
+yabai -m rule --add app="Obsidian" space=notes
+yabai -m rule --add app="Figma" space=design
 
 # link space to specific display
-yabai -m space 8 --display 2
+yabai -m space discord --display 2
 
 # bind apps to extra displays
 yabai -m rule --add app="Discord" space=8
 
 # window rules
 yabai -m rule --add app="^(System Settings|Books|Alfred|Activity Monitor|Installer|Telegram|Finder|Notes|Reminders|Mail|OBS|Numi)" manage=off
+
+# apply rules to existing windows
+yabai -m rule --apply
 
 echo "yabai configuration loaded..."
