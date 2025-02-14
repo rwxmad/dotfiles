@@ -29,6 +29,7 @@ yabai -m config left_padding $gap
 yabai -m config right_padding $gap
 yabai -m config window_gap 10
 
+# create space if not exist and give label to it
 function setup_space {
   local idx="$1"
   local name="$2"
@@ -43,13 +44,14 @@ function setup_space {
   yabai -m space "$idx" --label "$name"
 }
 
+# setup spaces
 setup_space 1 code
 setup_space 2 web
 setup_space 3 music
 setup_space 4 notes
 setup_space 5 design
-setup_space 6 other
-# setup_space 7 other
+setup_space 6 mail
+setup_space 7 other
 setup_space 8 discord
 
 # specific space settings
@@ -61,6 +63,8 @@ yabai -m rule --add app="Arc" space=web
 yabai -m rule --add app="Spotify" space=music
 yabai -m rule --add app="Obsidian" space=notes
 yabai -m rule --add app="Figma" space=design
+yabai -m rule --add app="Mail" space=mail
+yabai -m rule --add app="Fork" space=other
 
 # link space to specific display
 yabai -m space discord --display 2
