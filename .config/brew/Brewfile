@@ -204,7 +204,7 @@ brew "zoxide"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai", args: ["HEAD"]
+brew "koekeishiya/formulae/yabai"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Chromium based browser
@@ -267,8 +267,6 @@ cask "spotify"
 cask "stats"
 # Keyboard configurator
 cask "via"
-# Multimedia player
-cask "vlc"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 # Network protocol analyzer
