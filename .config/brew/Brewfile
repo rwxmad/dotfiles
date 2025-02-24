@@ -185,6 +185,8 @@ brew "stow"
 brew "telnet"
 # Programmatically correct mistyped console commands
 brew "thefuck"
+# Simplified and community-driven man pages
+brew "tldr"
 # Terminal multiplexer
 brew "tmux"
 # Vi 'workalike' with many additional features
