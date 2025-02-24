@@ -9,3 +9,5 @@
 
 .config/nvim/plugin
 .config/nvim.bak
+
+.config/karabiner/automatic_backups/
