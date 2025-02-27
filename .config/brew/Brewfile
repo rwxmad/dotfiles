@@ -253,6 +253,8 @@ cask "obs"
 cask "obsidian"
 # Retro video game emulation
 cask "openemu"
+# Tool to create and manage Outline servers, powered by Shadowsocks
+cask "outline-manager"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
 # Collaboration platform for API development
@@ -285,5 +287,4 @@ mas "Outline", id: 1356178125
 mas "Pages", id: 409201541
 mas "SnippetsLab", id: 1006087419
 mas "Telegram", id: 747648890
-mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
