@@ -73,7 +73,7 @@ yabai -m space discord --display 2
 yabai -m rule --add app="Discord" space=8
 
 # window rules
-yabai -m rule --add app="^(System Settings|Books|Alfred|Activity Monitor|Installer|Telegram|Finder|Notes|Reminders|Mail|OBS|Numi)" manage=off
+yabai -m rule --add app="^(System Settings|Books|Alfred|VIA|Activity Monitor|Installer|Telegram|Finder|Notes|Reminders|Mail|OBS|Numi)" manage=off
 
 # apply rules to existing windows
 yabai -m rule --apply
