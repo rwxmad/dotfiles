@@ -72,3 +72,6 @@ eval "$(starship init zsh)"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# mise
+eval "$(mise activate zsh)"
