@@ -70,8 +70,5 @@ eval "$(starship init zsh)"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
