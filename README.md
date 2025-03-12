@@ -8,15 +8,18 @@ ______         _     __  _  _
 ```
 
 ## Installation
+
 1. Clone this repo with submodules
+
 ```bash
 git clone --recurse-submodules git@github.com:rwxmad/dotfiles.git
 ```
+
 2. Run `install.sh`
 
 ## Shell setup
 
-- [alacritty](https://github.com/alacritty/alacritty) - A cross-platform, OpenGL terminal emulator
+- [ghostty](https://github.com/ghostty-org/ghostty) - 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration
 - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) - Unix shell that is built on top of bash with additional features
 - [starship](https://github.com/starship/starship) - Cross-shell prompt
 - [tmux](https://github.com/tmux/tmux) - Terminal multiplexer
