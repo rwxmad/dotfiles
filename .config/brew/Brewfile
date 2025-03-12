@@ -27,8 +27,6 @@ brew "libssh2"
 brew "aria2"
 # Record and share terminal sessions
 brew "asciinema"
-# Extendable version manager with support for Ruby, Node.js, Erlang & more
-brew "asdf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # C library of Git core methods that is re-entrant and linkable
@@ -133,6 +131,8 @@ brew "luarocks"
 brew "mas"
 # Menu-driven communications program
 brew "minicom"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Fast, highly customisable system info script
 brew "neofetch"
 # E-mail reader with support for Notmuch, NNTP and much more
@@ -231,6 +231,8 @@ cask "font-fira-code"
 cask "font-monocraft"
 # GIT client
 cask "fork"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Free and open-source image editor
 cask "gimp"
 # Desktop client for GitHub repositories
