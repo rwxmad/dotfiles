@@ -1,5 +1,5 @@
 # open terminal
-cmd - return : open -na /Applications/Alacritty.app
+cmd - return : open -na /Applications/Ghostty.app
 
 # layouts
 cmd + alt - t : yabai -m window --toggle float
