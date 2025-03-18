@@ -35,6 +35,8 @@ brew "libgit2"
 brew "bat"
 # High performance key/value database
 brew "berkeley-db"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Core application library for C
 brew "glib"
 # Vector graphics library with cross-device output support
