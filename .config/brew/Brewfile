@@ -21,6 +21,8 @@ brew "jpeg-xl"
 brew "aom"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# Arduino command-line interface
+brew "arduino-cli"
 # C library implementing the SSH2 protocol
 brew "libssh2"
 # Download with resuming and segmented downloading
@@ -135,6 +137,10 @@ brew "mas"
 brew "minicom"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Media player based on MPlayer and mplayer2
+brew "mpv"
 # Fast, highly customisable system info script
 brew "neofetch"
 # E-mail reader with support for Notmuch, NNTP and much more
@@ -145,8 +151,6 @@ brew "tree-sitter"
 brew "neovim"
 # Small build system for use with gyp or CMake
 brew "ninja"
-# Tiny, lightning fast, feature-packed file manager
-brew "nnn"
 # High performance message passing library
 brew "open-mpi"
 # Cryptography and SSL/TLS Toolkit
@@ -199,10 +203,6 @@ brew "weechat"
 brew "wget"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
-# Feature-rich command-line audio/video downloader
-brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Simple hotkey-daemon for macOS.
