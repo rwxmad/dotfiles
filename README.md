@@ -36,7 +36,9 @@ More tools in [Brewfile](.config/brew/Brewfile)
 
 You can find aliases for all scripts in [aliases.zsh](.config/zsh/aliases.zsh)
 
-|                   Script                   |          Description           |            Alias |
-| :----------------------------------------: | :----------------------------: | ---------------: |
-|      [`ip.sh`](.config/scripts/ip.sh)      | Return local and external ipv4 |             `ip` |
-| [`extract.sh`](.config/scripts/extract.sh) |    Extract compressed files    | `extract {file}` |
+|                         Script                         |               Description                |            Alias |
+| :----------------------------------------------------: | :--------------------------------------: | ---------------: |
+|            [`ip.sh`](.config/scripts/ip.sh)            |      Return local and external ipv4      |             `ip` |
+|       [`extract.sh`](.config/scripts/extract.sh)       |         Extract compressed files         | `extract {file}` |
+|    [`dump.sh (brew)`](.config/scripts/brew/dump.sh)    |   Dump brew dependencies to `Brewfile`   |          `brewd` |
+| [`install.sh (brew)`](.config/scripts/brew/install.sh) | Install all dependencies from `Brewfile` |          `brewi` |
