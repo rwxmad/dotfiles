@@ -1,0 +1,9 @@
+export EMPTY_COLOR=0x00000000
+
+export BAR_COLOR=EMPTY_COLOR
+
+export ITEM_BACKGROUND=0xff51A098
+
+export ACCENT_COLOR=0xff51A098
+
+export TEXT_COLOR=0xffffffff

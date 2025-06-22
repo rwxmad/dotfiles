@@ -1,0 +1,17 @@
+# font family
+FONT="BlexMono Nerd Font"
+
+# bar
+BAR_HEIGHT=40
+BAR_PADDING=4
+
+# popup
+POPUP_HEIGHT=35
+
+# sizes and styles
+ITEM_HEIGHT=30
+ROUNDING=8
+PADDING=10
+GAP=20
+
+SCROLL_DURATION=5
