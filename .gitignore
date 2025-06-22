@@ -11,3 +11,5 @@
 .config/nvim.bak
 
 .config/karabiner/automatic_backups/
+
+.config/github-copilot/
