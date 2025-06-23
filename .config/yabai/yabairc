@@ -35,7 +35,7 @@ yabai -m config window_gap $gap
 yabai -m config external_bar all:40:0
 
 # hide native macOS menu bar
-#yabai -m config menubar_opacity 0.0
+# yabai -m config menubar_opacity 0.0
 
 # create space if not exist and give label to it
 function setup_space {
