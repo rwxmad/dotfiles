@@ -47,6 +47,7 @@ source "$ITEMS_DIR/date.sh" # date
 source "$ITEMS_DIR/battery.sh" # battery
 source "$ITEMS_DIR/wifi.sh" # wi-fi
 source "$ITEMS_DIR/volume.sh" # volume
+source "$ITEMS_DIR/locale.sh" # locale
 source "$ITEMS_DIR/music.sh" # music
 
 ##### Alias #####
@@ -55,6 +56,8 @@ sketchybar --add alias Stats right \
                  background.height="$ITEM_HEIGHT" \
                  background.color="$ITEM_BACKGROUND" \
                  background.corner_radius="$ROUNDING"
+
+# sketchybar --add alias "Control Center,BentoBox" right \
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
