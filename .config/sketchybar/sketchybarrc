@@ -40,6 +40,7 @@ sketchybar --default "${default[@]}"
 # volume.sh script is only executed once an actual change in system audio
 # volume is registered. More info about the event system can be found here:
 # https://felixkratz.github.io/SketchyBar/config/events
+
 source "$ITEMS_DIR/apple.sh" # apple icon
 source "$ITEMS_DIR/spaces.sh" # manage spaces
 source "$ITEMS_DIR/front_app.sh" # current app
@@ -49,15 +50,7 @@ source "$ITEMS_DIR/wifi.sh" # wi-fi
 source "$ITEMS_DIR/volume.sh" # volume
 source "$ITEMS_DIR/locale.sh" # locale
 source "$ITEMS_DIR/music.sh" # music
-
-##### Alias #####
-sketchybar --add alias Stats right \
-           --set Stats background.drawing=on \
-                 background.height="$ITEM_HEIGHT" \
-                 background.color="$ITEM_BACKGROUND" \
-                 background.corner_radius="$ROUNDING"
-
-# sketchybar --add alias "Control Center,BentoBox" right \
+source "$ITEMS_DIR/stats.sh" # stats
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
