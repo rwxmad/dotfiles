@@ -1,13 +1,16 @@
 tap "candid82/brew"
 tap "eddieantonio/eddieantonio"
+tap "felixkratz/formulae"
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "jesseduffield/lazynpm"
 tap "jstkdng/programs"
 tap "koekeishiya/formulae"
 tap "neovim/neovim"
+tap "osx-cross/arm"
+tap "osx-cross/avr"
+tap "qmk/qmk"
 tap "yqrashawn/goku"
 # TIFF library and utilities
 brew "libtiff"
@@ -43,6 +46,8 @@ brew "btop"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Insanely fast image printing in your terminal
+brew "catimg"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Framework for layout and rendering of i18n text
@@ -59,6 +64,8 @@ brew "cocoapods"
 brew "rtmpdump"
 # Modern, maintained replacement for ls
 brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Asynchronous event library
@@ -141,8 +148,6 @@ brew "mise"
 brew "yt-dlp"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
-# Fast, highly customisable system info script
-brew "neofetch"
 # E-mail reader with support for Notmuch, NNTP and much more
 brew "neomutt"
 # Parser generator tool and incremental parsing library
@@ -195,6 +200,8 @@ brew "thefuck"
 brew "tldr"
 # Terminal multiplexer
 brew "tmux"
+# Markup-based typesetting system
+brew "typst"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Extensible IRC client
@@ -205,10 +212,18 @@ brew "wget"
 brew "yazi"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# UNIX shell (command interpreter)
+brew "zsh"
+# A window border system for macOS
+brew "felixkratz/formulae/borders"
+# Custom macOS statusbar with shell plugin, interaction and graph support
+brew "felixkratz/formulae/sketchybar"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
 brew "koekeishiya/formulae/yabai"
+# Quantum Mechanical Keyboard (QMK) Firmware
+brew "qmk/qmk/qmk"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Chromium based browser
@@ -226,7 +241,9 @@ cask "chromium"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
+# Matrix collaboration client
+cask "element"
 # Web browser
 cask "firefox"
 cask "font-fira-code"
@@ -269,6 +286,8 @@ cask "qbittorrent"
 cask "raycast"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
+# Tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
 # Music streaming service
 cask "spotify"
 # System monitor for the menu bar
@@ -277,18 +296,9 @@ cask "stats"
 cask "via"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
+# Wine wrapper built with SwiftUI
+cask "whisky"
 # Network protocol analyzer
-cask "wireshark"
+cask "wireshark-app"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
-mas "Boop", id: 1518425043
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Mattermost", id: 1614666244
-mas "Numbers", id: 409203825
-mas "Outline", id: 1356178125
-mas "Pages", id: 409201541
-mas "SnippetsLab", id: 1006087419
-mas "Telegram", id: 747648890
-mas "Xcode", id: 497799835
