@@ -2,7 +2,7 @@
 
 sketchybar --add item date right \
            --set date  update_freq=10 \
-                       icon=  \
+                       icon=􀧞  \
                        script="$PLUGIN_DIR/date.sh" \
                        icon.padding_left="$PADDING" \
                        background.height=30 \
