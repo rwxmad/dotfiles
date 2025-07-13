@@ -2,5 +2,5 @@
 node = "latest"
 python = "latest"
 ruby = "latest"
-rust = "latest"
+rust = "nightly"
 usage = "latest"
