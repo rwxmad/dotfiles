@@ -5,6 +5,7 @@ sketchybar --add item date right \
                        icon=􀧞  \
                        script="$PLUGIN_DIR/date.sh" \
                        icon.padding_left="$PADDING" \
+                       label.padding_right="$PADDING" \
                        background.height=30 \
                        background.drawing=on \
                        background.color="$ITEM_BACKGROUND" \
