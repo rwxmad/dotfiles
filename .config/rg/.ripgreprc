@@ -1,0 +1,28 @@
+# Follow symbolic links
+--follow
+
+# Don't respect ignore files (.gitignore, .ignore, etc.)
+--no-ignore
+
+# Don't let ripgrep vomit really long lines to my terminal, and show a preview
+--max-columns=150
+--max-columns-preview
+
+# Search hidden files / directories (e.g. dotfiles) by default
+--hidden
+
+# Exclude directories
+--glob=!{.git,node_modules,Trash}
+
+# Using glob patterns to include/exclude files or folders
+--glob=!.git/*
+
+# Ignore case
+--smart-case
+
+# Custom types
+--type-add
+web:*.{html,css,js,jsx,ts,tsx,vue}*
+
+# Sort by file path
+--sort=path
