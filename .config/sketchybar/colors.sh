@@ -15,7 +15,7 @@ export PURPLE=0xffD699B6
 export GREY0=0xff7A8478
 export GREY1=0xff859289
 export GREY2=0xff9DA9A0
----
+# ---
 
 export EMPTY_COLOR=0x00000000
 

@@ -12,6 +12,7 @@ do
     icon="${SPACE_ICONS[i]}"
     icon.padding_left="$PADDING"
     icon.padding_right="$PADDING"
+    icon.color="$FG"
     background.color="$ACCENT_COLOR"
     background.corner_radius="$ROUNDING"
     background.height="$ITEM_HEIGHT"
