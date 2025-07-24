@@ -9,10 +9,8 @@ window-padding-balance = true
 window-decoration = true
 
 # Theme
-theme = Builtin Solarized Dark
-
+theme = everforest
 background-opacity = 0.95
-background = #001217
 
 # Fonts
 font-family = BlexMono Nerd Font
