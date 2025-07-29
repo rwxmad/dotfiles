@@ -15,12 +15,13 @@ alias vim="nvim"
 # Changing 'ls' to 'exa'
 # --------------------------------------------------------------------------------------------------
 
-alias l='eza -al --icons --color=always --group-directories-first'
-alias ls='eza -a --icons --color=always --group-directories-first'
-alias la='eza -a --color=always --group-directories-first'
-alias ll='eza -l --color=always --group-directories-first'
-alias lt='eza -aT --color=always --group-directories-first'
-alias l.='eza -a | egrep "^\."'
+alias l='eza -al --icons --color=always --group-directories-first' # list all
+alias la=l # same as 'l'
+alias ls='eza -al --icons --sort=old --color=always' # sorted by modified date (last modified at top)
+alias lt='eza -aT --color=always --group-directories-first' # tree
+alias ld='eza -D --icons --color=always' # list only directories
+alias lf='eza -f --icons --color=always' # list only files
+alias l.='eza -a --icons | egrep "^\."' # search dotfiles in current dir
 
 # --------------------------------------------------------------------------------------------------
 # Scripts
