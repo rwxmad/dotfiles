@@ -2,13 +2,17 @@
 # General aliases
 # --------------------------------------------------------------------------------------------------
 
+# utils
 alias c="clear"
 
-alias dev="cd ~/dev"
-alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
+# directories
+alias dots="cd ~/dotfiles/"
 alias notes="cd ~/notes"
-alias github="cd ~/dev/github/"
+alias dev="cd ~/dev"
 
+# nvim
+alias v="nvim"
+alias vi="nvim"
 alias vim="nvim"
 
 # --------------------------------------------------------------------------------------------------
@@ -29,14 +33,10 @@ alias l.='eza -a --icons | egrep "^\."' # search dotfiles in current dir
 
 alias ip="sh $XDG_CONFIG_HOME/scripts/ip.sh"
 alias extract="sh $XDG_CONFIG_HOME/scripts/extract.sh"
+
+# homebrew
 alias brewd="sh $XDG_CONFIG_HOME/scripts/brew/dump.sh"
 alias brewi="sh $XDG_CONFIG_HOME/scripts/brew/install.sh"
-
-# --------------------------------------------------------------------------------------------------
-# Dotfiles
-# --------------------------------------------------------------------------------------------------
-
-alias dots="cd ~/dotfiles/"
 
 # --------------------------------------------------------------------------------------------------
 # npm
