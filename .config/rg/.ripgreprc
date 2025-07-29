@@ -1,6 +1,9 @@
 # Follow symbolic links
 --follow
 
+# Get more context around match
+--context=3
+
 # Don't respect ignore files (.gitignore, .ignore, etc.)
 --no-ignore
 
