@@ -1,4 +1,4 @@
-# Window
+### Window ###
 title=" "
 macos-titlebar-proxy-icon=hidden
 gtk-single-instance = true
@@ -8,20 +8,27 @@ window-padding-y = 2,0
 window-padding-balance = true
 window-decoration = true
 
-# Theme
+### Theme ###
 theme = everforest
 background-opacity = 0.95
 
-# Fonts
+### Fonts ###
 font-family = BlexMono Nerd Font
 font-size = 12
 font-thicken = true
 
-# Cursor
+### Cursor ###
 cursor-style = block
 cursor-style-blink = true
 cursor-invert-fg-bg = true
 
-# Other
+### Other ###
 copy-on-select = clipboard
 shell-integration-features = cursor,sudo,no-title
+
+### Keys ###
+
+# Set left option to act as alt
+macos-option-as-alt = left
+keybind = alt+left=unbind
+keybind = alt+right=unbind
