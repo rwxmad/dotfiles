@@ -22,7 +22,7 @@ alias vim="nvim"
 alias l='eza -al --icons --color=always --group-directories-first' # list all
 alias la=l # same as 'l'
 alias ls='eza -al --icons --sort=old --color=always' # sorted by modified date (last modified at top)
-alias lt='eza -aT --color=always --group-directories-first' # tree
+alias lt='eza -aT --color=always --icons --group-directories-first' # tree
 alias ld='eza -D --icons --color=always' # list only directories
 alias lf='eza -f --icons --color=always' # list only files
 alias l.='eza -a --icons | egrep "^\."' # search dotfiles in current dir
