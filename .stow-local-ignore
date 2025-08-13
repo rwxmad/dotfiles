@@ -5,7 +5,7 @@
 
 fonts
 
-install.sh
+Makefile
 
 ^/README.*
 ^/LICENSE.*
