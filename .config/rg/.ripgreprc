@@ -2,8 +2,8 @@
 --follow
 
 # Get more context around match
---context=3
---context-separator=────────────────────
+# --context=3
+# --context-separator=────────────────────
 
 # Don't respect ignore files (.gitignore, .ignore, etc.)
 --no-ignore
