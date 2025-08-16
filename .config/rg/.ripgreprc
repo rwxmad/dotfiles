@@ -2,6 +2,7 @@
 --follow
 
 # Get more context around match
+# NOTE: it breaks grep search in neovim
 # --context=3
 # --context-separator=────────────────────
 
