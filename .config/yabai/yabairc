@@ -58,9 +58,9 @@ setup_space 2 web
 setup_space 3 music
 setup_space 4 notes
 setup_space 5 design
-setup_space 6 mail
+setup_space 6 social
 setup_space 7 other
-setup_space 8 discord
+# setup_space 8 discord
 
 # specific space settings
 # yabai -m config --space 6 layout float
@@ -71,14 +71,15 @@ yabai -m rule --add app="Arc" space=web
 yabai -m rule --add app="Spotify" space=music
 yabai -m rule --add app="Obsidian" space=notes
 yabai -m rule --add app="Figma" space=design
-yabai -m rule --add app="Mail" space=mail
+yabai -m rule --add app="Mail" space=social
+yabai -m rule --add app="Discord" space=social
 yabai -m rule --add app="Fork" space=other
 
 # link space to specific display
-yabai -m space discord --display 2
+# yabai -m space discord --display 2
 
 # bind apps to extra displays
-yabai -m rule --add app="Discord" space=8
+# yabai -m rule --add app="Discord" space=8
 
 # window rules
 yabai -m rule --add app="^(System Settings|Preview|Books|Alfred|VIA|Activity Monitor|Installer|Telegram|Finder|Notes|Reminders|Mail|OBS|Numi|Outline)" manage=off
