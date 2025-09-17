@@ -25,10 +25,10 @@ cmd + shift - k : yabai -m window --swap north
 cmd + shift - j : yabai -m window --swap south
 
 # resize
-ctrl + alt - k : yabai -m window --resize top:0:-10; yabai -m window --resize bottom:0:10
-ctrl + alt - j : yabai -m window --resize top:0:10; yabai -m window --resize bottom:0:-10
-ctrl + alt - h : yabai -m window --resize right:-10:0; yabai -m window --resize left:10:0
-ctrl + alt - l : yabai -m window --resize right:10:0; yabai -m window --resize left:-10:0
+ctrl + alt - k : yabai -m window --resize top:0:-20; yabai -m window --resize bottom:0:20
+ctrl + alt - j : yabai -m window --resize top:0:20; yabai -m window --resize bottom:0:-20
+ctrl + alt - h : yabai -m window --resize right:-20:0; yabai -m window --resize left:20:0
+ctrl + alt - l : yabai -m window --resize right:20:0; yabai -m window --resize left:-20:0
 
 # change focus between external displays (left and right)
 alt - h : yabai -m display --focus west
