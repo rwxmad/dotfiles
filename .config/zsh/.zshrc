@@ -10,23 +10,36 @@ DISABLE_AUTO_TITLE="true"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+# Completion
+autoload -Uz compinit
+# Create cache dir if not exists
+mkdir -p "$HOME/.cache/zsh"
+# Define cache dir
+compinit -d "$ZSH_COMPDUMP"
+
 # --------------------------------------------------------------------------------------------------
 # Plugins
 # --------------------------------------------------------------------------------------------------
 
-source $XDG_CONFIG_HOME/antigen/antigen.zsh
+ZSH_PLUGINS_DIR=$HOME/.local/share/zsh-plugins
 
-antigen use oh-my-zsh
+fpath=(ZSH_PLUGINS_DIR $fpath)
 
-antigen bundle git
+# Completions
+# https://github.com/zsh-users/zsh-completions
 
-antigen bundle 'zsh-users/zsh-syntax-highlighting'
-antigen bundle 'zsh-users/zsh-autosuggestions'
-# antigen bundle 'zsh-users/zsh-completions'
+# # Syntax highlight
+# https://github.com/zdharma-continuum/fast-syntax-highlighting
+source $ZSH_PLUGINS_DIR/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
-antigen bundle 'agkozak/zsh-z'
+# Autosuggestions
+# https://github.com/zsh-users/zsh-autosuggestions/tree/master
+source $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-antigen apply
+# source $XDG_CONFIG_HOME/antigen/antigen.zsh
+# antigen use oh-my-zsh
+# antigen bundle git
+# antigen apply
 
 # --------------------------------------------------------------------------------------------------
 # Modules
