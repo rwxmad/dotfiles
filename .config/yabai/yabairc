@@ -25,14 +25,15 @@ gap=8
 padding=10
 bottom_padding=$((gap+padding))
 yabai -m config layout bsp
-yabai -m config top_padding $padding
+yabai -m config top_padding 60
 yabai -m config bottom_padding $bottom_padding
 yabai -m config left_padding $padding
 yabai -m config right_padding $padding
 yabai -m config window_gap $gap
 
 # settings for custom menu bar
-yabai -m config external_bar all:40:0
+# FIXME: external bar offset not working on macOS 26 Tahoe release
+# yabai -m config external_bar all:40:0
 
 # hide native macOS menu bar
 # yabai -m config menubar_opacity 0.0
