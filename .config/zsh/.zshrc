@@ -2,6 +2,9 @@
 # General settings
 # --------------------------------------------------------------------------------------------------
 
+# Profiling
+zmodload zsh/zprof
+
 export XDG_CONFIG_HOME=$HOME/.config
 
 DISABLE_AUTO_TITLE="true"
@@ -21,26 +24,33 @@ compinit -d "$ZSH_COMPDUMP"
 # Plugins
 # --------------------------------------------------------------------------------------------------
 
+# zsh plugins dir
 ZSH_PLUGINS_DIR=$HOME/.local/share/zsh-plugins
 
 fpath=(ZSH_PLUGINS_DIR $fpath)
 
-# Completions
+# completions
 # https://github.com/zsh-users/zsh-completions
+# ignore case, + -/_
+zstyle ':completion:*' matcher-list \
+  'm:{a-z}={A-Z}' \
+  'r:|[-_.]=* r:|=*' \
+  'l:|=*'
 
-# # Syntax highlight
+# syntax highlight
 # https://github.com/zdharma-continuum/fast-syntax-highlighting
 source $ZSH_PLUGINS_DIR/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
-# Autosuggestions
+# autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions/tree/master
 source $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# source $XDG_CONFIG_HOME/antigen/antigen.zsh
-# antigen use oh-my-zsh
-# antigen bundle git
-# antigen apply
+# oh-my-zsh
+# git
+# benchmark
+# plugins=(zsh-prompt-benchmark)
 
+source $ZSH_PLUGINS_DIR/zsh-prompt-benchmark/zsh-prompt-benchmark.plugin.zsh
 # --------------------------------------------------------------------------------------------------
 # Modules
 # --------------------------------------------------------------------------------------------------
@@ -78,6 +88,7 @@ export PS1="%m@%n:%F{2}%~%f$ "
 # --------------------------------------------------------------------------------------------------
 
 # Starship
+export STARSHIP_CACHE=~/.starship/cache
 eval "$(starship init zsh)"
 
 # fzf
@@ -87,4 +98,4 @@ eval "$(starship init zsh)"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # mise
-eval "$(mise activate zsh)"
+eval "$(mise activate zsh --shims)"
