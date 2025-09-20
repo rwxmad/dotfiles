@@ -150,7 +150,7 @@ brew "yt-dlp"
 brew "mpv"
 # E-mail reader with support for Notmuch, NNTP and much more
 brew "neomutt"
-# Parser generator tool and incremental parsing library
+# Incremental parsing library
 brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
@@ -186,8 +186,8 @@ brew "ripgrep"
 brew "ruff"
 # Experimental Rust compiler front-end for IDEs
 brew "rust-analyzer"
-# Terminal-based client for Spotify
-brew "spotify-tui"
+# Command driven spotify player
+brew "spotify_player"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -202,6 +202,8 @@ brew "tldr"
 brew "tmux"
 # Markup-based typesetting system
 brew "typst"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Extensible IRC client
@@ -221,11 +223,13 @@ brew "felixkratz/formulae/sketchybar"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
+brew "koekeishiya/formulae/yabai", args: ["HEAD"]
 # Quantum Mechanical Keyboard (QMK) Firmware
 brew "qmk/qmk/qmk"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Memory training application
+cask "anki"
 # Chromium based browser
 cask "arc"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
@@ -256,6 +260,8 @@ cask "ghostty"
 cask "gimp"
 # Desktop client for GitHub repositories
 cask "github"
+# Desktop automation application
+cask "hammerspoon"
 # Free and open-source media player
 cask "iina"
 # Vector graphics editor
@@ -296,8 +302,6 @@ cask "stats"
 cask "via"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
-# Wine wrapper built with SwiftUI
-cask "whisky"
 # Network protocol analyzer
 cask "wireshark-app"
 # Open-source version of the X.Org X Window System
