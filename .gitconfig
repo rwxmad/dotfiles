@@ -1,10 +1,16 @@
 # This is Git's per-user configuration file.
 [user]
-	name = rwxmad
-	email = rwxmad@gmail.com
+  name = rwxmad
+  email = rwxmad@gmail.com
+
+[github]
+	user = rwxmad
 
 [core]
   pager = delta
+
+[color]
+  ui = true
 
 [interactive]
   diffFilter = delta --color-only
@@ -23,3 +29,14 @@
 
 [pull]
   rebase = true
+
+[alias]
+  p = push
+  d = diff
+  st = status
+  ci = commit
+  st = status
+  br = branch
+  co = checkout
+  cm = commit -m
+  ca = commit -a
