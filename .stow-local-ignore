@@ -5,6 +5,7 @@
 
 fonts
 
+.editorconfig
 Makefile
 
 ^/README.*
