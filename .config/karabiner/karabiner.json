@@ -5,13 +5,13 @@
                 "rules": [
                     {
                         "description": "Next/Prev window on side mouse buttons",
+                        "enabled": true,
                         "manipulators": [
                             {
                                 "from": { "pointing_button": "button4" },
                                 "to": [
                                     {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["left_control"]
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --focus prev"
                                     }
                                 ],
                                 "type": "basic"
@@ -20,8 +20,7 @@
                                 "from": { "pointing_button": "button5" },
                                 "to": [
                                     {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_control"]
+                                        "shell_command": "/opt/homebrew/bin/yabai -m space --focus next"
                                     }
                                 ],
                                 "type": "basic"
