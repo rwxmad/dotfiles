@@ -31,7 +31,7 @@ alias l.='eza -a --icons | egrep "^\."' # search dotfiles in current dir
 # Scripts
 # --------------------------------------------------------------------------------------------------
 
-alias ip="sh $XDG_CONFIG_HOME/scripts/ip.sh"
+alias ipv4="sh $XDG_CONFIG_HOME/scripts/ip.sh"
 alias extract="sh $XDG_CONFIG_HOME/scripts/extract.sh"
 
 # homebrew
