@@ -1,5 +1,5 @@
 ### Window ###
-title=" "
+title="Ghostty"
 macos-titlebar-proxy-icon=hidden
 gtk-single-instance = true
 gtk-tabs-location = bottom
