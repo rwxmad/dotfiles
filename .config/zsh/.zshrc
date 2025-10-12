@@ -3,7 +3,7 @@
 # --------------------------------------------------------------------------------------------------
 
 # Profiling
-zmodload zsh/zprof
+# zmodload zsh/zprof
 
 export XDG_CONFIG_HOME=$HOME/.config
 
@@ -50,7 +50,7 @@ source $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 # benchmark
 # plugins=(zsh-prompt-benchmark)
 
-source $ZSH_PLUGINS_DIR/zsh-prompt-benchmark/zsh-prompt-benchmark.plugin.zsh
+# source $ZSH_PLUGINS_DIR/zsh-prompt-benchmark/zsh-prompt-benchmark.plugin.zsh
 # --------------------------------------------------------------------------------------------------
 # Modules
 # --------------------------------------------------------------------------------------------------
@@ -99,3 +99,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # mise
 eval "$(mise activate zsh --shims)"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
