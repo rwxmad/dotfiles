@@ -118,7 +118,7 @@
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["󱃃", "󰔏", "󱃂"],
-        "on-click": "ghostty -e s-tui"
+        "on-click": "ghostty -e btop"
     },
 
     "battery": {
@@ -145,10 +145,12 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon} {volume}% {format_source}",
         "format-bluetooth": "󰂰 {volume}%",
         "format-bluetooth-muted": "󰂲 {icon}",
         "format-muted": "󰝟",
+        "format-source": "",
+        "format-source-muted": "",
         "format-icons": {
             "headphone": "󰋋",
             "hands-free": "󰥰",
