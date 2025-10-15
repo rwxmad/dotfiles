@@ -25,7 +25,14 @@ help: ## Print help message
 # Stow
 # ###########################################################
 stow: ## Stow configs
-	stow ./
+	@for p in $(shell find .config -mindepth 1 -maxdepth 1 -type d -printf '%f\n'); do \
+		echo "stow $$p"; stow -S -d .config -t "$$HOME/.config" "$$p" || true; \
+	done
+
+# TODO: setup sync
+link-configs: ## Symlink all dirs from ./.config to ~/.config
+	@cd "$(HOME)/dotfiles/.config" && for d in */; do dst="$(HOME)/.config/$${d%/}"; [ -e "$$dst" ] && [ ! -L "$$dst" ] && { echo "SKIP $$dst (exists)"; continue; }; ln -sfn "$$(pwd)/$$d" "$$dst"; echo "LINK $$dst"; done
+
 
 # ###########################################################
 # zsh
@@ -61,3 +68,13 @@ homebrew: ## Install/Update homebrew, homebrew dependecies
 	fi
 	$(call echo_ok,Install homebrew dependecies...)
 	/bin/bash ./.config/scripts/brew/install.sh
+
+# ###########################################################
+# pacman
+# ###########################################################
+
+dump: ## Dump all packages, including AUR
+	@paru -Qqe > "./pacman.txt"
+
+restore: ## Restore all packages, including AUR
+	@paru -S --needed - < "./pacman.txt"
