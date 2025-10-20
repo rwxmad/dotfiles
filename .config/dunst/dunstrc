@@ -32,7 +32,7 @@
 
     # The height of a single notification, excluding the frame.
     # dynamic height from 0 to 300
-    height = (0, 350)
+    height = (0, 150)
     # constant height of 300
     # height = 300
     # NOTE: Dunst from version 1.11 and older don't support dynamic height
@@ -197,7 +197,7 @@
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".
-    vertical_alignment = top
+    vertical_alignment = center
 
     # Show age of message if message is older than show_age_threshold
     # seconds.
