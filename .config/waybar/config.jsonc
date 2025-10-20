@@ -4,14 +4,14 @@
     "height": 32,
     "spacing": 4,
     "margin": 0,
-    "modules-left": ["hyprland/workspaces", "hyprland/submap" ],
-        "modules-center": ["hyprland/window"],                                                                           // battery   // disk     // uptime  // custom/updates // backlight
-    "modules-right": ["pulseaudio",  "network", "cpu", "memory", "temperature", "battery", "disk", "custom/weather", "custom/quote", "custom/uptime", "hyprland/language", "tray", "clock"],
+    "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
+        "modules-center": ["clock"],                                                                           // battery   // disk     // uptime  // custom/updates // backlight
+    "modules-right": ["custom/playerctl", "pulseaudio",  "network", "cpu", "memory", "temperature", "battery", "disk", "custom/weather", "custom/quote", "custom/uptime", "hyprland/language", "tray"],
 
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
-        "format": "{name} {icon}",
+        "format": "{name} <span font='20px'>{icon}</span>",
         "format-icons": {
             "1": "",
             "2": "󰾔",
@@ -34,7 +34,8 @@
     },
 
     "hyprland/window": {
-      "icon": true
+      "icon": true,
+      "max-length": 50
     },
 
   "hyprland/language": {

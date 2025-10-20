@@ -55,11 +55,6 @@
   font-weight: 600;
 }
 
-window#waybar {
-  background-color: @background;
-  color: @foreground;
-}
-
 /* Common module styling */
 #mode,
 #mpd,
@@ -91,6 +86,10 @@ window#waybar {
   margin: 0;
 }
 
+#workspaces button label {
+  font-size: 16px;
+}
+
 #workspaces button:hover {
   background: @background-light;
   box-shadow: inherit;
@@ -106,6 +105,15 @@ window#waybar {
 #workspaces button.urgent {
   background-color: @workspaces-urgent-bg;
   color: @workspaces-urgent-fg;
+}
+
+window#waybar {
+  background-color: @background;
+  color: @foreground;
+}
+
+#window {
+  padding: 0 8px;
 }
 
 /* Module-specific styling */
