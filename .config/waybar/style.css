@@ -73,6 +73,7 @@
 #custom-updates,
 #custom-quote,
 #idle_inhibitor,
+#language,
 #tray {
   padding: 0 4px;
   background-color: transparent;
@@ -166,6 +167,10 @@ window#waybar {
   color: @temperature-critical-color;
 }
 
+#custom-gpu_temp {
+  color: @temperature-color;
+}
+
 #battery {
   color: @battery-color;
 }
@@ -228,9 +233,8 @@ window#waybar {
 }
 
 #tray {
+  margin: 0;
   background-color: transparent;
-  padding: 0 10px;
-  margin: 0 2px;
 }
 
 #tray > .passive {
