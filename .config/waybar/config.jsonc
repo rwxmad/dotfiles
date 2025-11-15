@@ -6,7 +6,7 @@
     "margin": 0,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
         "modules-center": ["clock"],                                                                           // battery   // disk     // uptime  // custom/updates // backlight
-    "modules-right": ["custom/playerctl", "pulseaudio",  "network", "cpu", "memory", "temperature", "battery", "disk", "custom/weather", "custom/quote", "custom/uptime", "hyprland/language", "tray"],
+    "modules-right": ["custom/playerctl", "pulseaudio",  "network", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "custom/weather", "custom/quote", "custom/uptime", "hyprland/language", "tray"],
 
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -39,9 +39,10 @@
     },
 
   "hyprland/language": {
-        "format": "{}",
+        "format": "  {}",
         "format-ru": "RU",
-        "format-en": "US"
+        "format-en": "US",
+        "on-click": "hyprctl switchxkblayout all next"
     },
 
     "custom/playerctl": {
@@ -76,7 +77,7 @@
     },
 
     "clock": {
-        "format": "󰥔 {:%H:%M}",
+        "format": "󰥔 {:%a %H:%M}",
         "format-alt": "󰃮 {:%Y-%m-%d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "calendar": {
@@ -115,11 +116,19 @@
         "on-click": "ghostty -e btop"
     },
 
-    "temperature": {
+    "temperature#cpu": {
+        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["󱃃", "󰔏", "󱃂"],
         "on-click": "ghostty -e btop"
+    },
+
+    "custom/gpu_temp": {
+      "interval": 2,
+      "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader",
+      "format": "󰢮 {}°C",
+      "on-click": "ghostty -e btop"
     },
 
     "battery": {
@@ -174,12 +183,12 @@
     //     "on-scroll-down": "brightnessctl set 5%-"
     // },
 
-    // "disk": {
-    //     "interval": 30,
-    //     "format": "󰋊 {percentage_used}%",
-    //     "path": "/",
-    //     "on-click": ""
-    // },
+    "disk": {
+        "interval": 30,
+        "format": "󰋊 {percentage_used}%",
+        "path": "/",
+        "on-click": ""
+    },
 
     "tray": {
         "icon-size": 20,
