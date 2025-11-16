@@ -6,7 +6,7 @@
     "margin": 0,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
         "modules-center": ["clock"],                                                                           // battery   // disk     // uptime  // custom/updates // backlight
-    "modules-right": ["custom/playerctl", "pulseaudio",  "network", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "custom/weather", "custom/quote", "custom/uptime", "hyprland/language", "tray"],
+    "modules-right": ["custom/playerctl", "pulseaudio",  "network", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "custom/weather", "custom/quote", "custom/uptime", "hyprland/language", "tray", "custom/power"],
 
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -121,14 +121,18 @@
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["󱃃", "󰔏", "󱃂"],
-        "on-click": "ghostty -e btop"
+        "on-click": "ghostty -e btop",
+        "tooltip": true,
+        "tooltip-format": "CPU: {}°C"
     },
 
     "custom/gpu_temp": {
       "interval": 2,
       "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader",
       "format": "󰢮 {}°C",
-      "on-click": "ghostty -e btop"
+      "on-click": "ghostty -e btop",
+      "tooltip": true,
+      "tooltip-format": "GPU: {}°C"
     },
 
     "battery": {
@@ -193,5 +197,14 @@
     "tray": {
         "icon-size": 20,
         "spacing": 4
+    },
+
+    "custom/power": {
+      "format": " ",
+      "tooltip": true,
+      "tooltip-format": "LMB: lock session\nMMB: suspend\nRMB: poweroff",
+      "on-click": "loginctl lock-session",
+      "on-click-middle": "systemctl suspend"
+      // "on-click-right": "systemctl poweroff"
     }
 }

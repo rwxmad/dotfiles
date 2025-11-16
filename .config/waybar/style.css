@@ -74,7 +74,8 @@
 #custom-quote,
 #idle_inhibitor,
 #language,
-#tray {
+#tray,
+#custom-power {
   padding: 0 4px;
   background-color: transparent;
 }
@@ -243,5 +244,9 @@ window#waybar {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
+  color: @red;
+}
+
+#custom-power {
   color: @red;
 }
