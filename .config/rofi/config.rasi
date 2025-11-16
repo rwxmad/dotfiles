@@ -1,12 +1,16 @@
 /*****----- Configuration -----*****/
 
 configuration {
-  modi               : "run,drun,window";
+  modi: "run,drun,window";
+
+  combi-modi: "drun,window";
+
   disable-history    : false;
   display-run        : " ";
   display-drun       : " ";
   display-window     : "󰕰 ";
   display-clipboard  : " ";
+  display-combi      : " ";
   drun-display-format: "{icon} {name}";
   clipboard-display-format: "{name}";
   hide-scrollbar     : true;
