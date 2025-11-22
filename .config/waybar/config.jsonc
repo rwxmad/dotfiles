@@ -77,9 +77,10 @@
     },
 
     "clock": {
-        "format": "󰥔 {:%a %H:%M}",
+        "format": "󰥔 {:%a %H:%M:%S}",
         "format-alt": "󰃮 {:%Y-%m-%d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1,
         "calendar": {
             "mode"          : "month",
             "mode-mon-col"  : 3,
