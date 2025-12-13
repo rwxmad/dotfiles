@@ -9,7 +9,7 @@ window-padding-balance = true
 window-decoration = true
 
 ### Theme ###
-theme = everforest
+theme = nordic
 background-opacity = 0.95
 
 ### Fonts ###
