@@ -3,7 +3,7 @@
     "position": "top",
     "height": 32,
     "spacing": 4,
-    "margin": 0,
+    "margin": "4 0",
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
         "modules-center": ["clock"],                                                                           // battery   // disk     // uptime  // custom/updates // backlight
     "modules-right": ["custom/playerctl", "pulseaudio",  "network", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "custom/weather", "custom/quote", "custom/uptime", "hyprland/language", "tray", "custom/power"],
@@ -19,7 +19,7 @@
             "4": "󰎚",
             "5": "󰏬",
             "6": "󰙯",
-            "7": "",
+            "7": "󰺻",
             "8": "󰹛",
             "9": "",
             "10": ""
@@ -88,11 +88,11 @@
             "on-scroll"     : 1,
             "on-click-right": "mode",
             "format": {
-                "months":     "<span color='#d3c6aa'><b>{}</b></span>",
-                "days":       "<span color='#e67e80'>{}</span>",
-                "weeks":      "<span color='#a7c080'><b>W{}</b></span>",
-                "weekdays":   "<span color='#7fbbb3'><b>{}</b></span>",
-                "today":      "<span color='#dbbc7f'><b><u>{}</u></b></span>"
+                "months":     "<span color='#d8dee9'><b>{}</b></span>",
+                "days":       "<span color='#bf616a'>{}</span>",
+                "weeks":      "<span color='#a3be8c'><b>W{}</b></span>",
+                "weekdays":   "<span color='#5e81ac'><b>{}</b></span>",
+                "today":      "<span color='#ebcb8b'><b><u>{}</u></b></span>"
             }
         },
         "actions": {
@@ -201,11 +201,11 @@
     },
 
     "custom/power": {
-      "format": " ",
+      "format": "",
       "tooltip": true,
-      "tooltip-format": "LMB: lock session\nMMB: suspend\nRMB: poweroff",
+      "tooltip-format": "LMB: lock session\nMMB: poweroff\nRMB: suspend",
       "on-click": "loginctl lock-session",
-      "on-click-middle": "systemctl suspend"
-      // "on-click-right": "systemctl poweroff"
+      // "on-click-middle": "systemctl poweroff"
+      "on-click-right": "systemctl suspend"
     }
 }
