@@ -2,12 +2,12 @@
 * {
     font:   "BlexMono Nerd Font Medium 12";
 
-    bg0:     #2B3339;
-    bg1:     #323D43;
-    fg0:     #D3C6AA;
+    bg0:     #1a1b26;
+    bg1:     #283457;
+    fg0:     #c0caf5;
 
-    accent-color:     #A7C080;
-    urgent-color:     #DBBC7F;
+    accent-color:     #9ece6a;
+    urgent-color:     #f7768e;
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -22,6 +22,7 @@ window {
     width:      480;
 
     background-color:   @bg0;
+    border-radius: 8px;
 }
 
 inputbar {
@@ -29,7 +30,6 @@ inputbar {
     padding:    8px;
 
     background-color:   @bg1;
-    border-radius: 4px;
 }
 
 prompt, entry, element-icon, element-text {
