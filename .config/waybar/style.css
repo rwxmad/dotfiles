@@ -78,35 +78,27 @@
 #tray,
 #custom-power {
   padding: 5px 10px;
-  background-color: @background;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 /* Workspaces styling */
 #workspaces button {
   padding: 0 15px;
-  background-color: @background;
+  background-color: transparent;
   color: @workspaces-color;
   margin: 0 4px;
 }
 
-#workspaces button label {
-  font-size: 16px;
+#workspaces button:hover,
+#workspaces button:focus {
+  background: none;
+  border-color: transparent;
+  box-shadow: none;
 }
 
-#workspaces button:hover {
-  background: @background-light;
-}
-
-#workspaces button.focused,
-#workspaces button.active {
-  color: @workspaces-focused-fg;
-  font-weight: 900;
-}
-
-#workspaces button.urgent {
-  background-color: @workspaces-urgent-bg;
-  color: @workspaces-urgent-fg;
+#waybar.top {
+  background: rgba(26, 27, 38, 0.5);
 }
 
 window#waybar {
@@ -116,7 +108,7 @@ window#waybar {
 
 #window {
   padding: 0 8px;
-  background-color: @background;
+  background-color: transparent;
 }
 
 window#waybar.empty #window {
@@ -240,7 +232,6 @@ window#waybar.empty #window {
 
 #tray {
   margin: 0;
-  background-color: @background;
 }
 
 #tray > .passive {

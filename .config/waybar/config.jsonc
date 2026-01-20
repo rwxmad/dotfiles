@@ -3,30 +3,27 @@
     "position": "top",
     "height": 32,
     "spacing": 4,
-    "margin": "4 0",
+    "margin": 8,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": ["custom/playerctl", "hyprland/language", "pulseaudio",  "network", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "custom/weather", "custom/quote", "tray", "custom/power"],
 
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "format": "{name} <span font='20px'>{icon}</span>",
-        "format-icons": {
-            "1": "",
-            "2": "󰾔",
-            "3": "󰎄",
-            "4": "󰎚",
-            "5": "󰏬",
-            "6": "󰙯",
-            "7": "󰺻",
-            "8": "󰹛",
-            "9": "",
-            "10": ""
-        },
-        "persistent_workspaces": {
-          "*": [1,2,3,4,5,6,7,8,9,10]
-        }
+  "hyprland/workspaces": {
+      "all-outputs": false,
+      "format": "{icon}",
+      "format-icons": {
+        "active": "",
+        "visible": "",
+        "default": ""
+      },
+      "on-scroll-up": "hyprctl dispatch workspace e+1 1>/dev/null",
+      "on-scroll-down": "hyprctl dispatch workspace e-1 1>/dev/null",
+      "sort-by-number": true,
+      "active-only": false,
+      "persistent-workspaces": {
+        "DP-1": [ 1, 8 ],
+        "HDMI-A-1": [ 9, 10 ]
+      }
     },
 
     "hyprland/submap": {
@@ -41,8 +38,8 @@
     "hyprland/language": {
         "format": "{}",
         "format-ru": "🇷🇺",
-        "format-en": "🇺🇸",
-        "on-click": "hyprctl switchxkblayout all next"
+        "format-en": "🇺🇸"
+        // "on-click": "hyprctl switchxkblayout all next"
     },
 
     "custom/playerctl": {
@@ -112,7 +109,8 @@
     },
 
     "temperature#cpu": {
-        "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
+        "hwmon-path-abs": "/sys/devices/virtual/thermal/thermal_zone1",
+        "input-filename": "temp1_input",
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["󱃃", "󰔏", "󱃂"],
