@@ -1,10 +1,12 @@
-/* ROFI SQUARED THEME USING THE EVERFOREST PALETTE  */
 * {
     font:   "BlexMono Nerd Font Medium 12";
 
-    bg0:     #1a1b26;
-    bg1:     #283457;
+    bg0:     #15161e;
+    bg1:     #1a1b26;
     fg0:     #c0caf5;
+
+    wbg:     #15161e90;
+    ibg:     #1a1b2690;
 
     accent-color:     #9ece6a;
     urgent-color:     #f7768e;
@@ -21,7 +23,7 @@ window {
     location:   center;
     width:      480;
 
-    background-color:   @bg0;
+    background-color:   @wbg;
     border-radius: 8px;
 }
 
@@ -29,7 +31,7 @@ inputbar {
     spacing:    8px;
     padding:    8px;
 
-    background-color:   @bg1;
+    background-color:   @ibg;
 }
 
 prompt, entry, element-icon, element-text {
