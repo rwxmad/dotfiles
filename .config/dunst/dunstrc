@@ -7,7 +7,7 @@
     ### Display ###
 
     # Which monitor should the notifications be displayed on.
-    monitor = 0
+    monitor = 1
 
     # Display notification on focused monitor.  Possible modes are:
     #   mouse: follow mouse pointer
@@ -227,7 +227,7 @@
     enable_recursive_icon_lookup = true
 
     # Set icon theme (only used for recursive icon lookup)
-    icon_theme = Everforest-Dark-Medium
+    icon_theme = Adwaita
     # You can also set multiple icon themes, with the leftmost one being used first.
     # icon_theme = "Adwaita, breeze"
 
@@ -347,26 +347,26 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#373f43"
-    foreground = "#7a8478"
-    frame_color = "#83c092"
+    background = "#16161e"
+    foreground = "#c0caf5"
+    frame_color = "#c0caf5"
     timeout = 10
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#373f43"
-    foreground = "#d3c6aa"
-    frame_color = "#a7c080"
+    background = "#1a1b26"
+    foreground = "#c0caf5"
+    frame_color = "#c0caf5"
     timeout = 10
     override_pause_level = 30
     # Icon for notifications with normal urgency
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#373f43"
-    foreground = "#d3c6aa"
-    frame_color = "#e67e80"
+    background = "#292e42"
+    foreground = "#db4b4b"
+    frame_color = "#db4b4b"
     timeout = 0
     override_pause_level = 60
     # Icon for notifications with critical urgency
