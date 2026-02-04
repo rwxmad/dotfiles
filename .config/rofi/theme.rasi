@@ -1,15 +1,15 @@
 * {
     font:   "BlexMono Nerd Font Medium 12";
 
-    bg0:     #15161e;
-    bg1:     #1a1b26;
-    fg0:     #c0caf5;
+    bg0:     #282828;
+    bg1:     #3c3836;
+    fg0:     #ebdbb2;
 
-    wbg:     #15161e90;
-    ibg:     #1a1b2690;
+    wbg:     #28282890;
+    ibg:     #3c383690;
 
-    accent-color:     #9ece6a;
-    urgent-color:     #f7768e;
+    accent-color:     #fe8019;
+    urgent-color:     #cc241d;
 
     background-color:   transparent;
     text-color:         @fg0;
