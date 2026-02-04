@@ -9,7 +9,7 @@ window-padding-balance = true
 window-decoration = true
 
 ### Theme ###
-theme = tokyonight_night
+theme = Gruvbox Dark
 background-opacity = 0.95
 
 ### Fonts ###
