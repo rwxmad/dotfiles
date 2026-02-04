@@ -21,8 +21,8 @@
       "sort-by-number": true,
       "active-only": false,
       "persistent-workspaces": {
-        "DP-1": [ 1, 8 ],
-        "HDMI-A-1": [ 9, 10 ]
+        "DP-1": [ 1, 7 ],
+        "HDMI-A-1": [ 8, 10 ]
       }
     },
 
