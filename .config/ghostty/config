@@ -13,7 +13,7 @@ theme = Gruvbox Dark
 background-opacity = 0.95
 
 ### Fonts ###
-font-family = BlexMono Nerd Font
+font-family = JetBrainsMono Nerd Font
 font-size = 10
 
 ### Cursor ###
