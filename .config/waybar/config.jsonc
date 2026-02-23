@@ -6,7 +6,7 @@
     "margin": 8,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/playerctl", "hyprland/language", "pulseaudio",  "network", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "custom/weather", "custom/quote", "tray", "custom/power"],
+    "modules-right": ["custom/playerctl",  "pulseaudio", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "custom/weather", "hyprland/language", "tray", "custom/power"],
 
   "hyprland/workspaces": {
       "all-outputs": false,
@@ -149,15 +149,15 @@
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
-    "network": {
-        "format-wifi": "󰖩 {essid} ({signalStrength}%)",
-        "format-ethernet": "󰈀 {ifname}",
-        "format-linked": "󰈀 {ifname} (No IP)",
-        "format-disconnected": "󰖪 Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "ghostty -e nmtui"
-    },
+    // "network": {
+    //     "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+    //     "format-ethernet": "󰈀 {ifname}",
+    //     "format-linked": "󰈀 {ifname} (No IP)",
+    //     "format-disconnected": "󰖪 Disconnected",
+    //     "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    //     "tooltip-format": "{ifname}: {ipaddr}",
+    //     "on-click": "ghostty -e nmtui"
+    // },
 
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
