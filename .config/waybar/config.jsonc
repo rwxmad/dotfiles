@@ -6,7 +6,7 @@
     "margin": 8,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/playerctl",  "pulseaudio", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "custom/weather", "hyprland/language", "tray", "custom/power"],
+    "modules-right": ["custom/playerctl",  "pulseaudio", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "hyprland/language", "tray", "custom/power"],
 
   "hyprland/workspaces": {
       "all-outputs": false,
@@ -60,12 +60,12 @@
         "on-click-right": "playerctl next"
     },
 
-    "custom/weather": {
-        "exec": "curl 'https://wttr.in/Moscow?format=1'",
-        "interval": 3600,
-        "format": "{}",
-        "tooltip": true
-    },
+    // "custom/weather": {
+    //     "exec": "curl 'https://wttr.in/Moscow?format=1'",
+    //     "interval": 3600,
+    //     "format": "{}",
+    //     "tooltip": true
+    // },
 
     "idle_inhibitor": {
         "format": "{icon}",
