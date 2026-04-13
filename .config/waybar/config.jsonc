@@ -6,7 +6,7 @@
     "margin": 8,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/playerctl",  "pulseaudio", "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "hyprland/language", "tray", "custom/power"],
+    "modules-right": ["custom/playerctl",  "pulseaudio", "backlight",  "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "hyprland/language", "tray", "custom/power"],
 
   "hyprland/workspaces": {
       "all-outputs": false,
@@ -181,12 +181,12 @@
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
     },
 
-    // "backlight": {
-    //     "format": "{icon} {percent}%",
-    //     "format-icons": ["󰃞", "󰃟", "󰃠"],
-    //     "on-scroll-up": "brightnessctl set +5%",
-    //     "on-scroll-down": "brightnessctl set 5%-"
-    // },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-"
+    },
 
     "disk": {
         "interval": 30,
