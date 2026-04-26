@@ -7,6 +7,7 @@ fonts
 
 .editorconfig
 Makefile
+pacman.txt
 
 ^/README.*
 ^/LICENSE.*
