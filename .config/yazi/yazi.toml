@@ -1,0 +1,25 @@
+[opener]
+
+edit = [
+	{ run = "$EDITOR %s", block = true, for = "unix" },
+]
+
+play = [
+	{ run = "mpv %s", orphan = true, for = "unix" },
+]
+
+open = [
+	{ run = "xdg-open %s", desc = "Open" },
+]
+
+open_pdf = [
+	{ run = "sioyek %s", desc = "Open PDF" },
+]
+
+
+[open]
+
+prepend_rules = [
+	{ mime = "video/*", use = "play" },
+	{ url = "*.pdf",    use = "open_pdf" },
+]

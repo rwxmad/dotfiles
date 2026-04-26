@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on   = "<C-g>"
+run  = 'shell -- rofi -theme fullscreen-preview -show filebrowser -filebrowser-command "ya emit reveal" -filebrowser-directory "$(pwd)"'
+desc = "Grid view"
