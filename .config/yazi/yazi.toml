@@ -16,10 +16,15 @@ open_pdf = [
 	{ run = "sioyek %s", desc = "Open PDF" },
 ]
 
+open_image = [
+	{ run = "feh %s", orphan = true, desc = "Open image" },
+]
+
 
 [open]
 
 prepend_rules = [
-	{ mime = "video/*", use = "play" },
-	{ url = "*.pdf",    use = "open_pdf" },
+	{ mime = "video/*",  use = "play" },
+	{ mime = "image/*",  use = "open_image" },
+	{ url = "*.pdf",     use = "open_pdf" },
 ]
