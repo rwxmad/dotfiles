@@ -50,6 +50,9 @@ alias l.='eza -a --icons | egrep "^\."' # search dotfiles in current dir
 alias ipv4="sh $XDG_CONFIG_HOME/scripts/ip.sh"
 alias extract="sh $XDG_CONFIG_HOME/scripts/extract.sh"
 
+# weather
+alias weather="sh $XDG_CONFIG_HOME/scripts/weather.sh"
+
 # homebrew
 alias brewd="sh $XDG_CONFIG_HOME/scripts/brew/dump.sh"
 alias brewi="sh $XDG_CONFIG_HOME/scripts/brew/install.sh"
@@ -74,6 +77,7 @@ alias ncc="npm cache clean -f"
 
 alias g='git'
 alias ga='git add'
+alias gp='git push'
 alias gaa='git add --all'
 alias gapa='git add --patch'
 alias gau='git add --update'
