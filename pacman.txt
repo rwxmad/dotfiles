@@ -42,10 +42,14 @@ fd
 feh
 figma-linux
 fontforge
+foot
+foremost
 fprintd
 freecad
 furmark
+fwupd
 fzf
+ghidra
 ghostty
 gimp
 git
@@ -85,6 +89,7 @@ lazydocker
 lazygit
 libgtop
 libpulse
+libreoffice-still
 linux
 linux-firmware
 linux-headers
@@ -117,12 +122,13 @@ openbsd-netcat
 opencl-nvidia
 opencode
 openrgb
-orca-slicer
+orca-slicer-bin
 os-prober
 otf-ipaexfont
 otf-ipafont
 otf-ipamjfont
 pacman-contrib
+papirus-icon-theme
 paru
 paru-debug
 pass
@@ -137,8 +143,10 @@ power-profiles-daemon
 prismlauncher
 python-gpustat
 python-pip
+qbittorrent
 qmk
 qt5-svg
+qt5-wayland
 ripgrep
 rofi
 rofi-tools-bin
@@ -158,6 +166,7 @@ steam
 stow
 sudo
 swappy
+swaync
 telegram-desktop
 texlive-fontsextra
 texlive-latexextra
@@ -173,6 +182,7 @@ v2rayn
 via-bin
 vial-appimage
 vim
+vivid
 vulkan-tools
 waybar
 wev
@@ -191,7 +201,6 @@ xdg-desktop-portal-termfilechooser-hunkyburrito-git
 xdg-utils
 yazi
 yt-dlp
-zen-browser-bin
 zoxide
 zram-generator
 zsh
