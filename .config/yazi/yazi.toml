@@ -1,7 +1,7 @@
 [opener]
 
 edit = [
-	{ run = "$EDITOR %s", block = true, for = "unix" },
+	{ run = '$EDITOR "$@"', block = true, for = "unix" },
 ]
 
 play = [
