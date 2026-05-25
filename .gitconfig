@@ -6,6 +6,9 @@
 [github]
 	user = rwxmad
 
+[includeIf "gitdir:/home/rwxmad/dev/work/"]
+  path = ~/.gitconfig-work
+
 [core]
   pager = delta
 
@@ -18,7 +21,7 @@
 [delta]
   navigate = true
   light = false
-  side-by-side = false
+  side-by-side = true
   line-numbers = true
 
 [merge]
