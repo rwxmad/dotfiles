@@ -11,7 +11,6 @@ basemark
 bat
 bind
 blender
-blueman
 bluetui
 bluez
 bluez-deprecated-tools
@@ -20,10 +19,12 @@ brave-bin
 brightnessctl
 browserpass-chromium
 btop
+bun
 chafa
 chromium
 chrono-date
 claude-code
+cliamp
 cliphist
 dart-sass
 dbeaver
@@ -36,6 +37,15 @@ dosfstools
 dunst
 efibootmgr
 element-desktop
+elephant
+elephant-calc
+elephant-clipboard
+elephant-desktopapplications
+elephant-files
+elephant-providerlist
+elephant-runner
+elephant-symbols
+elephant-websearch
 eza
 fastfetch
 fd
@@ -49,6 +59,7 @@ freecad
 furmark
 fwupd
 fzf
+gamescope
 ghidra
 ghostty
 gimp
@@ -79,8 +90,10 @@ hyprpicker
 hyprshutdown
 hyprwayland-scanner
 imagemagick
+impala
 inetutils
 inkscape
+intel-media-driver
 intel-ucode
 john
 kdeconnect
@@ -104,10 +117,9 @@ mpv
 nano
 nautilus
 neovim
-network-manager-applet
-networkmanager
 nmap
 nodejs
+noto-fonts
 noto-fonts-emoji
 npm
 nvidia-open
@@ -122,7 +134,7 @@ openbsd-netcat
 opencl-nvidia
 opencode
 openrgb
-orca-slicer-bin
+orca-slicer-git
 os-prober
 otf-ipaexfont
 otf-ipafont
@@ -132,7 +144,6 @@ papirus-icon-theme
 paru
 paru-debug
 pass
-pavucontrol
 php
 pipewire
 pipewire-alsa
@@ -147,6 +158,7 @@ qbittorrent
 qmk
 qt5-svg
 qt5-wayland
+rclone
 ripgrep
 rofi
 rofi-tools-bin
@@ -166,6 +178,7 @@ steam
 stow
 sudo
 swappy
+swaybg
 swaync
 telegram-desktop
 texlive-fontsextra
@@ -176,6 +189,7 @@ tmux
 trash-cli
 ttf-jetbrains-mono-nerd
 typst
+udiskie
 ufw
 usbutils
 v2rayn
@@ -183,13 +197,16 @@ via-bin
 vial-appimage
 vim
 vivid
+vpl-gpu-rt
 vulkan-tools
+walker
 waybar
 wev
 weylus-bin
 wf-recorder-git
 wget
 wifite
+wiremix
 wireplumber
 wl-clipboard
 wpa_supplicant
@@ -198,6 +215,7 @@ wqy-zenhei
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-termfilechooser-hunkyburrito-git
+xdg-terminal-exec
 xdg-utils
 yazi
 yt-dlp
