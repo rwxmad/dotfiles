@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+DOTFILES="$(cd "$(dirname "$0")" && pwd)"
+IGNORE=(
+  .git .gitignore .gitmodules .stow-local-ignore .editorconfig
+  install pacman.txt README.md LICENSE build fonts .config bin .luarc.json stylua.toml
+)
+
+green='\033[0;32m'
+red='\033[0;31m'
+nc='\033[0m'
+
+ok()    { printf "${green}%s${nc}\n"      "$*"; }
+error() { printf "${red}ERROR: %s${nc}\n" "$*"; }
+linked(){ printf "${green}LINK${nc}: %s\n" "$*"; }
+
+ignored() {
+  local base="$1"
+  for ig in "${IGNORE[@]}"; do
+    [[ "$base" == "$ig" ]] && return 0
+  done
+  return 1
+}
+
+safe_link() {
+  local src="$1" dst="$2" label="$3"
+  if [[ -L "$dst" ]]; then
+    [[ "$(readlink "$dst")" == "$src" ]] && return 0
+    ln -sf "$src" "$dst"
+    linked "$label (updated)"
+  elif [[ -e "$dst" ]]; then
+    error "SKIP: $label (regular file exists, remove manually to link)"
+  else
+    ln -sf "$src" "$dst"
+    linked "$label"
+  fi
+}
+
+stow() {
+  for item in "$DOTFILES"/.[^.]* "$DOTFILES"/*; do
+    local base
+    base="$(basename "$item")"
+    ignored "$base" && continue
+    safe_link "$item" "$HOME/$base" "$base"
+  done
+
+  for item in "$DOTFILES"/.config/*; do
+    local base
+    base="$(basename "$item")"
+    safe_link "$item" "$HOME/.config/$base" ".config/$base"
+  done
+}
+
+bin() {
+  mkdir -p "$HOME/.local/bin"
+  for item in "$DOTFILES"/bin/*; do
+    local base
+    base="$(basename "$item")"
+    safe_link "$item" "$HOME/.local/bin/$base" ".local/bin/$base"
+  done
+}
+
+zsh() {
+  if command -v zsh &>/dev/null; then
+    ok "zsh already installed."
+  else
+    error "zsh not installed. Installing..."
+    sudo pacman -S --needed zsh
+    chsh -s "$(command -v zsh)"
+    ok "zsh installed!"
+  fi
+}
+
+dump() {
+  paru -Qqe > "$DOTFILES/pacman.txt"
+  ok "Packages dumped to pacman.txt"
+}
+
+restore() {
+  paru -S --needed - < "$DOTFILES/pacman.txt"
+}
+
+all() {
+  zsh
+  stow
+  bin
+  ok "All done"
+}
+
+help() {
+  cat <<'EOF'
+Usage: ./install.sh [command]
+
+Commands:
+  all      Run all: zsh, stow, bin  (default)
+  stow     Link dotfiles to ~/ and .config/ to ~/.config/
+  bin      Link scripts to ~/.local/bin
+  zsh      Install zsh if missing
+  dump     Dump installed packages to pacman.txt
+  restore  Restore packages from pacman.txt
+  help     Show this message
+EOF
+}
+
+"${1:-all}" "$@"
