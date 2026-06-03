@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Bluetooth
+Comment=Bluetooth
+Exec=ghostty --title=bluetui -e bluetui
+Icon=bluetooth
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=bluetui

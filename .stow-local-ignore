@@ -26,3 +26,4 @@ install
 # handled separately by install
 \.config
 bin
+applications

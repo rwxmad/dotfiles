@@ -71,6 +71,16 @@ bin() {
   done
 }
 
+applications() {
+  mkdir -p "$HOME/.local/share/applications"
+  for item in "$DOTFILES"/applications/*; do
+    local base
+    base="$(basename "$item")"
+    safe_link "$item" "$HOME/.local/share/applications/$base" ".local/share/applications/$base"
+  done
+  update-desktop-database "$HOME/.local/share/applications" &>/dev/null || true
+}
+
 zsh() {
   if command -v zsh &>/dev/null; then
     ok "zsh already installed."
@@ -95,6 +105,7 @@ all() {
   zsh
   stow
   bin
+  applications
   ok "All done"
 }
 

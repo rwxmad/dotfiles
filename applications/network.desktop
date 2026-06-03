@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Network
+Comment=Network settings
+Exec=ghostty --title=impala -e impala
+Icon=wireless
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=impala
