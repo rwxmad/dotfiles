@@ -29,15 +29,9 @@ hl.on('hyprland.start', function()
   hl.exec_cmd('gsettings set org.gnome.desktop.interface cursor-size ' .. config.cursor_size)
   hl.exec_cmd('sleep 5 && gsettings set org.gnome.desktop.interface color-scheme prefer-dark')
 
-  hl.exec_cmd('dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XAUTHORITY')
-  hl.exec_cmd('dbus-update-activation-environment --systemd --all')
-  hl.exec_cmd(
-    'systemctl --user import-environment AQ_DRM_DEVICES __NV_PRIME_RENDER_OFFLOAD __VK_LAYER_NV_optimus __GLX_VENDOR_LIBRARY_NAME LIBVA_DRIVER_NAME GBM_BACKEND ELECTRON_OZONE_PLATFORM_HINT'
-  )
   hl.exec_cmd('/usr/lib/mate-polkit/polkit-mate-authentication-agent-1')
   hl.exec_cmd('waybar')
-  hl.exec_cmd('hyprpaper')
-  hl.exec_cmd('nm-applet')
+  hl.exec_cmd('swaybg -i ~/.config/wall.png -m fill')
   hl.exec_cmd('udiskie')
   hl.exec_cmd('swaync')
   hl.exec_cmd('hypridle')
@@ -47,84 +41,18 @@ hl.on('hyprland.start', function()
   hl.exec_cmd(os.getenv('HOME') .. '/.config/hypr/scripts/monitor-hotplug.sh')
 
   -- apps (workspace assigned via window rules)
-  hl.exec_cmd('ghostty -e tmux')
-  hl.exec_cmd(config.browser)
-  hl.exec_cmd('spotify')
-  hl.exec_cmd('obsidian')
-  -- hl.exec_cmd('inkscape')
-  hl.exec_cmd('discord')
-  hl.exec_cmd('thunderbird')
+  hl.exec_cmd('uwsm-app -- ghostty -e tmux')
+  hl.exec_cmd('uwsm-app -- ' .. config.browser)
+  hl.exec_cmd('uwsm-app -- spotify')
+  hl.exec_cmd('uwsm-app -- obsidian')
+  -- hl.exec_cmd('uwsm-app -- inkscape')
+  hl.exec_cmd('uwsm-app -- discord')
+  hl.exec_cmd('uwsm-app -- thunderbird')
 end)
 
-hl.workspace_rule({
-  workspace = '1',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '2',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '3',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '4',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '5',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '6',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '7',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '8',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '9',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
-
-hl.workspace_rule({
-  workspace = '10',
-  monitor = config.primary_monitor,
-  default = true,
-  persistent = true,
-})
+for i = 1, 10 do
+  hl.workspace_rule({ workspace = tostring(i), default = true, persistent = true })
+end
 
 -- ###############
 -- ### GESTURE ###
@@ -286,7 +214,7 @@ hl.window_rule({
 hl.window_rule({
   workspace = 3,
   match = {
-    class = '^(spotify)$',
+    class = '^(Spotify)$',
   },
 })
 

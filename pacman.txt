@@ -85,7 +85,6 @@ htop
 hypridle
 hyprland
 hyprlock
-hyprpaper
 hyprpicker
 hyprshutdown
 hyprwayland-scanner
