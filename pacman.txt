@@ -166,6 +166,7 @@ ruby
 ruby-certificate_authority
 ruff
 sassc
+sddm
 sing-box
 sioyek-git
 slurp
@@ -192,6 +193,7 @@ typst
 udiskie
 ufw
 usbutils
+uwsm
 v2rayn
 via-bin
 vial-appimage
