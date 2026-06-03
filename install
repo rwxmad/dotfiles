@@ -73,7 +73,12 @@ bin() {
 
 applications() {
   mkdir -p "$HOME/.local/share/applications"
-  for item in "$DOTFILES"/applications/*; do
+  for item in "$DOTFILES"/applications/*.desktop; do
+    local base
+    base="$(basename "$item")"
+    safe_link "$item" "$HOME/.local/share/applications/$base" ".local/share/applications/$base"
+  done
+  for item in "$DOTFILES"/applications/hidden/*.desktop; do
     local base
     base="$(basename "$item")"
     safe_link "$item" "$HOME/.local/share/applications/$base" ".local/share/applications/$base"
