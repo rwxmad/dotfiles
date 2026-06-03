@@ -26,18 +26,14 @@ scrollbar {
 }
 
 .box-wrapper {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.04));
+  background: rgba(20, 20, 19, 0.9);
 
   backdrop-filter: blur(18px);
   -gtk-backdrop-filter: blur(18px);
 
   border-radius: 16px;
 
-  border: 1px solid rgba(255, 255, 255, 0.25);
-
-  box-shadow:
-    0 8px 15px rgba(255, 255, 255, 0.1),
-    inset 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(20, 20, 19, 0.5);
 
   padding: 12px;
 }
@@ -58,11 +54,11 @@ scrollbar {
 }
 
 child:selected .item-box {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(214, 93, 14, 0.8);
 }
 
 child:selected .item-box * {
-  color: @selected-text;
+  color: @base;
 }
 
 .item-box {
