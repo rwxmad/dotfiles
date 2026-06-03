@@ -15,7 +15,7 @@ ______         _     __  _  _
 git clone --recurse-submodules git@github.com:rwxmad/dotfiles.git
 ```
 
-2. Run `install.sh`
+2. Run [install](./install)
 
 ## Shell setup
 
@@ -30,7 +30,7 @@ git clone --recurse-submodules git@github.com:rwxmad/dotfiles.git
 - [eza](https://github.com/eza-community/eza) - A modern replacement for ‘ls’
 - [delta](https://github.com/dandavison/delta) - A syntax-highlighting pager for git, diff, and grep output
 
-More tools in [Brewfile](.config/brew/Brewfile)
+More tools in [pacman.txt](./pacman.txt)
 
 ## Scripts
 
