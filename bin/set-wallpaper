@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [[ -z $1 ]]; then
+  echo "Usage: set-wallpaper <path-to-image>" >&2
+  exit 1
+fi
+
+WALLPAPER="$(realpath "$1")"
+
+if [[ ! -f "$WALLPAPER" ]]; then
+  echo "File does not exist: $WALLPAPER" >&2
+  exit 1
+fi
+
+mkdir -p "$HOME/.local/state"
+ln -nsf "$WALLPAPER" "$HOME/.local/state/current-wallpaper"
+
+pkill -x swaybg
+setsid uwsm-app -- start-wallpaper >/dev/null 2>&1 &

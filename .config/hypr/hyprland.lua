@@ -31,7 +31,7 @@ hl.on('hyprland.start', function()
 
   hl.exec_cmd('/usr/lib/mate-polkit/polkit-mate-authentication-agent-1')
   hl.exec_cmd('waybar')
-  hl.exec_cmd('swaybg -i ~/.config/wall.png -m fill')
+  hl.exec_cmd('start-wallpaper')
   hl.exec_cmd('udiskie')
   hl.exec_cmd('swaync')
   hl.exec_cmd('hypridle')

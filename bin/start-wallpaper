@@ -1,0 +1,6 @@
+#!/bin/bash
+
+WALL="${HOME}/.local/state/current-wallpaper"
+[[ -e "$WALL" ]] || WALL="${XDG_CONFIG_HOME}/wall.png"
+
+exec swaybg -i "$WALL" -m fill
