@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=wlmouse
+Comment=wlmouse settings
+Exec=chromium --class=wlmouse --app=https://gm.wlmouse.gg/#/project/items
+Icon=input-mouse
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=wlmouse
