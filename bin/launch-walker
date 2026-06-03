@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if ! pgrep -x elephant > /dev/null; then
+  setsid uwsm-app -- elephant &
+fi
+
+if ! pgrep -f "walker --gapplication-service" > /dev/null; then
+  setsid uwsm-app -- env GSK_RENDERER=cairo walker --gapplication-service &
+fi
+
+exec walker "$@"
