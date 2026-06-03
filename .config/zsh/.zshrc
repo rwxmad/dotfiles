@@ -86,12 +86,15 @@ export PAGER="bat"
 # --------------------------------------------------------------------------------------------------
 
 export CLICOLOR=1
-export LSCOLORS=fxgxfxexbxegedabagacad
+export LS_COLORS="$(vivid generate gruvbox-dark-soft)"
 export PS1="%m@%n:%F{2}%~%f$ "
 
 # --------------------------------------------------------------------------------------------------
 # Other
 # --------------------------------------------------------------------------------------------------
+
+# zoxide
+eval "$(zoxide init zsh)"
 
 # Starship
 export STARSHIP_CACHE=~/.starship/cache
@@ -108,4 +111,5 @@ eval "$(mise activate zsh --shims)"
 
 . "$HOME/.atuin/bin/env"
 
+# atuin
 eval "$(atuin init zsh)"
