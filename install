@@ -2,10 +2,6 @@
 set -euo pipefail
 
 DOTFILES="$(cd "$(dirname "$0")" && pwd)"
-IGNORE=(
-  .git .gitignore .gitmodules .stow-local-ignore .editorconfig
-  install pacman.txt README.md LICENSE build fonts .config bin .luarc.json stylua.toml
-)
 
 green='\033[0;32m'
 red='\033[0;31m'
@@ -17,9 +13,12 @@ linked(){ printf "${green}LINK${nc}: %s\n" "$*"; }
 
 ignored() {
   local base="$1"
-  for ig in "${IGNORE[@]}"; do
-    [[ "$base" == "$ig" ]] && return 0
-  done
+  while IFS= read -r pattern || [[ -n "$pattern" ]]; do
+    [[ "$pattern" =~ ^[[:space:]]*# ]] && continue
+    [[ -z "${pattern// }" ]] && continue
+    local p="${pattern#^/}"
+    [[ "$base" =~ ^$p$ ]] && return 0
+  done < "$DOTFILES/.stow-local-ignore"
   return 1
 }
 
@@ -48,8 +47,19 @@ stow() {
   for item in "$DOTFILES"/.config/*; do
     local base
     base="$(basename "$item")"
+    [[ "$base" == "systemd" ]] && continue
     safe_link "$item" "$HOME/.config/$base" ".config/$base"
   done
+
+  # systemd/user/ may already exist as a real directory; link each item individually
+  if [[ -d "$DOTFILES/.config/systemd/user" ]]; then
+    mkdir -p "$HOME/.config/systemd/user"
+    for item in "$DOTFILES/.config/systemd/user"/*; do
+      local base
+      base="$(basename "$item")"
+      safe_link "$item" "$HOME/.config/systemd/user/$base" ".config/systemd/user/$base"
+    done
+  fi
 }
 
 bin() {

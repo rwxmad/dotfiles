@@ -1,13 +1,28 @@
-# ~./dotfiles/.stow-local-ignore: Files to be ignored by gnu 'stow'
+# Ignored by install script and gnu stow
 
+# git
 \.git
 \.gitignore
+\.gitmodules
+\.stow-local-ignore
 
-fonts
+# editor config
+\.editorconfig
+\.luarc\.json
+stylua\.toml
 
-.editorconfig
-Makefile
-pacman.txt
-
+# meta
 ^/README.*
 ^/LICENSE.*
+pacman\.txt
+build
+
+# fonts (installed separately)
+fonts
+
+# install script itself
+install
+
+# handled separately by install
+\.config
+bin
