@@ -1,39 +1,38 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 32,
+    "height": 26,
     "spacing": 4,
-    "margin": 8,
+    "margin": 4,
     "modules-left": ["hyprland/workspaces", "hyprland/submap", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/playerctl",  "pulseaudio", "backlight",  "cpu", "memory", "temperature#cpu", "custom/gpu_temp",  "battery", "disk", "hyprland/language", "tray", "custom/power"],
+    "modules-right": ["tray", "custom/playerctl",  "pulseaudio", "backlight", "bluetooth", "network", "cpu", "memory", "temperature#cpu", "custom/gpu_temp", "disk", "hyprland/language", "battery"],
 
   "hyprland/workspaces": {
-      "all-outputs": false,
-      "format": "{icon}",
-      "format-icons": {
-        "default": "",
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5",
-        "6": "6",
-        "7": "7",
-        "8": "8",
-        "9": "9",
-        "10": "0",
-        "active": "󱓻"
-      },
-      "on-scroll-up": "hyprctl dispatch workspace e+1 1>/dev/null",
-      "on-scroll-down": "hyprctl dispatch workspace e-1 1>/dev/null",
-      "sort-by-number": true,
-      "active-only": false,
-      "persistent-workspaces": {
-        "DP-1": [ 1, 7 ],
-        "HDMI-A-1": [ 8, 10 ]
-      }
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "0",
+      "active": "󱓻"
     },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
 
     "hyprland/submap": {
         "format": "<span>{}</span>"
@@ -59,13 +58,6 @@
         "on-click": "playerctl play-pause",
         "on-click-right": "playerctl next"
     },
-
-    // "custom/weather": {
-    //     "exec": "curl 'https://wttr.in/Moscow?format=1'",
-    //     "interval": 3600,
-    //     "format": "{}",
-    //     "tooltip": true
-    // },
 
     "idle_inhibitor": {
         "format": "{icon}",
@@ -131,33 +123,55 @@
       "interval": 2,
       "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader",
       "format": "󰢮 {}°C",
-      "on-click": "ghostty -e btop",
+      "on-click": "ghostty --title=nvtop -e nvtop",
       "tooltip": true,
       "tooltip-format": "GPU: {}°C"
     },
 
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
-        "format-plugged": "󰚥 {capacity}%",
-        "format-alt": "{icon} {time}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-discharging": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "interval": 5,
+    // "on-click": "menu power",
+    // "on-click-right": "",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
+  },
 
-    // "network": {
-    //     "format-wifi": "󰖩 {essid} ({signalStrength}%)",
-    //     "format-ethernet": "󰈀 {ifname}",
-    //     "format-linked": "󰈀 {ifname} (No IP)",
-    //     "format-disconnected": "󰖪 Disconnected",
-    //     "format-alt": "{ifname}: {ipaddr}/{cidr}",
-    //     "tooltip-format": "{ifname}: {ipaddr}",
-    //     "on-click": "ghostty -e nmtui"
-    // },
+  "network": {
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format": "{icon}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰀂",
+    "format-disconnected": "󰤮",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)",
+    "tooltip-format-ethernet": "Connected",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 3,
+    "spacing": 1,
+    "on-click": "ghostty --title=impala -e impala"
+  },
+
+  "bluetooth": {
+    "format": "",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "format-no-controller": "",
+    "tooltip-format": "Devices connected: {num_connections}",
+    "on-click": "ghostty --title=bluetui -e bluetui"
+  },
 
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
@@ -175,7 +189,7 @@
             "car": "󰄋",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click": "pavucontrol",
+        "on-click": "ghostty --title=wiremix -e wiremix",
         "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
         "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
@@ -196,16 +210,7 @@
     },
 
     "tray": {
-        "icon-size": 20,
-        "spacing": 4
-    },
-
-    "custom/power": {
-      "format": "",
-      "tooltip": true,
-      "tooltip-format": "LMB: lock session\nMMB: poweroff\nRMB: suspend",
-      "on-click": "loginctl lock-session",
-      // "on-click-middle": "systemctl poweroff"
-      "on-click-right": "systemctl suspend"
+        "icon-size": 12,
+        "spacing": 17
     }
 }
