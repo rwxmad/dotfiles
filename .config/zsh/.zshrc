@@ -109,7 +109,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # mise
 eval "$(mise activate zsh --shims)"
 
-. "$HOME/.atuin/bin/env"
-
 # atuin
 eval "$(atuin init zsh)"
