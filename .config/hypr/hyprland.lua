@@ -2,7 +2,7 @@ local config = require('config')
 require('hyprvars')
 
 hl.env('EDITOR', 'nvim')
-hl.env('AQ_DRM_DEVICES', '/dev/dri/nvidia-dgpu:/dev/dri/intel-igpu')
+-- hl.env('AQ_DRM_DEVICES', '/dev/dri/nvidia-dgpu:/dev/dri/intel-igpu')
 hl.env('LIBVA_DRIVER_NAME', 'nvidia')
 hl.env('__GLX_VENDOR_LIBRARY_NAME', 'nvidia')
 hl.env('NVD_BACKEND', 'direct')
@@ -38,7 +38,6 @@ hl.on('hyprland.start', function()
   hl.exec_cmd('wl-clip-persist --clipboard regular')
   hl.exec_cmd('wl-paste --type text --watch cliphist store')
   hl.exec_cmd('wl-paste --type image --watch cliphist store')
-  hl.exec_cmd(os.getenv('HOME') .. '/.config/hypr/scripts/monitor-hotplug.sh')
 
   -- apps (workspace assigned via window rules)
   hl.exec_cmd('uwsm-app -- ghostty -e tmux')
@@ -59,7 +58,7 @@ end
 -- ###############
 
 -- # touchpad swipe with 3 fingers
-hl.gesture({ fingers = 3, direction = 'horizontal', action = 'fullscreen' })
+hl.gesture({ fingers = 3, direction = 'horizontal', action = 'workspace' })
 
 -- #############################
 -- ### ENVIRONMENT VARIABLES ###
