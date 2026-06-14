@@ -3,11 +3,11 @@ require('hyprvars')
 
 hl.env('EDITOR', 'nvim')
 -- hl.env('AQ_DRM_DEVICES', '/dev/dri/nvidia-dgpu:/dev/dri/intel-igpu')
-hl.env('LIBVA_DRIVER_NAME', 'nvidia')
-hl.env('__GLX_VENDOR_LIBRARY_NAME', 'nvidia')
-hl.env('NVD_BACKEND', 'direct')
+-- hl.env('LIBVA_DRIVER_NAME', 'nvidia')
+-- hl.env('__GLX_VENDOR_LIBRARY_NAME', 'nvidia')
+-- hl.env('NVD_BACKEND', 'direct')
 hl.env('XDG_SESSION_TYPE', 'wayland')
-hl.env('GBM_BACKEND', 'nvidia-drm')
+-- hl.env('GBM_BACKEND', 'nvidia-drm')
 
 hl.env('CLUTTER_BACKEND', 'wayland')
 hl.env('GDK_BACKEND', 'wayland,x11,*')
@@ -19,6 +19,7 @@ hl.env('QT_QPA_PLATFORMTHEME', 'gtk3')
 hl.env('QT_WAYLAND_DISABLE_WINDOWDECORATION', '1')
 hl.env('SDL_VIDEODRIVER', 'wayland')
 hl.env('GSK_RENDERER', 'ngl')
+hl.env('ELECTRON_OZONE_PLATFORM_HINT', 'auto')
 
 -- autostart
 hl.on('hyprland.start', function()
@@ -173,6 +174,11 @@ hl.bind('mouse:276', hl.dsp.focus({ workspace = 'e+1' }))
 -- Mouse move/resize
 hl.bind(config.mod .. ' + mouse:272', hl.dsp.window.drag(), { mouse = true })
 hl.bind(config.mod .. ' + mouse:273', hl.dsp.window.resize(), { mouse = true })
+
+-- Enable/disable internal monitor on open/close laptop
+hl.bind('switch:on:Lid Switch', hl.dsp.exec_cmd('lid-internal off'), { locked = true })
+hl.bind('switch:off:Lid Switch', hl.dsp.exec_cmd('lid-internal on'), { locked = true })
+hl.bind(config.mod .. ' + O', hl.dsp.exec_cmd('lid-internal toggle'))
 
 -- Zoom
 hl.bind(config.mod .. ' + mouse_down', function()
