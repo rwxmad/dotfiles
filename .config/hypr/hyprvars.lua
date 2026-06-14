@@ -59,6 +59,10 @@ hl.config({
     active_opacity = 1.0,
     fullscreen_opacity = 1.0,
     rounding = 4,
+
+    blur = {
+      enabled = false,
+    },
   },
 })
 
