@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Enable / disable / toggle the internal laptop panel (eDP-1) on a Hyprland Lua config.
+#
+# hyprvars.lua must contain (at the end of the MONITORS block):
+#   if io.open(os.getenv('HOME') .. '/.local/state/hypr/lid-internal-off') then
+#     hl.monitor({ output = 'eDP-1', disabled = true })
+#   end
+#
+# Usage: lid-internal {on|off|toggle}
+
+set -euo pipefail
+
+INTERNAL="eDP-1"
+FLAG="${XDG_STATE_HOME:-$HOME/.local/state}/hypr/lid-internal-off"
+
+notify() {
+  command -v notify-send >/dev/null 2>&1 && notify-send -i video-display "Lid" "$1" || true
+}
+
+off() {
+  if ! hw-external-monitors; then
+    notify "No external monitor"
+    exit 0
+  fi
+  mkdir -p "$(dirname "$FLAG")"
+  : >"$FLAG"
+  hyprctl reload
+}
+
+on() {
+  rm -f "$FLAG"
+  hyprctl reload
+}
+
+case "${1:-}" in
+  off) off ;;
+  on) on ;;
+  toggle) [[ -e "$FLAG" ]] && on || off ;;
+  *)
+    echo "usage: $(basename "$0") {on|off|toggle}" >&2
+    exit 1
+    ;;
+esac
