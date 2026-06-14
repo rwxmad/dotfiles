@@ -9,10 +9,10 @@ base
 base-devel
 basemark
 bat
+bibata-cursor-theme-bin
 bind
 blender
 bluetui
-bluez
 bluez-deprecated-tools
 bluez-utils
 brave-bin
@@ -34,7 +34,6 @@ discord
 docker
 docker-compose
 dosfstools
-dunst
 efibootmgr
 element-desktop
 elephant
@@ -94,6 +93,8 @@ inetutils
 inkscape
 intel-media-driver
 intel-ucode
+iwd
+jdk-openjdk
 john
 kdeconnect
 kitty
@@ -117,7 +118,6 @@ nano
 nautilus
 neovim
 nmap
-nodejs
 noto-fonts
 noto-fonts-emoji
 npm
@@ -157,6 +157,7 @@ qbittorrent
 qmk
 qt5-svg
 qt5-wayland
+qt6-multimedia-ffmpeg
 rclone
 ripgrep
 rofi
@@ -164,6 +165,7 @@ rofi-tools-bin
 ruby
 ruby-certificate_authority
 ruff
+rustup
 sassc
 sddm
 sing-box
@@ -173,6 +175,7 @@ smartmontools
 sof-firmware
 solaar
 spotify
+spotify-player
 starship
 steam
 stow
@@ -181,6 +184,7 @@ swappy
 swaybg
 swaync
 telegram-desktop
+tesseract-data-afr
 texlive-fontsextra
 texlive-latexextra
 thunderbird
@@ -193,12 +197,13 @@ udiskie
 ufw
 usbutils
 uwsm
-v2rayn
+v2rayn-bin
 via-bin
 vial-appimage
 vim
 vivid
 vpl-gpu-rt
+vulkan-intel
 vulkan-tools
 walker
 waybar
@@ -217,7 +222,7 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-termfilechooser-hunkyburrito-git
 xdg-terminal-exec
-xdg-utils
+xray
 yazi
 yt-dlp
 zoxide
