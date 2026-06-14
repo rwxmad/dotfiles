@@ -3,6 +3,12 @@ hl.monitor({ output = 'eDP-1', mode = '3200x2000@120Hz', position = '0x0', scale
 hl.monitor({ output = 'DP-1', mode = '2560x1440@144Hz', position = 'auto', scale = 1 })
 hl.monitor({ output = '', mode = 'preferred', position = 'auto', scale = 'auto' })
 
+local f = io.open(os.getenv('HOME') .. '/.local/state/hypr/lid-internal-off')
+if f then
+  f:close()
+  hl.monitor({ output = 'eDP-1', disabled = true })
+end
+
 -- GENERAL
 hl.config({
   general = {
@@ -53,12 +59,6 @@ hl.config({
     active_opacity = 1.0,
     fullscreen_opacity = 1.0,
     rounding = 4,
-    blur = {
-      enabled = true,
-      size = 8,
-      passes = 2,
-      xray = true,
-    },
   },
 })
 
