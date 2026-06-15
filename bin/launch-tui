@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Launch a TUI command in the default terminal
+
+exec setsid uwsm-app -- xdg-terminal-exec --app-id=dev.rwxmad.$(basename $1) -e "$1" "${@:2}"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Launch a TUI or focus an existing terminal window for it
+
+APP_ID="$(basename "$1")"
+LAUNCH_COMMAND="launch-tui $@"
+
+exec launch-or-focus "dev.rwxmad.$APP_ID" "$LAUNCH_COMMAND"
+
