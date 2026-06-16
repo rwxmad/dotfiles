@@ -277,6 +277,14 @@ hl.window_rule({
 
 hl.window_rule({
   float = true,
+  size = { 'monitor_w*0.8', 'monitor_h*0.8' },
+  match = {
+    class = '^(dev.rwxmad.btop)$',
+  },
+})
+
+hl.window_rule({
+  float = true,
   size = { '800', '800' },
   match = {
     class = '^(dev.rwxmad.impala)$',
