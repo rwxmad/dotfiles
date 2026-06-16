@@ -34,6 +34,9 @@
 @define-color battery-critical-color @red;
 @define-color network-color @blue;
 @define-color network-disconnected-color @red;
+@define-color bluetooth-color @fg;
+@define-color bluetooth-connected-color @blue;
+@define-color bluetooth-disconnected-color @red;
 @define-color pulseaudio-color @orange;
 @define-color pulseaudio-muted-color @red;
 @define-color backlight-color @yellow;
@@ -66,6 +69,7 @@
 #custom-gpu_temp,
 #battery,
 #network,
+#bluetooth,
 #pulseaudio,
 #backlight,
 #disk,
@@ -191,6 +195,18 @@ window#waybar.empty #window {
 
 #network.disconnected {
   color: @network-disconnected-color;
+}
+
+#bluetooth {
+  color: @bluetooth-color;
+}
+
+#bluetooth.connected {
+  color: @bluetooth-connected-color;
+}
+
+#bluetooth.disconnected {
+  color: @bluetooth-disconnected-color;
 }
 
 #pulseaudio {
