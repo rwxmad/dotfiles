@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Recreate my default tmux layout: home (main/nvim/dots/notes) + work (main)
+# Idempotent: existing sessions are left untouched, missing ones are built
+# Usage: tmux-sessions [session-to-attach] (default: home)
+
+set -euo pipefail
+
+# main window: full-height left pane (80% width), right column split top/bottom
+dev_layout() {
+  local target="$1" dir="$2"
+  tmux split-window -h -l 20% -t "$target" -c "$dir"
+  tmux split-window -v -t "$target" -c "$dir"
+  tmux select-pane -t "${target}.1" # focus the big left pane
+}
+
+build_home() {
+  tmux has-session -t home 2>/dev/null && return 0
+
+  tmux new-session -d -s home -n main -c "$HOME/dev"
+  dev_layout home:main "$HOME/dev"
+
+  tmux new-window -t home -n nvim  -c "$HOME/dotfiles/.config/nvim"
+  tmux new-window -t home -n dots  -c "$HOME/dotfiles"
+  tmux new-window -t home -n notes -c "$HOME/notes"
+
+  tmux select-window -t home:main
+}
+
+build_work() {
+  tmux has-session -t work 2>/dev/null && return 0
+
+  tmux new-session -d -s work -n main -c "$HOME/dev/work"
+  dev_layout work:main "$HOME/dev/work"
+}
+
+build_home
+build_work
+
+target="${1:-home}"
+if [[ -n "${TMUX:-}" ]]; then
+  tmux switch-client -t "$target"
+else
+  tmux attach-session -t "$target"
+fi
