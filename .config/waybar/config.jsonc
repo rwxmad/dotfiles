@@ -100,13 +100,13 @@
         "format": "󰘚 {usage}%",
         "tooltip": true,
         "interval": 1,
-        "on-click": "ghostty -e btop"
+        "on-click": "launch-or-focus-tui btop"
     },
 
     "memory": {
         "format": "󰍛 {}%",
         "interval": 1,
-        "on-click": "ghostty -e btop"
+        "on-click": "launch-or-focus-tui btop"
     },
 
     "temperature#cpu": {
@@ -114,7 +114,7 @@
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["󱃃", "󰔏", "󱃂"],
-        "on-click": "ghostty -e btop",
+        "on-click": "launch-or-focus-tui btop",
         "tooltip": true,
         "tooltip-format": "CPU: {}°C"
     },
@@ -123,7 +123,7 @@
       "interval": 2,
       "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader",
       "format": "󰢮 {}°C",
-      "on-click": "ghostty --title=nvtop -e nvtop",
+      "on-click": "launch-or-focus-tui nvtop",
       "tooltip": true,
       "tooltip-format": "GPU: {}°C"
     },
@@ -160,7 +160,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "ghostty --title=impala -e impala"
+    "on-click": "launch-or-focus-tui impala"
   },
 
   "bluetooth": {
@@ -170,29 +170,29 @@
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "ghostty --title=bluetui -e bluetui"
+    "on-click": "launch-or-focus-tui bluetui"
   },
 
-    "pulseaudio": {
-        "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": "󰂰 {volume}%",
-        "format-bluetooth-muted": "󰂲 {icon}",
-        "format-muted": "󰝟",
-        "format-source": "",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "󰋋",
-            "hands-free": "󰥰",
-            "headset": "󰋎",
-            "phone": "󰏲",
-            "portable": "󰄝",
-            "car": "󰄋",
-            "default": ["󰕿", "󰖀", "󰕾"]
-        },
-        "on-click": "ghostty --title=wiremix -e wiremix",
-        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
+  "pulseaudio": {
+      "format": "{icon} {volume}% {format_source}",
+      "format-bluetooth": "󰂰 {volume}%",
+      "format-bluetooth-muted": "󰂲 {icon}",
+      "format-muted": "󰝟",
+      "format-source": "",
+      "format-source-muted": "",
+      "format-icons": {
+          "headphone": "󰋋",
+          "hands-free": "󰥰",
+          "headset": "󰋎",
+          "phone": "󰏲",
+          "portable": "󰄝",
+          "car": "󰄋",
+          "default": ["󰕿", "󰖀", "󰕾"]
+      },
+      "on-click": "launch-or-focus-tui wiremix",
+      "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+      "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
     },
 
     "backlight": {
