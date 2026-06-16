@@ -279,7 +279,7 @@ hl.window_rule({
   float = true,
   size = { '800', '800' },
   match = {
-    title = '^(impala)$',
+    class = '^(dev.rwxmad.impala)$',
   },
 })
 
@@ -287,7 +287,7 @@ hl.window_rule({
   float = true,
   size = { '800', '800' },
   match = {
-    title = '^(bluetui)$',
+    class = '^(dev.rwxmad.bluetui)$',
   },
 })
 
@@ -295,7 +295,7 @@ hl.window_rule({
   float = true,
   size = { 'monitor_w * 0.5', 'monitor_h * 0.5' },
   match = {
-    class = '^(wiremix)$',
+    class = '^(dev.rwxmad.wiremix)$',
   },
 })
 
