@@ -12,8 +12,8 @@ return {
   terminal = 'ghostty',
   browser = 'helium-browser',
   launcher = 'launch-walker',
-  file_manager = 'ghostty --title=yazi -e yazi',
-  bluetooth = 'ghostty --title=bluetui -e bluetui',
+  file_manager = 'launch-or-focus-tui yazi',
+  bluetooth = 'launch-or-focus-tui bluetui',
   clipboard = os.getenv('HOME') .. '/.config/rofi/scripts/cliphist/run',
   web_search = os.getenv('HOME') .. '/.config/rofi/scripts/web-search.sh',
 
