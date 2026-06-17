@@ -43,3 +43,6 @@
   co = checkout
   cm = commit -m
   ca = commit -a
+
+[init]
+	defaultBranch = main
