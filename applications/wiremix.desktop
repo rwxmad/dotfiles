@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Wiremix
+Comment=Sound settings
+Exec=launch-or-focus-tui wiremix
+Icon=audio-speaker-left-side
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=wiremix
