@@ -2,7 +2,7 @@
 Type=Application
 Name=Network
 Comment=Network settings
-Exec=ghostty --title=impala -e impala
+Exec=launch-or-focus-tui impala
 Icon=wireless
 Terminal=false
 Categories=Utility;
