@@ -168,8 +168,14 @@ hl.bind('XF86MonBrightnessUp', hl.dsp.exec_cmd('brightnessctl -e4 -n2 set 5%+'),
 hl.bind('XF86MonBrightnessDown', hl.dsp.exec_cmd('brightnessctl -e4 -n2 set 5%-'), { locked = true, repeating = true })
 
 -- Screenshot
-hl.bind('Print', hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))
-hl.bind('SHIFT + Print', hl.dsp.exec_cmd('grim - | swappy -f -'))
+hl.bind(
+  'Print',
+  hl.dsp.exec_cmd('grim -g "$(slurp)" - | satty -f - --copy-command wl-copy --actions-on-enter save-to-clipboard')
+)
+hl.bind(
+  'SHIFT + Print',
+  hl.dsp.exec_cmd('grim - | satty -f - --copy-command wl-copy --actions-on-enter save-to-clipboard')
+)
 
 -- Mouse side buttons — scroll workspaces
 hl.bind('mouse:275', hl.dsp.focus({ workspace = 'e-1' }))
