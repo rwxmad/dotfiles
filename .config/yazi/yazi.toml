@@ -17,7 +17,7 @@ open_pdf = [
 ]
 
 open_image = [
-	{ run = "feh %s", orphan = true, desc = "Open image" },
+	{ run = "imv %s", orphan = true, desc = "Open image" },
 ]
 
 
