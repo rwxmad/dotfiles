@@ -26,6 +26,7 @@ chrono-date
 claude-code
 cliamp
 cliphist
+comfyui
 dart-sass
 dbeaver
 ddcci-driver-linux-dkms
@@ -48,7 +49,6 @@ elephant-websearch
 eza
 fastfetch
 fd
-feh
 figma-linux
 fontforge
 foot
@@ -89,6 +89,7 @@ hyprshutdown
 hyprwayland-scanner
 imagemagick
 impala
+imv
 inetutils
 inkscape
 intel-media-driver
@@ -129,6 +130,8 @@ nvtop
 nwg-look
 obs-studio
 obsidian
+ollama
+ollama-cuda
 openbsd-netcat
 opencl-nvidia
 opencode
@@ -167,6 +170,7 @@ ruby-certificate_authority
 ruff
 rustup
 sassc
+satty
 sddm
 sing-box
 sioyek-git
