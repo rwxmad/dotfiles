@@ -46,3 +46,12 @@ hl.window_rule({
     class = '^(org.gnome.Calculator)$',
   },
 })
+
+-- Media/image/video apps should be opaque.
+hl.window_rule({
+  tag = '-default-opacity',
+  opacity = '1 1',
+  match = {
+    class = '^(zoom|vlc|mpv|org.kde.kdenlive|com.obsproject.Studio|com.github.PintaProject.Pinta|imv)$',
+  },
+})
