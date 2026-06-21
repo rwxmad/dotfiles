@@ -32,3 +32,23 @@ text/x-tex=nvim.desktop
 x-scheme-handler/chrome=helium.desktop
 x-scheme-handler/http=helium.desktop
 x-scheme-handler/https=helium.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-SC9GQ3.desktop
+message/rfc822=userapp-Thunderbird-SC9GQ3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-SC9GQ3.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-Y1WGQ3.desktop
+text/calendar=userapp-Thunderbird-Y1WGQ3.desktop
+application/x-extension-ics=userapp-Thunderbird-Y1WGQ3.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-Y1WGQ3.desktop
+image/png=imv.desktop
+image/jpeg=imv.desktop
+image/gif=imv.desktop
+image/webp=imv.desktop
+image/bmp=imv.desktop
+image/avif=imv.desktop
+image/heif=imv.desktop
+
+[Added Associations]
+x-scheme-handler/mailto=userapp-Thunderbird-SC9GQ3.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-SC9GQ3.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-Y1WGQ3.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-Y1WGQ3.desktop;
