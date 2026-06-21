@@ -8,8 +8,8 @@ hide_action_hints = true                                                    # gl
 
 [keybinds]
 quick_activate = []
-next = ["ctrl j"]
-previous = ["ctrl k"]
+next = ["ctrl j", "ctrl n", "Down"]
+previous = ["ctrl k", "ctrl p", "Up"]
 
 [columns]
 symbols = 1 # providers to be queried by default
