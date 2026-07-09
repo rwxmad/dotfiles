@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=btop++
+Comment=btop++
+Exec=launch-or-focus-tui btop
+Icon=btop
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=btop

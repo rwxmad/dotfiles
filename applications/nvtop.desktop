@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=nvtop
+Comment=nvtop
+Exec=launch-or-focus-tui nvtop
+Icon=nvtop
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=nvtop
