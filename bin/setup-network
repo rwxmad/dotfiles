@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#   archinstall (systemd-networkd profile):
+#   - /etc/systemd/network/20-wired.network, 20-wireless.network
+#   - enable systemd-networkd / systemd-resolved
+#   - /etc/resolv.conf -> stub-resolv.conf
+#   - iwd EnableNetworkConfiguration=false  (default iwd)
+
+set -euo pipefail
+
+# iwd -> Wi-Fi; IP layer - systemd-networkd
+sudo systemctl enable iwd.service
+
+# mask wait-online
+sudo systemctl disable systemd-networkd-wait-online.service
+sudo systemctl mask systemd-networkd-wait-online.service
