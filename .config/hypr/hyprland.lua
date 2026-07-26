@@ -1,5 +1,6 @@
 local config = require('config')
 require('hyprvars')
+require('toggles')
 
 hl.env('EDITOR', 'nvim')
 -- hl.env('AQ_DRM_DEVICES', '/dev/dri/nvidia-dgpu:/dev/dri/intel-igpu')
@@ -36,6 +37,7 @@ hl.on('hyprland.start', function()
   hl.exec_cmd('udiskie')
   hl.exec_cmd('swaync')
   hl.exec_cmd('hypridle')
+  hl.exec_cmd('monitor-watch')
   hl.exec_cmd('wl-clip-persist --clipboard regular')
   hl.exec_cmd('wl-paste --type text --watch cliphist store')
   hl.exec_cmd('wl-paste --type image --watch cliphist store')
@@ -47,7 +49,6 @@ hl.on('hyprland.start', function()
   hl.exec_cmd('uwsm-app -- obsidian')
   -- hl.exec_cmd('uwsm-app -- inkscape')
   hl.exec_cmd('uwsm-app -- discord')
-  hl.exec_cmd('uwsm-app -- thunderbird')
 end)
 
 for i = 1, 10 do
@@ -87,18 +88,20 @@ hl.env('XCURSOR_THEME', config.cursor_theme)
 -- ###################
 
 hl.bind(config.mod .. ' + Q', hl.dsp.window.close())
+hl.bind(config.mod .. ' + F', hl.dsp.window.fullscreen({ mode = 'fullscreen' }))
+hl.bind(config.mod .. ' + T', hl.dsp.window.float({ action = 'toggle' }))
+hl.bind(config.mod .. ' + P', hl.dsp.window.pseudo())
+
 hl.bind(config.mod .. ' + return', hl.dsp.exec_cmd(config.terminal))
 hl.bind(config.mod .. ' + SPACE', hl.dsp.exec_cmd(config.launcher))
 hl.bind(config.mod .. ' + S', hl.dsp.exec_cmd(config.web_search))
-hl.bind(config.mod .. ' + F', hl.dsp.window.fullscreen({ mode = 'fullscreen' }))
-hl.bind(config.mod .. ' + P', hl.dsp.window.pseudo())
 hl.bind(config.mod .. ' + E', hl.dsp.exec_cmd(config.file_manager))
 hl.bind(config.mod .. ' + B', hl.dsp.exec_cmd(config.bluetooth))
-hl.bind(config.mod .. ' + T', hl.dsp.window.float({ action = 'toggle' }))
+hl.bind(config.mod .. ' + SHIFT + M', hl.dsp.exec_cmd(config.mail))
+hl.bind(config.mod .. ' + SHIFT + C', hl.dsp.exec_cmd('hyprpicker -a -f hex'))
 hl.bind(config.mod .. ' + V', hl.dsp.exec_cmd(config.clipboard))
-hl.bind(config.mod .. ' + ALT + L', hl.dsp.exec_cmd('hyprlock'))
-hl.bind(config.mod .. ' + C', hl.dsp.exec_cmd('hyprpicker -a -f hex'))
 hl.bind(config.mod .. ' + SHIFT + N', hl.dsp.exec_cmd('swaync-client -t -sw'))
+hl.bind(config.mod .. ' + ALT + L', hl.dsp.exec_cmd('hyprlock'))
 
 -- Move focus
 hl.bind(config.mod .. ' + H', hl.dsp.focus({ direction = 'l' }))
@@ -186,7 +189,7 @@ hl.bind(config.mod .. ' + mouse:272', hl.dsp.window.drag(), { mouse = true })
 hl.bind(config.mod .. ' + mouse:273', hl.dsp.window.resize(), { mouse = true })
 
 -- Enable/disable internal monitor on open/close laptop
-hl.bind('switch:on:Lid Switch', hl.dsp.exec_cmd('lid-internal off'), { locked = true })
+hl.bind('switch:on:Lid Switch', hl.dsp.exec_cmd('hw-external-monitors && lid-internal off'), { locked = true })
 hl.bind('switch:off:Lid Switch', hl.dsp.exec_cmd('lid-internal on'), { locked = true })
 hl.bind(config.mod .. ' + O', hl.dsp.exec_cmd('lid-internal toggle'))
 
