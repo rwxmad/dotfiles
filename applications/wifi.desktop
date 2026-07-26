@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Network
-Comment=Network settings
+Name=WiFi
+Comment=WiFi settings
 Exec=launch-or-focus-tui impala
 Icon=wireless
 Terminal=false

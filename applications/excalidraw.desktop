@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Excalidraw
+Comment=Excalidraw board
+Exec=launch-webapp https://excalidraw.com
+Icon=input-mouse
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=excalidraw

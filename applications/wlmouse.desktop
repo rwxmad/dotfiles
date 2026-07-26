@@ -2,7 +2,7 @@
 Type=Application
 Name=wlmouse
 Comment=wlmouse settings
-Exec=chromium --class=wlmouse --app=https://gm.wlmouse.gg/#/project/items
+Exec=launch-webapp https://gm.wlmouse.gg/#/project/items
 Icon=input-mouse
 Terminal=false
 Categories=Utility;

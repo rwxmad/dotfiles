@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Email
+Comment=neomutt
+Exec=launch-or-focus-tui neomutt
+Icon=email
+Terminal=false
+Categories=Utility;
+StartupNotify=false
+StartupWMClass=neomutt
