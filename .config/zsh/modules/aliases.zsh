@@ -15,6 +15,12 @@ alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 
+# clipboard
+alias pbcopy='wl-copy'
+alias pbpaste='wl-paste'
+
+alias open='xdg-open'
+
 # --------------------------------------------------------------------------------------------------
 # Navigation
 # --------------------------------------------------------------------------------------------------
@@ -52,6 +58,9 @@ alias fd='fd --no-ignore --hidden --color=always'
 
 # lazygit
 alias lg='lazygit'
+
+# mise
+alias misereload='eval "$(mise hook-env --force)"'
 
 # --------------------------------------------------------------------------------------------------
 # Scripts
