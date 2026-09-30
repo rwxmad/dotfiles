@@ -1,14 +1,8 @@
 -- MONITORS
 hl.monitor({ output = 'eDP-1', mode = '3200x2000@120Hz', position = '0x0', scale = 1.25 })
 -- hl.monitor({ output = 'DP-1', mode = '2560x1440@144Hz', position = 'auto', scale = 1 })
-hl.monitor({ output = 'DP-1', mode = '3840x2160@165Hz', position = 'auto', scale = 1 })
-hl.monitor({ output = '', mode = 'preferred', position = 'auto', scale = 'auto' })
-
-local f = io.open(os.getenv('HOME') .. '/.local/state/hypr/lid-internal-off')
-if f then
-  f:close()
-  hl.monitor({ output = 'eDP-1', disabled = true })
-end
+-- hl.monitor({ output = 'DP-1', mode = '3840x2160@165Hz', position = 'auto', scale = 1 })
+-- hl.monitor({ output = '', mode = 'preferred', position = 'auto', scale = 'auto' })
 
 -- GENERAL
 hl.config({
@@ -51,6 +45,7 @@ hl.config({
     mouse_move_enables_dpms = true,
     enable_swallow = false,
     focus_on_activate = true,
+    allow_session_lock_restore = true,
   },
 })
 
