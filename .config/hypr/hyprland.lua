@@ -4,10 +4,7 @@ require('toggles')
 
 hl.env('EDITOR', 'nvim')
 hl.env('NVD_BACKEND', 'direct')
--- hl.env('LIBVA_DRIVER_NAME', 'nvidia')
-hl.env('__GLX_VENDOR_LIBRARY_NAME', 'nvidia')
 hl.env('XDG_SESSION_TYPE', 'wayland')
--- hl.env('GBM_BACKEND', 'nvidia-drm')
 
 hl.env('CLUTTER_BACKEND', 'wayland')
 hl.env('GDK_BACKEND', 'wayland,x11,*')
