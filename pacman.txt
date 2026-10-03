@@ -31,7 +31,6 @@ chromium
 chrono-date
 claude-code
 cliamp
-cliphist
 comfyui
 dart-sass
 dbeaver
