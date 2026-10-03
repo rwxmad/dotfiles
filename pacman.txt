@@ -187,7 +187,6 @@ qt6-multimedia-ffmpeg
 quickshell
 rclone
 ripgrep
-rofi
 ruby
 ruby-certificate_authority
 ruff
