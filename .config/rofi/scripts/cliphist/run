@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-rofi -modi clipboard:~/.config/rofi/scripts/cliphist/cliphist-rofi-img -show clipboard -show-icons
