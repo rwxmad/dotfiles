@@ -13,3 +13,13 @@
 .config/karabiner/automatic_backups/
 
 .config/github-copilot/
+
+# quickshell
+.qmlls.ini
+
+# yazi: plugins and flavors are installed from package.toml (`ya pkg install`)
+.config/yazi/plugins/*
+.config/yazi/flavors/*
+
+# btop
+.config/btop/
