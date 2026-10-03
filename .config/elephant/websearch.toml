@@ -1,0 +1,17 @@
+[[entries]]
+name = "Google"
+default = true
+icon = "google"
+url = "https://www.google.com/search?q=%TERM%"
+
+[[entries]]
+name = "YouTube"
+prefix = "yt"
+icon = "youtube"
+url = "https://www.youtube.com/results?search_query=%TERM%"
+
+[[entries]]
+name = "GitHub"
+prefix = "gh"
+icon = "github"
+url = "https://github.com/search?q=%TERM%"
