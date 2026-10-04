@@ -76,6 +76,7 @@ github-cli
 glib2-devel
 gnome-calculator
 gnome-disk-utility
+gnome-keyring
 gnome-themes-extra
 godot
 gputest
