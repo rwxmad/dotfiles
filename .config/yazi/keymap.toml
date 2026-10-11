@@ -1,8 +1,8 @@
 [[mgr.prepend_keymap]]
-on   = "<C-g>"
-run  = 'shell -- rofi -theme fullscreen-preview -show filebrowser -filebrowser-command "ya emit reveal" -filebrowser-directory "$(pwd)"'
-desc = "Grid view"
-
-[[mgr.prepend_keymap]]
 on  = "y"
 run = [ 'shell -- for path in %s; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ]
+
+[[mgr.prepend_keymap]]
+on = [ "m", "S" ]
+run  = "plugin what-size"
+desc = "Calc size of selection or cwd"
