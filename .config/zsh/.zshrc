@@ -107,7 +107,7 @@ eval "$(starship init zsh)"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # mise
-eval "$(mise activate zsh --shims)"
+eval "$(mise activate zsh)"
 
 # atuin
 eval "$(atuin init zsh)"
