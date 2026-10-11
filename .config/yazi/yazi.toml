@@ -14,13 +14,16 @@ open_pdf = [
 open_image = [
 	{ run = "imv %s", orphan = true, desc = "Open image" },
 ]
-
+open_3d = [
+	{ run = "f3d %s", orphan = true, desc = "Open 3d model" },
+]
 
 [open]
 prepend_rules = [
 	{ mime = "video/*",  use = "play" },
 	{ mime = "image/*",  use = "open_image" },
 	{ url = "*.pdf",     use = "open_pdf" },
+	{ url = "*.{3mf,obj,pts,ply,stl,step,stp}", use = "open_3d" },
 ]
 
 [plugin]
