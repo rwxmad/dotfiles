@@ -97,6 +97,7 @@ hyprland-preview-share-picker-git
 hyprlock
 hyprpicker
 hyprshutdown
+hyprsunset
 imagemagick
 impala
 imv
