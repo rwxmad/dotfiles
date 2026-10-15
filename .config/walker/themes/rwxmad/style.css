@@ -1,5 +1,5 @@
 @define-color text #ebdbb2;
-@define-color selected-text #98971a;
+@define-color accent #83a598;
 @define-color base #282828;
 @define-color background #282828;
 
@@ -54,7 +54,7 @@ scrollbar {
 }
 
 child:selected .item-box {
-  background: rgba(214, 93, 14, 0.8);
+  background: alpha(@accent, 0.8);
 }
 
 child:selected .item-box * {
