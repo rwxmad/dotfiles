@@ -18,6 +18,7 @@ Singleton {
   readonly property string doNotDisturb: glyph(0xF009B)
   readonly property string recording: glyph(0xF0EC2)
   readonly property string stayAwake: glyph(0xF0176)
+  readonly property string nightLight: glyph(0xF050E)
   readonly property string calendar: glyph(0xF00ED)
 
   readonly property string play: glyph(0xF040A)
