@@ -1,8 +1,6 @@
 -- MONITORS
 hl.monitor({ output = 'eDP-1', mode = '3200x2000@120Hz', position = '0x0', scale = 1.25 })
--- hl.monitor({ output = 'DP-1', mode = '2560x1440@144Hz', position = 'auto', scale = 1 })
--- hl.monitor({ output = 'DP-1', mode = '3840x2160@165Hz', position = 'auto', scale = 1 })
--- hl.monitor({ output = '', mode = 'preferred', position = 'auto', scale = 'auto' })
+hl.monitor({ output = '', mode = 'highres', position = 'auto', scale = 1 })
 
 -- GENERAL
 hl.config({
@@ -12,7 +10,7 @@ hl.config({
     gaps_out = 4,
     border_size = 2,
     col = {
-      active_border = 'rgba(a3be8cff)',
+      active_border = 'rgba(83a598ff)',
       inactive_border = 'rgba(191d24ff)',
     },
   },
