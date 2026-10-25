@@ -1,14 +1,14 @@
 @define-color text #ebdbb2;
-@define-color accent #83a598;
 @define-color base #282828;
-@define-color background #282828;
+@define-color accent #83a598;
+@define-color border #83a598;
 
 * {
   all: unset;
 }
 
 * {
-  font-family: monospace;
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
   color: @text;
 }
@@ -26,25 +26,19 @@ scrollbar {
 }
 
 .box-wrapper {
-  background: rgba(20, 20, 19, 0.9);
-
-  backdrop-filter: blur(18px);
-  -gtk-backdrop-filter: blur(18px);
-
-  border-radius: 16px;
-
-  border: 1px solid rgba(20, 20, 19, 0.5);
-
-  padding: 12px;
+  background: alpha(@base, 0.95);
+  padding: 20px;
+  border: 2px solid @border;
+  border-radius: 4px;
 }
 
 .search-container {
-  background: transparent;
+  background: @base;
   padding: 10px;
 }
 
 .input placeholder {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .input:focus,
@@ -53,12 +47,12 @@ scrollbar {
   outline: none;
 }
 
-child:selected .item-box {
-  background: alpha(@accent, 0.8);
+child:selected {
+  background: alpha(@text, 0.07);
 }
 
 child:selected .item-box * {
-  color: @base;
+  color: @accent;
 }
 
 .item-box {
@@ -87,7 +81,7 @@ child:selected .item-box * {
 }
 
 .keybind-hints {
-  background: @background;
+  background: @base;
   padding: 10px;
   margin-top: 10px;
 }
