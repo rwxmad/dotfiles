@@ -17,6 +17,7 @@ bat
 bibata-cursor-theme-bin
 bind
 blender
+bolt
 bluetui
 bluez-deprecated-tools
 bluez-utils
