@@ -15,6 +15,7 @@ Singleton {
   readonly property string clock: glyph(0xF0954)
   readonly property string mapMarker: glyph(0xF041)
   readonly property string loading: glyph(0xF0996)
+  readonly property string bell: glyph(0xF009A)
   readonly property string doNotDisturb: glyph(0xF009B)
   readonly property string recording: glyph(0xF0EC2)
   readonly property string stayAwake: glyph(0xF0176)
