@@ -48,6 +48,7 @@ elephant-calc
 elephant-clipboard
 elephant-desktopapplications
 elephant-files
+elephant-menus
 elephant-providerlist
 elephant-runner
 elephant-symbols
@@ -211,7 +212,6 @@ stow
 sudo
 swappy
 swaybg
-swaync
 tailscale
 telegram-desktop
 tesseract-data-afr
