@@ -35,7 +35,6 @@ cliamp
 comfyui
 dart-sass
 dbeaver
-ddcci-driver-linux-dkms
 ddcutil
 discord
 docker
@@ -101,7 +100,6 @@ hyprpicker
 hyprshutdown
 hyprsunset
 imagemagick
-impala
 imv
 inetutils
 inkscape
@@ -109,7 +107,6 @@ intel-gpu-tools
 intel-media-driver
 intel-ucode
 isync
-iwd
 jdk-openjdk
 john
 kdeconnect
@@ -141,6 +138,7 @@ nano
 nautilus
 neomutt
 neovim
+networkmanager
 nmap
 notmuch
 noto-fonts
