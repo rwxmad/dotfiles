@@ -42,6 +42,7 @@ Singleton {
   // Roles used across the bar
   readonly property color background: bg0
   readonly property color foreground: fg1
+  readonly property color dim: Qt.darker(foreground, 1.4)
   readonly property color accent: brightBlue
   readonly property color urgent: red
 
