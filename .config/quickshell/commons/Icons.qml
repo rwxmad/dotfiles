@@ -51,6 +51,13 @@ Singleton {
   readonly property list<string> wifi: glyphs([0xF092F, 0xF091F, 0xF0922, 0xF0925, 0xF0928])
   readonly property string ethernet: glyph(0xF0200)
   readonly property string disconnected: glyph(0xF092E)
+  readonly property string wifiRestricted: glyph(0xF0929)
+  readonly property string ethernetRestricted: glyph(0xF0202)
+  readonly property string captivePortal: glyph(0xF03CC)
+  readonly property string speedTest: glyph(0xF04C5)
+  readonly property string lock: glyph(0xF033E)
+  readonly property string forget: glyph(0xF0159)
+  readonly property string confirm: glyph(0xF012C)
 
   readonly property list<string> battery: glyphs([0xF007A, 0xF007B, 0xF007C, 0xF007D, 0xF007E, 0xF007F, 0xF0080, 0xF0081, 0xF0082, 0xF0079])
   readonly property list<string> batteryCharging: glyphs([0xF089C, 0xF0086, 0xF0087, 0xF0088, 0xF089D, 0xF0089, 0xF089E, 0xF008A, 0xF008B, 0xF0085])
