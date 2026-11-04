@@ -32,6 +32,9 @@ Singleton {
   readonly property int popupPadding: 14
   readonly property int inputPaddingY: 7
 
+  // ease-out for press feedback and panel motion
+  readonly property list<real> easeOut: [0.23, 1, 0.32, 1, 1, 1]
+
   readonly property real normalFillAlpha: 0.04
   readonly property real hoverFillAlpha: 0.08
   readonly property real selectedFillAlpha: 0.18
