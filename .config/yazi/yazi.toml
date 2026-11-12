@@ -1,6 +1,6 @@
 [opener]
 edit = [
-	{ run = '$EDITOR "$@"', block = true, for = "unix" },
+	{ run = '$EDITOR %s', block = true, for = "unix" },
 ]
 play = [
 	{ run = "mpv %s", orphan = true, for = "unix" },
