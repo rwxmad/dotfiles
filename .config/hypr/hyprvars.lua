@@ -44,6 +44,7 @@ hl.config({
     enable_swallow = false,
     focus_on_activate = true,
     allow_session_lock_restore = true,
+    bell_sound = 'none',
   },
 })
 
